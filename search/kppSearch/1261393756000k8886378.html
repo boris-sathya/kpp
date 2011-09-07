@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+	  <base href="http://web.mit.edu/newsoffice/2009/data-compression-1217.html" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="MIT; Massachusetts Institute of Technology; News Office; Compressed sensing; Compression; Computer science and technology; CSAIL; Electrical engineering and electronics; Linear sketching; Sparse recovery" />
+  <meta name="title" content="Putting the squeeze on data" />
+  <meta name="author" content="Larry Hardesty, MIT News Office" />
+  <meta name="description" content="In work that could make it easier to handle huge data sets, MIT researchers improve data compression's fidelity without sacrificing speed" />
+  <title>Putting the squeeze on data</title>
+  <link href="/newsoffice/templates/mit/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="http://web.mit.edu/newsoffice/components/com_comment/joscomment/templates/SSlide-emotop/css/css-age.css" type="text/css" />
+  <link rel="stylesheet" href="http://web.mit.edu/newsoffice/templates/mit/css/popups.css" type="text/css" />
+  <script type="text/javascript" src="/newsoffice/media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="/newsoffice/media/system/js/caption.js"></script>
+  <script type="text/javascript" src="http://web.mit.edu/newsoffice/templates/mit/js/jquery-1.3.2.min.js"></script>
+  <script type="text/javascript" src="http://web.mit.edu/newsoffice/templates/mit/js/jquery.popup.js"></script>
+  <script type="text/javascript">
+ var JOSC_postCSS=1;
+  </script>
+  <script type='text/javascript'>
+ var _JOOMLACOMMENT_MSG_DELETE 	= "Are you sure you want to delete this comment?"; var _JOOMLACOMMENT_MSG_DELETEALL = "Are you sure you want to delete all comments?"; var _JOOMLACOMMENT_WRITECOMMENT 	= "Write comment"; var _JOOMLACOMMENT_SENDFORM 		= "Send"; var _JOOMLACOMMENT_EDITCOMMENT 	= "Edit comment"; var _JOOMLACOMMENT_EDIT 			= "Edit"; var _JOOMLACOMMENT_FORMVALIDATE 	= "Please insert at least a comment."; var _JOOMLACOMMENT_FORMVALIDATE_CAPTCHA = "Please input the anti-spam code that you can read in the image."; var _JOOMLACOMMENT_FORMVALIDATE_CAPTCHA_FAILED = "Anti-spam code is not correct. Please input the code that you can read in the image."; var _JOOMLACOMMENT_FORMVALIDATE_EMAIL = "To be notified, please enter your email"; var _JOOMLACOMMENT_ANONYMOUS 	= "Anonymous"; var _JOOMLACOMMENT_BEFORE_APPROVAL = "Your comment has been queued for moderation by site administrators and will be published after approval."; var _JOOMLACOMMENT_REQUEST_ERROR = "Request failed"; var _JOOMLACOMMENT_MSG_NEEDREFRESH = "";
+</script>
+  <script type='text/javascript' src='http://web.mit.edu/newsoffice/components/com_comment/joscomment/jscripts/client.js'></script>
+
+	<link rel="stylesheet" href="/newsoffice/templates/mit/css/style.css" type="text/css" />
+	<!--[if IE]><link rel="stylesheet" href="/newsoffice/templates/mit/css/ie.css" type="text/css" /><![endif]-->
+	<!--[if IE 6]><link rel="stylesheet" href="/newsoffice/templates/mit/css/ie6.css" type="text/css" /><![endif]-->
+</head>
+<body>
+<a name="up" id="up"></a>
+<div id="wrapper">  
+  <div id="topbar"><a href="http://web.mit.edu">massachusetts institute of technology</a></div>  
+  <div id="header">
+    <div class="logo">
+    	
+		            <a href="/newsoffice" title="MIT News">
+                <img src="/newsoffice/templates/mit/images/newslogo.gif" alt="MIT News" align="left" width="278" height="48" />
+            </a>  
+        		  	
+		    </div>
+    <div class="search"><form action="index.php" method="post">
+	<div class="searchSubmit">
+		search<br/>
+		<input name="searchword" id="mod_search_searchword" maxlength="60" alt="Search" class="inputboxSubmit" type="text" size="19" value=""  onblur="if(this.value=='') this.value='search...';" onfocus="if(this.value=='search...') this.value='';" /><input type="image" value="Search" class="buttonSubmit" src="/newsoffice/images/M_images/searchButton.gif" onclick="this.form.searchword.focus();"/>	</div>
+	<input type="hidden" name="task"   value="search" />
+	<input type="hidden" name="option" value="com_search" />
+</form></div>
+    <div class="clear"></div>
+    <div id="menu"><ul class="link"><li class="link-li"><a class="link-a ov red" href="/newsoffice/engineering.html">engineering</a></li><li class="link-li"><a class="link-a ov red" href="/newsoffice/science.html">science</a></li><li class="link-li"><a class="link-a ov red" href="/newsoffice/business.html">business</a></li><li class="link-li"><a class="link-a ov red" href="/newsoffice/architecture-and-planning.html">architecture and planning</a></li><li class="link-li"><a class="link-a ov red" href="/newsoffice/humanities-arts-and-social-sciences.html">humanities, arts, and social sciences</a></li><li class="link-li"><a class="link-a ov " href="/newsoffice/campus.html">campus</a></li><li class="link-li"><a class="link-a ov " href="/newsoffice/multimedia.html">multimedia</a></li><li class="link-li"><a class="link-a ov " href="/press/">press</a></li></ul></div>    
+  </div>
+  
+  
+	    
+        <div id="sheadcol">
+<h1>Putting the squeeze on data</h1>
+<div class="dek">In work that could make it easier to handle huge data sets, MIT researchers improve data compression's fidelity without sacrificing speed</div>
+<div class="byline">Larry Hardesty, MIT News Office<br /></div></div>
+        <div class="clear"></div>
+        <div id="scol1">
+<div class="section">
+<h2>today's news</h2><div class="story"><h3><a href="/newsoffice/2009/dawn-green-1217.html">Not easy being green</a></h3><div class="storypic"><a href="/newsoffice/2009/dawn-green-1217.html"><img src="http://web.mit.edu/newsoffice/images/article_images/tn/20091217154953-2.jpg" alt="" height="135" width="180" border="0" /></a><br /><div class="caption">The sun rises in England's Lake District.</div></div><p>MIT historian Harriet Ritvo explains how a battle to save an English lake helped found modern environmentalism â?? but might worry greens today  </p></div><h4><a href="/newsoffice/2009/cdms-mit-1218.html">Closing in on dark matter?</a></h4><div class="smdate">December 18, 2009</div></div>
+</div>
+        <div id="scol2">
+            <div id="main_container"><div class="storyfull">
+	<div class="lead">
+					<div class="storypic">
+            					
+                <img src="http://web.mit.edu/newsoffice//images/article_images/20091217161424-4.jpg" width="368" height="276" border="" alt="" />
+				                
+                                
+			</div>
+				<div class="leadwithimage">
+			<div class="byline">
+									<div class="date">December 21, 2009</div>
+							</div>
+			<br />
+			<div class="storybuttons">
+				<div class="storybutton emailbutton">
+					<a href="/newsoffice/component/mailto/?articleId=14772&amp;tmpl=component&amp;link=aHR0cDovL3dlYi5taXQuZWR1L25ld3NvZmZpY2UvMjAwOS9kYXRhLWNvbXByZXNzaW9uLTEyMTcuaHRtbA%3D%3D" onclick="window.open(this.href,'win2','status=yes,toolbar=yes,scrollbars=yes,titlebar=yes,menubar=yes,resizable=yes,width=640,height=480,directories=yes,location=yes'); return false;">email</a>
+				</div>
+                                
+				<div class="storybutton commentbutton">
+					<a href="#JOSC_TOP">comment</a>
+				</div>
+                				<div class="storybutton printbutton">
+                
+                
+					<a href="/newsoffice/2009/data-compression-1217.html?tmpl=component&amp;print=1" title="Print" onclick="window.open(this.href,'win2','status=yes,toolbar=yes,scrollbars=yes,titlebar=yes,menubar=yes,resizable=yes,width=640,height=480,directories=yes,location=yes'); return false;" rel="nofollow">print</a>
+				</div>
+				<div class="storybutton sharebutton">
+					<a href="#" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]');" onmouseout="addthis_close();" onclick="return addthis_sendto();">share</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div style="clear: left;"></div>
+<div class="articlebody">Data compression is one of the fundamental research areas in computer science, letting information systems do more with less. Itâ??s the reason the iPod nano can hold thousands of songs instead of hundreds, and itâ??s what keeps transmitted images from choking the Internet. If every digital file is a string of bits â?? zeroes and ones â?? then compression is a way to represent the same information with fewer bits.<br /><br />Most compression techniques trade space for time: while the compressed file takes up less memory, it has to be decoded before its contents are intelligible. In applications where memory is in short supply but data needs constant updating, it can be prohibitively time consuming to keep decompressing a file, modifying it, and then recompressing it. As a result, such applications â?? monitoring Internet traffic, for instance, or looking for patterns in huge collections of scientific data â?? often use a type of compression called linear compression. With linear compression, a computer program can modify the data in a compressed file without first decoding it.<br /><br />Last year, Associate Professor Piotr Indyk of MIT's Computer Science and Artificial Intelligence Laboratory and his graduate student Radu Berinde introduced two different versions of a new linear-compression algorithm that perform as well as any yet invented â?? and for some applications, better. Both versions of the algorithm, however, had limitations: under certain extreme conditions, theyâ??d just stop working. But this fall, at the Allerton Conference on Communication, Control, and Computing hosted by the University of Illinois at Urbana-Champaign, Indyk and Berinde presented a new version of the algorithm that combined the advantages of its predecessors and overcame their drawbacks.<br /><br />â??The two previous algorithms each had their own faults,â?? says Deanna Needell, a postdoc at Stanford who helped develop one of the other leading linear-compression algorithms. â??And this tends to be the case in many situations in this area, that if you have two algorithms, one is good at one thing and the other is good at another. And [the new algorithm] sort of merged the two benefits. Itâ??s like, hereâ??s this algorithm that does both of the good things.â??<br /><br />Some compression techniques, like the zip algorithm commonly used for Internet downloads, are whatâ??s called â??losslessâ??: when you unzip the zipped version of a file, you recover every bit of the original. Other compression techniques are â??lossyâ??: the MP3 version of a song, for example, takes up about a tenth as much space as the CD version, but it irreversibly discards a lot of subtle audio data.<br /><br />Linear compression is lossy: expanding the compressed file doesnâ??t give you all the data in the original. But for many applications, that doesnâ??t matter. Take, for instance, Internet traffic monitoring. Packets of data traveling over the Internet pass through a succession of special-purpose computers called routers; each router examines the packetâ??s ultimate destination and tells it where to go next. Thereâ??s no way a router could store information about all the packets that pass through it in the course of a day, but with linear compression, it can store an approximation. Decoding the data can still disclose what Indyk calls the â??heavy hittersâ?? â?? the sites that are sending and receiving the most packets â?? which is what most researchers are interested. In other applications, the heavy hitters might be the members of a large population whose blood tests positive for a disease, or the concentrations of particular molecules in a chemical sample.<br /><br /><b>Going the distance</b><br /><br />According to Indyk, there are three principal criteria for evaluating the performance of a linear-compression algorithm. One is the degree of compression: how much smaller the compressed file is than the uncompressed data. The second is recovery time: how long it takes to decode the compressed data. (Indyk says that some of the early linear-compression algorithms would take â??hours or even daysâ?? to reconstruct an image captured by a one-megapixel camera.) And since linear compression is lossy, the third is how accurately the algorithm can reconstruct the original file.<br /><br />In the last seven years, Indyk says, the field has progressed to the point where linear-compression algorithms can perform well along any two of those three parameters at the expense of the third. Indyk and Berinde chose to trade some fidelity in reconstruction for efficient extraction and good compression. Indeed, Indyk and some of his other students have recently demonstrated that thereâ??s a mathematical limit to how much space savings linear compression can afford â?? and his and Berindeâ??s algorithm reaches it.<br /><br />The insight behind the MIT researchersâ?? algorithm is fairly technical, but Indyk tried to explain it in laymanâ??s terms. If you take two very different files â?? strings of ones and zeroes â?? of similar size, â??the difference between them has a geometric interpretation,â?? Indyk explains. That is, thereâ??s a way to mathematically describe the difference between the files in terms of distance: one file can be thought of as being close to or far away from the other.<br /><br />With linear compression, thereâ??s generally a trade-off between how fast the compression algorithm is and how much of the original file can be recovered. Slower but more accurate algorithms tend to preserve the geometric distance between files: if two uncompressed files are far apart, the compressed versions will be, too. With faster algorithms, on the other hand, the compressed files tend to be much closer to each other than the source files were.<br /><br />Indyk and Berinde found a way to analyze the difference between compressed files using a different mathematical notion of geometric distance; under that analysis, some fast compression algorithms still preserve the distance between files. By taking advantage of this new perspective, the researchers were able to devise a decompression algorithm that recovers much more information from the original file without sacrificing any speed.<br /><br />Work like Indyk and Berindeâ??s holds out the hope that soon, linear-compression algorithms will no longer need to sacrifice performance along one of the three parameters that Indyk mentioned â?? compression, time and accuracy. â??I think weâ??re actually pretty close to that,â?? says Needell. â??Weâ??re pretty much to the end: weâ??re almost there.â?? She adds, however, that â??thereâ??s plenty of other directions that the field will go in.â?? For instance, she says, many of the mathematical techniques that linear-compression algorithms rely on could be adapted to improve the â??recommendation enginesâ?? on web sites like Netflix or Amazon, which try to predict which books or movies a customer might like on the basis of prior history.<br /><br /><br mce_bogus="1"><!-- START of joscomment --><div id='comment'>
+
+<a name='JOSC_TOP'></a>
+
+<table align='center' class='sectiontableheader' id='CommentMenu' width='100%' cellpadding='0' cellspacing='0' border='0'>
+  <tr>
+    <td align='left' class='label'>Comments</td>
+	<td align='right' class='buttons'>
+	  <table cellpadding='0' cellspacing='0' border='0'>
+	    <tr>
+		
+		
+		
+		
+	    </tr>
+	  </table>
+	</td>
+  </tr>
+</table>
+
+
+<div id='JOSC_formpos'>
+<div class="onlyregistered"><a href="/newsoffice/login.html?articleId=14772&amp;articleItemid=21">Log in to write comments</a></div><form name='joomlacommentform' method='post' action='PHP_SELF'><input type='hidden' name='content_id' value='14772' /><input type='hidden' name='component' value='' /><input type='hidden' name='joscsectionid' value='1' /><table class='buttoncontainer' style='display:none;' cellpadding='0' cellspacing='0'><tr><td><input type='button' class='button' name='bsend' value='{_SENDFORM}' onclick='JOSC_editPost(-1,-1)' /></td><td id='JOSC_busy'></td></tr></table></form>
+</div>
+
+<table align='center' id='CommentPageNav' width='100%' cellpadding='0' cellspacing='0' border='0'>
+<tr><td>
+<div id="joscPageNav"></div>
+</td><td id='JOSC_busypage'></td></tr>
+</table>
+
+<div id='Comments'></div>
+
+
+<h4 style="display:none;">!joomlacomment 4.0 Copyright (C) 2009 Compojoom.com . All rights reserved."</h4></div>
+<script type='text/javascript'>
+var JOSC_ajaxEnabled=1;if (!JOSC_http) JOSC_ajaxEnabled=false;var JOSC_sortDownward='0';var JOSC_captchaEnabled=true;var JOSC_template='http://web.mit.edu/newsoffice/components/com_comment/joscomment/templates/SSlide-emotop';var JOSC_liveSite='http://web.mit.edu/newsoffice/components/com_comment/joscomment';var JOSC_ConfigLiveSite='http://web.mit.edu/newsoffice/';var JOSC_linkToContent='http://web.mit.edu/newsoffice/2009/data-compression-1217.html';var JOSC_autopublish='0';
+</script>
+<!-- END of joscomment --></div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a73301e0c1fbbc2"></script>
+</div>
+        </div>
+        <div id="scol3"><div class="section_separator"></div><div id="top_right_line"></div>	
+	<script type="text/javascript">
+		var $j = jQuery.noConflict();
+	
+		$j(document).ready(function(){
+			$j("a[rel^='prettyPhoto']").prettyPhoto({showTitle: false, theme: 'dark_square'});
+		});
+	</script>
+	
+
+<div class="section">
+<h2>multimedia</h2>
+<div class="story">
+<div class="storypic"><a href="/newsoffice/articleimages.php?id=13471&amp;iframe=true&amp;width=378&amp;height=903" rel="prettyPhoto1" target="_blank"><img src="http://web.mit.edu/newsoffice/images/article_images/tn/20091218120050-0.jpg" height="564" width="180" border="0" alt="" /></a></div>
+<p>Although compressing preexisting image files is not a typical application of linear compression, it provides a vivid means of comparing algorithms. A source image (top) was compressed using two linear-compression algorithms. When the images were decompressed, the older algorithm (middle) provided a slightly more faithful reconstruction of the original â?? but it took more than 100 times as long to execute as the new MIT algorithm (bottom).</p>
+</div>
+</div>
+
+<div class="section">
+<h2>related</h2>
+<div><h4><a href="http://people.csail.mit.edu/indyk/" target="_blank">Piotr Indyk</a></h4></div>
+<div><h4><a href="http://people.csail.mit.edu/radu/" target="_blank">Radu Berinde</a></h4></div>
+<div><h4><a href="http://theory.csail.mit.edu/" target="_blank">Theory of Computation group</a></h4></div>
+</div>
+
+<h2>tags</h2>
+
+<div class="labels-label-list">
+	<h4 class="tagsH4"><a class="label" href="/newsoffice/topic/compressed-sensing.html" title="Compressed sensing">Compressed sensing</a></h4><h4 class="tagsH4"><a class="label" href="/newsoffice/topic/compression.html" title="Compression">Compression</a></h4><h4 class="tagsH4"><a class="label" href="/newsoffice/topic/computers.html" title="Computer science and technology">Computer science and technology</a></h4><h4 class="tagsH4"><a class="label" href="/newsoffice/topic/csail.html" title="CSAIL">CSAIL</a></h4><h4 class="tagsH4"><a class="label" href="/newsoffice/topic/electrical-engineering.html" title="Electrical engineering and electronics">Electrical engineering and electronics</a></h4><h4 class="tagsH4"><a class="label" href="/newsoffice/topic/linear-sketching.html" title="Linear sketching">Linear sketching</a></h4><h4 class="tagsH4"><a class="label" href="/newsoffice/topic/sparse-recovery.html" title="Sparse recovery">Sparse recovery</a></h4>    
+</div></div>
+    
+        
+  
+  	<div class="clear"></div>
+  	<div id="footer">
+  		<a href="http://www.mit.edu" target="blank" title="Massachusetts Institute of Technology"><img src="/newsoffice/templates/mit/images/footer-logo.gif" alt="Massachusetts Institute of Technology" align="right" width="116" height="64" border="0" /></a> MIT news&nbsp;&nbsp;|&nbsp;&nbsp;77 Massachusetts Avenue, Room 11-400&nbsp;&nbsp;|&nbsp;&nbsp;Cambridge, MA 02139-4307&nbsp;|&nbsp;Tel 617.253.2700&nbsp;|&nbsp;TTY 617.258.9344<br />
+    <a href="http://twitter.com/MITNews" class="footer_link" target="_blank" title="twitter">twitter</a>&nbsp;|&nbsp;<a href="/newsoffice/rss.html" class="footer_link" title="rss">rss</a>&nbsp;|&nbsp;<a href="/newsoffice/contact.html" class="footer_link" title="contact">contact</a>&nbsp;|&nbsp;<a href="/newsoffice/about.html" class="footer_link" title="about mit news office">about the mit news office</a>&nbsp;|&nbsp;<a href="/newsoffice/news-office-comments.html" title="comment on this site" class="footer_link">comment on this site</a>&nbsp;|&nbsp;</a><span><a href="http://mit.edu" class="footer_link" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a></span> 
+    </div>
+</div>
+<!-- SiteCatalyst code version: H.20.3.
+Copyright 1997-2009 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="/newsoffice/templates/mit/js/s_code.js"></script>
+<script language="JavaScript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName=""
+s.server=""
+s.channel=""
+s.pageType=""
+s.prop1=""
+s.prop2=""
+s.prop3=""
+s.prop4=""
+s.prop5=""
+/* Conversion Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events=""
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://mitnews.122.2O7.net/b/ss/mitnews/1/H.20.3--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.20.3. -->
+</body>
+</html>

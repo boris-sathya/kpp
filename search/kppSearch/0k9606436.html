@@ -1,0 +1,120 @@
+<html>
+<!-- $Id: fontutils.html,v 1.11 2006/11/22 09:12:14 ramprasadb Exp $ -->
+<head>
+<title>Fontutils - GNU Project - Free Software Foundation (FSF)</title>
+<link rev="made" href="mailto:webmasters@www.gnu.org">
+<meta name="keywords" content="GNU fontutils, font utilities, bitmap
+        fonts, outline fonts, splines, side bearings">
+</head>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#1F00FF" ALINK="#FF0000" VLINK="#9900DD">
+
+<h1>GNU Fontutils</h1>
+
+<a HREF="/graphics/gnu-head-sm.jpg"><img SRC="/graphics/gnu-head-sm.jpg"
+ALT=" [image of the Head of a GNU] "
+WIDTH="129" HEIGHT="122"></a>
+<a HREF="/graphics/gnu-head.jpg">(jpeg 21k)</a>
+
+<P>
+<HR>
+
+<P>The GNU font utilities 
+to allow conversion of a scanned type specimen image into an outline
+(PostScript or Metafont) font.  These fonts can be used with
+<a href="/software/ghostscript/ghostscript.html">Ghostscript</a> or
+<a href="http://tug.org">TeX</a>.
+
+<p>The fontutils are <b>looking for a maintainer</b>.  Please 
+<a href="mailto:bug-fontutils@gnu.org">email</a> if you're interested.
+
+<ul>
+<li><a href="http://ftp.gnu.org/gnu/fontutils/">Download sources</a>.
+<li><a href="http://www.delorie.com/gnu/docs/fontutils/fontu_toc.html">View
+    manual</a>.
+</ul>
+
+<p>Since the fontutils were originally written in the early 1990's,
+other programs have been developed which do a better job of some parts
+of this task.  Here is a list of the fontutils programs with indications
+of their current status:
+
+<ul>
+<li>imgrotate: rotates images 90 degrees, an inefficiently-implemented
+subset of pnmrotate (from <a href="http://netpbm.sourceforge.net">netpbm</a>).
+
+<li>imageto: extracts individual characters from a large image; still useful.
+
+<li>fontconvert: some features may still be useful, such as creating a
+tfm file from a bitmap.
+
+<li>charspace: allows non-interactive side bearing specification, so
+possibly still useful.  On the other hand, <a
+href="http://fontforge.sourceforge.net">fontforge</a> allows interactive
+specification, and has a very nice preview window for testing side
+bearings.
+
+<li>gsrenderfont: a shell script that converts outline fonts to bitmaps
+at a given size.  This is called from TeX programs under certain
+circumstances.  The version here has long been replaced by the scripts
+in the TeX distributions.
+
+<li>limn: does the actual conversion from bitmaps to splines. These
+days, you're much better off using
+<a href="http://autotrace.sourceforge.net">autotrace</a> or
+<a href="http://potrace.sourceforge.net">potrace</a>.
+
+<li>bzrto: conversion from the generic homegrown `bzr' (Bezier) format
+output by limn to PostScript Type&nbsp;1, PostScript Type&nbsp;3, or
+Metafont.  Obsolete.
+
+<li>bpltobzr: translate the binary bzr format into an equivalent text
+format `bpl' (bezier property list), for editing.  Fortunately, a
+full-featured free outline font editor, <a
+href="http://fontforge.sourceforge.net">fontforge</a>, has been written
+(by George Williams).
+
+<li>xbfe: bitmap font editor for shapes and metrics; astonishingly, it
+seems there are still no bitmap editors for any format except BDF, so
+still useful.
+
+</ul>
+
+<p>If you have questions or suggestions for the fontutils, please email
+<a href="mailto:bug-fontutils@gnu.org"><em>bug-fontutils@gnu.org</em></a>.
+
+<P>
+<HR>
+
+<P>
+Return to <A HREF="/home.html">GNU's home page</A>.
+
+<P>
+<P>Please send FSF &amp; GNU inquiries &amp; questions to
+<A HREF="mailto:gnu@gnu.org"><EM>gnu@gnu.org</EM></A>.
+There are also <A HREF="http://www.fsf.org/about/contact.html">other ways to
+contact</A> the FSF.
+
+<p>Please send comments on these web pages in general to
+<a href="mailto:webmasters@www.gnu.org"><EM>webmasters@www.gnu.org</EM></a>
+(and <a href="mailto:bug-gnu-utils@gnu.org"><em>bug-gnu-utils@gnu.org</em></a>
+for this page in particular),
+and <br>send other questions to
+<a href="mailto:gnu@gnu.org"><em>gnu@gnu.org</em></a>.
+
+<P>Copyright &copy; 2001, 2003, 2004, 2006 Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA  02110-1301,  USA
+
+<P>Verbatim copying and distribution of this entire article is
+permitted in any medium, provided this notice is preserved.
+
+<p>Updated:
+<!-- timestamp start -->
+$Date: 2006/11/22 09:12:14 $ $Author: ramprasadb $
+<!-- timestamp end -->
+
+<p>
+<hr />
+
+</body>
+</html>

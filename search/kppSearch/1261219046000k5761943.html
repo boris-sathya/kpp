@@ -1,0 +1,1056 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head><script type='text/javascript'>
+
+/*
+Auto Refresh Page with Time script
+By JavaScript Kit (javascriptkit.com)
+Over 200+ free scripts here!
+*/
+
+/* enter refresh time in "minutes:seconds" Minutes should range from 0 to inifinity. Seconds should range from 0 to 59 */
+var limit="20:05";
+
+if (document.images){
+var parselimit=limit.split(":");
+parselimit=parselimit[0]*60+parselimit[1]*1;
+}
+function beginrefresh(){
+if (!document.images) {
+return; }
+if (parselimit==1) {
+window.location.reload(); }
+else{ 
+parselimit-=1;
+curmin=Math.floor(parselimit/60);
+cursec=parselimit%60;
+if (curmin!=0) {
+curtime=curmin+" minutes and "+cursec+" seconds left until page refresh!"; }
+else {
+curtime=cursec+" seconds left until page refresh!"; }
+window.status=curtime;
+setTimeout("beginrefresh()",1000);
+}
+}
+
+window.onload=beginrefresh;
+</script>
+<script type="text/javascript">(function() { var a=window;function e(b){this.t={};this.tick=function(c,h,d){d=d?d:(new Date).getTime();this.t[c]=[d,h]};this.tick("start",null,b)}var f=new e;a.jstiming={Timer:e,load:f};try{a.jstiming.pt=a.gtbExternal&&a.gtbExternal.pageT()||a.external&&a.external.pageT}catch(g){};a.tickAboveFold=function(b){b=b;var c=0;if(b.offsetParent){do c+=b.offsetTop;while(b=b.offsetParent)}b=c;b<=750&&a.jstiming.load.tick("aft")};var i=false;function j(){if(!i){i=true;a.jstiming.load.tick("firstScrollTime")}}a.addEventListener?a.addEventListener("scroll",j,false):a.attachEvent("onscroll",j); })();</script>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='true' name='MSSmartTagsPreventParsing'/>
+<meta content='blogger' name='generator'/>
+<link href='http://www.blogger.com/favicon.ico' rel='icon' type='image/vnd.microsoft.icon'/>
+<link href='http://sundargates.blogspot.com/' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Free World - Atom" href="http://sundargates.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Free World - RSS" href="http://sundargates.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Free World - Atom" href="http://www.blogger.com/feeds/2420990664367705514/posts/default" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=2420990664367705514" />
+<link rel="me" href="http://www.blogger.com/profile/02146981276921954302" />
+<link rel="openid.server" href="http://www.blogger.com/openid-server.g" />
+<title>Free World</title>
+<link type='text/css' rel='stylesheet' href='http://www.blogger.com/static/v1/widgets/3796602922-widget_css_bundle.css' />
+<link type='text/css' rel='stylesheet' href='http://www.google.com/uds/solutions/newsbar/gsnewsbar.css' />
+ <link rel="stylesheet" type="text/css" href="http://www.blogger.com/static/v1/v-css/3727950723-blog_controls.css"/>
+ <link rel="stylesheet" type="text/css" href="http://www.blogger.com/dyn-css/authorization.css?targetBlogID=2420990664367705514&zx=29bf5301-b5c4-421d-8158-ad6d883261d7"/>
+<style type="text/css">#navbar-iframe { display:block }
+</style>
+
+<style id='page-skin-1' type='text/css'><!--
+
+/* --- * Blogger Template Style---- * Name: XPS Computer---- *Designer: J.Aghili----------- * URL: www.finalsense.com ------ * Date: November 2007 ----- */
+/* Variable definitions
+====================
+<Variable name="textcolor" description="Text Color"
+type="color" default="#555">
+<Variable name="PageBgColor" description="Page Background Color"
+type="color" default="#000">
+<Variable name="pagetitlecolor" description="Page Header Color"
+type="color" default="#99D06C">
+<Variable name="datecolor" description="Date Header Color"
+type="color" default="#fc6">
+<Variable name="titlecolor" description="Post Title Color"
+type="color" default="#99D06C">
+<Variable name="titlehovercolor" description="Post Title Hover Color"
+type="color" default="#f93">
+<Variable name="footercolor" description="Post Footer Color"
+type="color" default="#99D06C">
+<Variable name="sidebartextcolor" description="Sidebar Text Color"
+type="color" default="#808080">
+<Variable name="sidebarcolor" description="Sidebar Title Color"
+type="color" default="#99D06C">
+<Variable name="sidebarlink" description="Sidebar Link Color"
+type="color" default="#808080">
+<Variable name="sidebarhover" description="Sidebar Hover Color"
+type="color" default="#f90">
+<Variable name="linkcolor" description="Link Color"
+type="color" default="#369">
+<Variable name="linkhover" description="Link Hover Color"
+type="color" default="#99D06C">
+<Variable name="visitedlinkcolor" description="Visited Link Color"
+type="color" default="#369">
+<Variable name="descriptioncolor" description="Description Color"
+type="color" default="#999">
+<Variable name="Commentscolor" description="Comments Text Color"
+type="color" default="#666">
+<Variable name="bodyfont" description="Text Font"
+type="font" default="normal normal 82% Verdana, sans-serif">
+<Variable name="pagetitlefont" description="Page Header Font"
+type="font" default="normal bold 350% 'Times New Roman','Georgia'">
+<Variable name="titlefont" description="Post Title Font"
+type="font" default="normal bold 100% 'Times New Roman','Georgia'">
+<Variable name="sidebarheaderfont" description="Sidebar Title Font"
+type="font" default="normal bold 115% 'Times New Roman','Georgia'">
+<Variable name="sidebarfont" description="Sidebar Text Font"
+type="font" default="normal normal 90% 'Verdana','Arial'">
+<Variable name="descriptionfont" description="Description Font"
+type="font" default="normal normal 85% 'Verdana','Arial'">
+*/
+/* ---( page defaults )--- */
+body { margin: 0px;  padding: 0px;  text-align: left;  font:normal normal 82% Verdana, sans-serif; color:#555555; background:#000 url('http://lh3.google.com/jvdmds/R0Zq0NWgLVI/AAAAAAAAA50/TJN3JBiaWxY/xps-b.jpg') repeat-x top left; }
+blockquote {  margin: 0 0 0 30px;  padding: 0px 0 0 20px;  font-size: 88%;  line-height: 1.5em; }
+blockquote p {  margin-top: 0;  }
+abbr, acronym {  cursor: help;  font-style: normal;  }
+code {  color: #f63;  }
+hr {  display: none;  }
+img {  border: none;  }
+/* unordered list style */
+ul {list-style: none;  margin-left: 7px;  padding: 0;}
+li {list-style: none;  padding-left: 8px;  margin-bottom: 3px;}
+/* links */
+a:link {color: #336699; text-decoration: none;}
+a:visited {color: #336699; text-decoration: none;}
+a:hover {  color: #99D06C; text-decoration: none;}
+a:active { color: #336699; text-decoration: none;}
+/* ---( layout structure )---*/
+#outer-wrapper {width:900px; margin: 0px auto;  text-align: justify; }
+#content-wrapper { margin: 0px; /* to avoid the border image */  width: 100%;}
+#main { float: left;  width:570px;  margin: 0px; padding-left:25px;  line-height: 1.2em;  word-wrap: break-word; /* fix for long text breaking sidebar float in IE */  overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */  }
+#sidebar { float:right;  width: 260px;  padding-right:25px; font: normal normal 90% 'Verdana','Arial'; color: #808080; line-height: 1.4em;  word-wrap: break-word; /* fix for long text breaking sidebar float in IE */  overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */  }
+#center {background:#fff url('http://lh3.google.com/jvdmds/R0Zq0NWgLUI/AAAAAAAAA5s/OuWeedkx_0Q/xps-2.jpg') repeat-y top left;}
+/* ---( header and site name )--- */
+#header-wrapper { margin: 0px; padding: 0px}
+#header {height:290px; overflow: hidden; width:900px; color: #99D06C;   background: url('http://lh4.google.com/jvdmds/R0ZpOdWgLGI/AAAAAAAAA3k/K7IGxRK05u8/xps-1.jpg') no-repeat top left;  }
+#header h1 {width: 500px; font: normal bold 350% 'Times New Roman','Georgia'; margin:120px 20px 5px 360px; padding:5px; filter: glow(color=#000000,Strength=5); text-align:center; }
+#header h1 a {text-decoration: none;  color: #99D06C;  }
+#header h1 a:hover {color: #999999;}
+#header .description {margin:-5px 20px 5px 360px; text-align:center;  width:500px; font: normal normal 85% 'Verdana','Arial';  color: #999999; }
+/* ---( main column )--- */
+h2.date-header {font-size: 70%; color: #ffcc66; margin:0px; text-align: left; }
+.post h3 { text-align: left; font: normal bold 100% 'Times New Roman','Georgia';  color: #99D06C; border-top: 1px solid #BDE1A0; border-bottom: 1px solid #BDE1A0; }
+.post {padding:0px;}
+.post h3 a {color: #99D06C; text-decoration: none;}
+.post h3 a:hover {color: #ff9933;  text-decoration: none; }
+.post-footer {height:30px;  margin:0px; text-align: right;  font-size: 88%;  color:#99D06C; }
+.post img {padding: 6px;  border-top: 1px solid #ddd;  border-left: 1px solid #ccc;  border-bottom: 1px solid #c0c0c0;  border-right: 1px solid #c0c0c0;  }
+.feed-links {clear: both;  line-height: 2.5em; color:#99D06C; border-top: 1px solid #BDE1A0; }
+.blog-feeds {text-align: right; color:#99D06C;}
+#blog-pager-newer-link {float: left; }
+#blog-pager-older-link {float: right; }
+#blog-pager {text-align: center;}
+/* comment styles */
+#comments {  padding-top: 10px;  font-size: 88%;  line-height: 1.5em;  color: #666666;}
+#comments h4 {  margin: 20px 0 15px 0;  padding: 8px 0 0 40px;  font-family: "Lucida Grande", "Trebuchet MS";  font-size: 105%;  color: #666666;  height: 29px !important; /* for most browsers */  height /**/:37px; /* for IE5/Win */  }
+#comments ul {  margin-left: 0;  }
+#comments li {  background: none;  padding-left: 0;  }
+.comment-body {  padding: 0 10px 0 25px;  }
+.comment-body p {  margin-bottom: 0;  }
+.comment-author {  margin: 4px 0 0 0;  padding: 0 10px 0 60px;  color: #999;    }
+.comment-footer {  border-bottom: 1px solid #ddd;  padding-bottom: 1em;}
+.deleted-comment {  font-style:italic;  color:gray;  }
+/* ---( sidebar )--- */
+.sidebar h2 { margin: 0 0 0 0;  padding: 10px 0 0 0px; font: normal bold 115% 'Times New Roman','Georgia';  color: #99D06C;  height: 32px;  height: 32px !important; /* for most browsers */  height /**/:57px; /* for IE5/Win */  }
+.sidebar .widget { margin: 0;  padding: 0 0 10px 10px; }
+.sidebar a {color: #808080; text-decoration: none;}
+.sidebar a:hover {color: #ff9900;}
+.sidebar li { }
+.profile-textblock { margin: 0.5em 0;  line-height: 1.6em;}
+.profile-img {float: right;  margin:3px;  border: 1px solid #ddd;  padding: 3px;}
+/* ---( footer )--- */
+.clear { /* to fix IE6 padding-top issue */  clear: both;  }
+#footer {margin: 0; width:900px; height:231px; background: url('http://lh6.google.com/jvdmds/R0ZpO9WgLHI/AAAAAAAAA3s/x1l3OKj487Y/xps-3.jpg') no-repeat top left; text-align:center; color: #060; }
+#footer-wrapper {margin: 0px;  padding:0px;  font-size: 73%;  clear: both; }
+#footer-wrapper a { color: #060; text-decoration: none; line-height:231px;}
+#footer-wrapper a:hover{  color: #ffc;  text-decoration: none;}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #outer-wrapper,
+body#layout #main,
+body#layout #sidebar {padding-top: 0;  margin-top: 0;}
+body#layout #outer-wrapper,body#layout #content-wrapper {padding-top: 0}
+body#layout #sidebar {margin-right: 0;}
+body#layout #header,body#layout #footer,
+body#layout #main {padding: 0;}
+body#layout #content-wrapper {margin: 0px;}
+#navbar-iframe {height:0px; visibility:hidden; display:none}
+
+--></style>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body>
+<div class='navbar section' id='navbar'><div class='widget Navbar' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener("load",
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<iframe src="http://www.blogger.com/navbar.g?targetBlogID=2420990664367705514&amp;blogName=Free+World&amp;publishMode=PUBLISH_MODE_BLOGSPOT&amp;navbarType=BLACK&amp;layoutType=LAYOUTS&amp;searchRoot=http%3A%2F%2Fsundargates.blogspot.com%2Fsearch&amp;blogLocale=en&amp;homepageUrl=http%3A%2F%2Fsundargates.blogspot.com%2F" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="30px" width="100%" id="navbar-iframe" allowtransparency="true" title="Blogger Navigation and Search"></iframe>
+<div></div></div></div>
+<div id='outer-wrapper'><div id='wrap2'>
+<!-- skip links for text browsers -->
+<span id='skiplinks' style='display:none;'>
+<a href='#main'>skip to main </a> |
+      <a href='#sidebar'>skip to sidebar</a>
+</span>
+<div id='header-wrapper'>
+<div class='header section' id='header'><div class='widget Header' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+Free World
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<p class='description'><span>
+</span></p>
+</div>
+</div>
+</div></div>
+</div>
+<div id='center'>
+<div id='content-wrapper'>
+<div id='main-wrapper'>
+<div class='main section' id='main'><div class='widget Blog' id='Blog1'>
+<div class='blog-posts hfeed'>
+<!-- google_ad_section_start(name=default) -->
+<h2 class='date-header'>Monday, June 23, 2008</h2>
+<div class='post hentry uncustomized-post-template'>
+<a name='1222669437985801267'></a>
+<h3 class='post-title entry-title'>
+<a href='http://sundargates.blogspot.com/2008/06/china-overtakes-us-in-online-population.html'>China overtakes US in Online Population:</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body entry-content'>
+<div style="text-align: center;"><span style="font-size:180%;"><strong>China overtakes US in Online Population:</strong></span><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://www.kwintessential.co.uk/images/country/china-flag.jpg"><img src="http://www.kwintessential.co.uk/images/country/china-flag.jpg" alt="" border="0" /></a><br /></div><br /><br />The recent news from China Network Information Centre is that China not only has the world's largest popultion but also the largest number of Internet surfers in the world.Estimates say that there are atleast 221 million surfers in China, thus overtaking USA in Internet Traffic. But the bad news for China is that the ratio of Internet Users to the population in China of 16 percent is less than the Global average of 19 percent. But the biggest problem of the chinese surfers are restrictions to almost 30 ercent of the World Wide Web. This figure is not exaggerated and is the truth in the land of Sang Kyi. If not in other areas, we must appreciate the Indian Government for not blocking any domains and allowing the people to choose their own content which is really satisfactory.
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn'>sundaram</span>
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://sundargates.blogspot.com/2008/06/china-overtakes-us-in-online-population.html' rel='bookmark' title='permanent link'><abbr class='published' title='2008-06-23T01:02:00-07:00'>1:02 AM</abbr></a>
+</span>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='https://www.blogger.com/comment.g?blogID=2420990664367705514&postID=1222669437985801267' onclick=''>0
+comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1952740797'>
+<a href='http://www.blogger.com/post-edit.g?blogID=2420990664367705514&postID=1222669437985801267' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://www.blogger.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+Labels:
+<a href='http://sundargates.blogspot.com/search/label/china' rel='tag'>china</a>,
+<a href='http://sundargates.blogspot.com/search/label/online%20density' rel='tag'>online density</a>,
+<a href='http://sundargates.blogspot.com/search/label/online%20population' rel='tag'>online population</a>,
+<a href='http://sundargates.blogspot.com/search/label/usa' rel='tag'>usa</a>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+<div class='post hentry uncustomized-post-template'>
+<a name='7432203286041722249'></a>
+<h3 class='post-title entry-title'>
+<a href='http://sundargates.blogspot.com/2008/06/my-disappointments-this-year.html'>My Disappointments this Year:</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body entry-content'>
+<span><span><br /><br />My Disappointments this Year:</span></span><br /><br /><br />Hey guys, Every week I have given you news about my school. This week, I will tell what all disappointed me most when I studied in Shrishti Matric Higher Secondary School. The biggest disappointment for me this year was the marks of my close friend Aadarsh. I have always had great expectations of him.Infact I have always thought that he could be only one to beat sneha in what she does best ie by-hearting. Ofcourse Aadarsh also had great knowledge but then if I were to tell one person who could beat her it should surely be aadarsh. But then he fell in hands of a girl last year. Despite my warnings,He continued with his love life and couldn't do well that well in his Exams. Anyway, Though it was a disappointment for me I would like to say one thing here. Though Aadarsh didn't get very good marks,He will come out as one of the best as he has good knowledge and also a thirst for knowing more. I bid him the best of luck in his life.  Well the other big disappointment for me was the fact that students were not treated well in the matric school. Just imagine students treated on the basis of their marks rather than knowledge, talent etc... The inference is that none of the class students are capable of studying. I just want to ask one question to the teacher concerned: If she is going to treat students like that on the basis of marks, will they really have any intention of studying? Won't the students get bogged down by her comments? I think Sneha deserves the attention she gets for her hard work. But that doesn't mean that you have got to insult somebody just to appreciate someone. I hope that doesn't repeat again in the school. There were other disappointments as well but then they were just okay to deal with.
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn'>sundaram</span>
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://sundargates.blogspot.com/2008/06/my-disappointments-this-year.html' rel='bookmark' title='permanent link'><abbr class='published' title='2008-06-23T00:59:00-07:00'>12:59 AM</abbr></a>
+</span>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='https://www.blogger.com/comment.g?blogID=2420990664367705514&postID=7432203286041722249' onclick=''>0
+comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1952740797'>
+<a href='http://www.blogger.com/post-edit.g?blogID=2420990664367705514&postID=7432203286041722249' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://www.blogger.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+Labels:
+<a href='http://sundargates.blogspot.com/search/label/aadarsh' rel='tag'>aadarsh</a>,
+<a href='http://sundargates.blogspot.com/search/label/shrishti' rel='tag'>shrishti</a>,
+<a href='http://sundargates.blogspot.com/search/label/sundaram' rel='tag'>sundaram</a>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+<h2 class='date-header'>Saturday, June 21, 2008</h2>
+<div class='post hentry uncustomized-post-template'>
+<a name='4429457041687161174'></a>
+<h3 class='post-title entry-title'>
+<a href='http://sundargates.blogspot.com/2008/06/android-os-review.html'>ANDROID OS REVIEW</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body entry-content'>
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://cache.gizmodo.com/assets/resources/2008/02/newandroidSDK.png"><img src="http://cache.gizmodo.com/assets/resources/2008/02/newandroidSDK.png" border="0" alt="" /></a><br />Hey Dudes,<br />Have you heard of Android? Have you heard of Google Mobile? well if you haven't heard of that then this is the place where you need to know it. &#160;Well Google started 20 years &#160;ago but then they have been growing better than most companies on earth. &#160;The simple reason for their growth is their revolutionary concepts. &#160;They have revolutionalised the world of search engines, the world of advertising, the world of document, the world of Hard disk, the world of mail and what not!&#160;&#160;&#160;&#160;<br />And now they have come to revolutionalise the world of Mobile. &#160;They got inspired by the most Hyped Gadget on Earth the iphone. &#160;They have developed a test version of Android(an open operating system derived from Linux). &#160;They are set to install this platform on almost all mobile phones. &#160;Well what does that mean for us? &#160;It simply means that our mobile software could be highly customisable and it also means that no matter which cell phone you wish to buy your interface could resemble the same. &#160;Just like windows XP working on an intel machine or a AMD machine. That sounds great doesn't that? &#160;Well when will this Platform get released. &#160;Well experts say that Android phones or rather G-Phones could get released by the end of this year and HTC will be the first company to roll out the first version&#160;of G-Phones.&#160;&#160;Well if your going to buy cell phones now, I would suggest you to wait for the early versions of G-Phones to hit the Stores.
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn'>sundaram</span>
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://sundargates.blogspot.com/2008/06/android-os-review.html' rel='bookmark' title='permanent link'><abbr class='published' title='2008-06-21T03:46:00-07:00'>3:46 AM</abbr></a>
+</span>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='https://www.blogger.com/comment.g?blogID=2420990664367705514&postID=4429457041687161174' onclick=''>0
+comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1952740797'>
+<a href='http://www.blogger.com/post-edit.g?blogID=2420990664367705514&postID=4429457041687161174' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://www.blogger.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+Labels:
+<a href='http://sundargates.blogspot.com/search/label/android' rel='tag'>android</a>,
+<a href='http://sundargates.blogspot.com/search/label/android%20of' rel='tag'>android of</a>,
+<a href='http://sundargates.blogspot.com/search/label/google' rel='tag'>google</a>,
+<a href='http://sundargates.blogspot.com/search/label/iphone' rel='tag'>iphone</a>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+<h2 class='date-header'>Tuesday, June 17, 2008</h2>
+<div class='post hentry uncustomized-post-template'>
+<a name='3017087540645513355'></a>
+<h3 class='post-title entry-title'>
+<a href='http://sundargates.blogspot.com/2008/06/do-we-need-iphone.html'>Do we need an iphone?</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body entry-content'>
+<div style="text-align: center;"><font style="font-weight: bold;" face="georgia">Do we really need an iphone? Is Iphone the invention of the decade?</font><br /></div><font face="trebuchet ms">Well when I started this blog, one of my friends asked me if I can get Rs 10000 or more from this blog so that I could buy an iPhone. I really started wondering has iPhone become that great? I think we all love the iPhone for the way it looks and functions. But we should introspect ourselves "Do we really need an iPhone?" well, lets come up with pros and cons of the iPhone.</font> <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_MNC5xgx_Ba0/SFfpYqT3wvI/AAAAAAAAAI0/Cnoe0EZLhc4/s1600-h/iphone-2.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 355px; height: 355px;" src="http://3.bp.blogspot.com/_MNC5xgx_Ba0/SFfpYqT3wvI/AAAAAAAAAI0/Cnoe0EZLhc4/s320/iphone-2.jpg" alt="" id="BLOGGER_PHOTO_ID_5212891703588406002" border="0"></a><font face="trebuchet ms"><span style="font-weight: bold;">Pros</span>:</font> <font face="trebuchet ms"><span style="font-weight: bold;">1.Looks</span>: It looks great,elegant. surely It sets our fashion statement right.it is both sleek and trendy.</font><span style="font-weight: bold;"> </span><font face="trebuchet ms"><span style="font-weight: bold;">2.Interface</span>: Well one can never deny the fact that the iphone has got a revolutionary interface. Its interface is unique and tempting.</font> <font style="font-weight: bold;" face="trebuchet ms">3.</font><font face="trebuchet ms"><span style="font-weight: bold;">Great screen</span>: the iphone has a 3 inch beautiful screen which is great to watch videos.</font> <font face="trebuchet ms"><span style="font-weight: bold;">4.Great software</span>: the new iphone 3g supports 3rd party apps which is a great feature.This means that the iphone will have an open operating system and not the mac osX which is great news for developers.</font> <font face="trebuchet ms"><span style="font-weight: bold;">5.Features</span>: The iphone has the revolutionary accelerometer implemented in the best possible manner. That is a great plus for watching videos.</font><span style="font-weight: bold;"> </span><font face="trebuchet ms"><span style="font-weight: bold;">6.best web browser</span> available for the mobiles.</font> <font style="font-weight: bold;" face="trebuchet ms">7.cheapest smartphone in the market</font><span style="font-weight: bold;"> </span><font face="trebuchet ms"><br /><span style="font-weight: bold;">Cons</span>:</font> <font face="trebuchet ms"><span style="font-weight: bold;">1.poor camera</span>: The iphone does not have a very good camera. It does not have a flash which is a great minus.</font><span style="font-weight: bold;"> </span><font face="trebuchet ms"><span style="font-weight: bold;">2.locked:</span> since the iphone is locked,you can't select your GSM operator which again is a great minus.</font><span style="font-weight: bold;"> </span><font face="trebuchet ms"><span style="font-weight: bold;">3.lacks great features</span>: It does not have advanced GPS system and HSDPA which are essential in today's world.</font>  <font face="trebuchet ms">Though the iphone has equal pluses and minuses, you have  to use it to feel the iphone experience.<span style="font-weight: bold;">Though experts might not opt for iphone,can you remember a phone that has been spoken of for more than 2 years? </span></font>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn'>sundaram</span>
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://sundargates.blogspot.com/2008/06/do-we-need-iphone.html' rel='bookmark' title='permanent link'><abbr class='published' title='2008-06-17T09:34:00-07:00'>9:34 AM</abbr></a>
+</span>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='https://www.blogger.com/comment.g?blogID=2420990664367705514&postID=3017087540645513355' onclick=''>0
+comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1952740797'>
+<a href='http://www.blogger.com/post-edit.g?blogID=2420990664367705514&postID=3017087540645513355' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://www.blogger.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+<div class='post hentry uncustomized-post-template'>
+<a name='4843362926456849092'></a>
+<h3 class='post-title entry-title'>
+<a href='http://sundargates.blogspot.com/2008/06/creamy-layer.html'>The creamy layer</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body entry-content'>
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_MNC5xgx_Ba0/SFfgtqWtoBI/AAAAAAAAAIs/4sF1bixL3rY/s1600-h/14977.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://1.bp.blogspot.com/_MNC5xgx_Ba0/SFfgtqWtoBI/AAAAAAAAAIs/4sF1bixL3rY/s320/14977.jpg" alt="" id="BLOGGER_PHOTO_ID_5212882168772927506" border="0" /></a><br /><br /><div style="text-align: center;"><span style="font-weight: bold; color: rgb(51, 51, 153);font-size:180%;" ><span style="font-family:verdana;">Top Four talented lot:</span></span><br /></div>well I have discussed the students who have got the highest marks in the board exams.Next let us discuss the top most talented in the school(the creamy lot).This list will not include me as I'm the judge.also I can't judge myself. I have prepared this list remembering how everyone will end up in future. I am only going to take computer science as the only criteria. That means this list will give us info about the best computer engineers that are available in our school.Well everyone of us will in near future be benefitted by computer science in one way or the other. Thats why I'm preparing a seperate list for CSC engineers.Lets go to the top five.<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_MNC5xgx_Ba0/SFff_paYNxI/AAAAAAAAAIk/x5CJNFf9xRo/s1600-h/Talent+Cycle.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://4.bp.blogspot.com/_MNC5xgx_Ba0/SFff_paYNxI/AAAAAAAAAIk/x5CJNFf9xRo/s320/Talent+Cycle.jpg" alt="" id="BLOGGER_PHOTO_ID_5212881378245883666" border="0" /></a><br />1.The number one spot is filled by Raghu Ram. I think he has great skills and great understanding of the subject. But he should concentrate more on latest computer techniques,languages,news and all geeky stuff.He knows c++ to great extent.He should start concentrating on computer graphics and software emulators.He has the talent to improve a lot and I think surely he will do that.<br /><br />2.Raghu Raam is followed by Bharathan.This fellow has got some unique thinking and unique methods.He can improve a lot considering his talent.<br /><br />3.Next comes Vijay Prashanth.He also java and VB to some extent and has the talent to improve. He Surely needs to work hard.I hope he does that.All the best VGP!!!<br /><br />4. Next comes my close friend Jagadheesh.This fellow has the thirst for knowing more geeky stuff and surely has got great talent. He is presently going great guns and I sincerely hope he continues doing that.<br />I think all of them will end up in attaining great heights in their career.All the best.
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn'>sundaram</span>
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://sundargates.blogspot.com/2008/06/creamy-layer.html' rel='bookmark' title='permanent link'><abbr class='published' title='2008-06-17T08:59:00-07:00'>8:59 AM</abbr></a>
+</span>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='https://www.blogger.com/comment.g?blogID=2420990664367705514&postID=4843362926456849092' onclick=''>0
+comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1952740797'>
+<a href='http://www.blogger.com/post-edit.g?blogID=2420990664367705514&postID=4843362926456849092' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://www.blogger.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+Labels:
+<a href='http://sundargates.blogspot.com/search/label/computer%20science' rel='tag'>computer science</a>,
+<a href='http://sundargates.blogspot.com/search/label/Raghu%20Raam' rel='tag'>Raghu Raam</a>,
+<a href='http://sundargates.blogspot.com/search/label/talent' rel='tag'>talent</a>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+<div class='post hentry uncustomized-post-template'>
+<a name='8798597309733813299'></a>
+<h3 class='post-title entry-title'>
+<a href='http://sundargates.blogspot.com/2008/06/top-three.html'>The Top three</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body entry-content'>
+<div style="text-align: center;"><span style="font-weight: bold; color: rgb(51, 51, 153);font-size:180%;" ><span style="font-family: verdana;">Top Three of the school:</span></span><br /></div> <span style="font-family: georgia;">Well everyone knows that I study in Shrishti.this year the school produced excellent results mainly because of the efforts of the students.The top three in school were</span><br /><span style="font-family: georgia;"> <span style="font-weight: bold;">1.Sneha(1184)</span></span><br /><span style="font-family: georgia; font-weight: bold;"> 2.Charanya(1168)</span><br /><span style="font-family: georgia; font-weight: bold;"> 3.Gopika and Venkatesh(1166)</span><br /><span style="font-family: georgia;"> All four had got excellent marks in all subjects.I would like to discuss each one of them and see how well they would fare in their careers.</span><br /><span style="font-family: georgia;"> First let me start with sneha.She is my favorite in the top three.She is not a highly intelligent girl but God has given her the art of by-hearting.She does that with great ease and is excellent in doing that.She can study but not learn.She isn't good in computers and she wont enter into that field.She will most probably become a doctor.But only time can answer whether she will she end up high in her career.I think if she can just improve her knowledge she should surely be up there.She has the essential hard work that is needed to become great.So I wish her the best luck possible!!!</span><br /><span style="font-family: georgia;"> </span><br /><span style="font-family: georgia;"> Sneha is followed by charanya an old friend of mine(If I can putr it that way).I don't know if she considers me as her friend.Anyway,that isn't neccessary now. Even charanya is a great hard worker.She has opted for computer Science hence she must take engineering most probably computer science.As far as charanya is concerned she has to improve in programming skills. I think she's weak in that. But you never know. If she works hard she can end up doing better programs than Raghu, Jagadheesh and last me.You never know? I think she has got the required talent to go to the top.I hope she sincerely tries to learn geeky languages and progress in computer science.I hope she works hard!!!</span><br /><span style="font-family: georgia;"> </span><br /><span style="font-family: georgia;"> The third spot is shared by Venkatesh and Gopika.I think both of them will end up doing B.E Electronics and communications. Time will tell that anyway.I think both of them are best suited for EC than CSC ot IT.If one prefers to join IT career one must have sound programming skills.Both of them need to cultivate it in the first place before opting for IT career.Anyway that's how I see things. Thats for them to decide that.I hope they improve their skills soon. </span>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn'>sundaram</span>
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://sundargates.blogspot.com/2008/06/top-three.html' rel='bookmark' title='permanent link'><abbr class='published' title='2008-06-17T08:32:00-07:00'>8:32 AM</abbr></a>
+</span>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='https://www.blogger.com/comment.g?blogID=2420990664367705514&postID=8798597309733813299' onclick=''>0
+comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1952740797'>
+<a href='http://www.blogger.com/post-edit.g?blogID=2420990664367705514&postID=8798597309733813299' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://www.blogger.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+Labels:
+<a href='http://sundargates.blogspot.com/search/label/charanya' rel='tag'>charanya</a>,
+<a href='http://sundargates.blogspot.com/search/label/gopika' rel='tag'>gopika</a>,
+<a href='http://sundargates.blogspot.com/search/label/Raghu%20Raam' rel='tag'>Raghu Raam</a>,
+<a href='http://sundargates.blogspot.com/search/label/shrishti' rel='tag'>shrishti</a>,
+<a href='http://sundargates.blogspot.com/search/label/sneha' rel='tag'>sneha</a>,
+<a href='http://sundargates.blogspot.com/search/label/sundaram.a' rel='tag'>sundaram.a</a>,
+<a href='http://sundargates.blogspot.com/search/label/venkatesh' rel='tag'>venkatesh</a>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+<div class='post hentry uncustomized-post-template'>
+<a name='5726105961325175650'></a>
+<h3 class='post-title entry-title'>
+<a href='http://sundargates.blogspot.com/2008/06/top-5-cellphones-of-week.html'>Top 5 cellphones of the week</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body entry-content'>
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_MNC5xgx_Ba0/SFeJA_Y30yI/AAAAAAAAAIc/qNGBlO5nxAU/s1600-h/mobile-phones_cmyk.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 401px; height: 305px;" src="http://4.bp.blogspot.com/_MNC5xgx_Ba0/SFeJA_Y30yI/AAAAAAAAAIc/qNGBlO5nxAU/s320/mobile-phones_cmyk.jpg" alt="" id="BLOGGER_PHOTO_ID_5212785743813399330" border="0" /></a>Hi guys,<br />I would like to give a list of the top five cellphones every week.You could choose the cellphone you want by reading this entry every week.you can also send me a mail regarding the features you want,budget which could  help you to choose the right cellphone.Anyway it's is your decision to seek my help. Okay, Let us start with this week's list.This is for the cellphones ranging between Rs.10000 to Rs.20000.<br /><span style="color: rgb(0, 0, 102);font-family:verdana;font-size:130%;"  ><span style="font-weight: bold; font-style: italic;">1.Apple Iphone 3g:</span></span><br />I could not think of any other cellphone other than the apple iphone 3g for the top spot.It has a great interface,great features incuding  a wifi connection,3g and a 2Mp camera with video recording not to mention apple's unique multi-touch interface.all these are unique and it is going to be available for Rs.10000 or less.The only Disadvantage that this phone has is its lock for GSM operator,which I think is unfair.So in India,you can use it with Airtel or Vodafone.<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_MNC5xgx_Ba0/SFeBy9LFNKI/AAAAAAAAAH0/rxTk9bgRM70/s1600-h/iPhone.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 336px; height: 259px;" src="http://2.bp.blogspot.com/_MNC5xgx_Ba0/SFeBy9LFNKI/AAAAAAAAAH0/rxTk9bgRM70/s320/iPhone.jpg" alt="" id="BLOGGER_PHOTO_ID_5212777806119122082" border="0" /></a><br /><span style="color: rgb(51, 0, 153); font-weight: bold; font-family: verdana;">2.Nokia n81:</span><br />I think this is one of the most feature rich phones available in the market today.It has almost all the features that one could think of incuding 3g,wi-fi,8GB of internal storage,2 MP camera with video recording and flash.It also supports the nokia nGage application which allows us to play games with great experience.It also comes preinstalled with Nokia maps with GPS integration.<br />It cost somewhere around Rs.15000 and it is a great phone.The greatest disadvantage with this phone is it's slow processor and the jog wheel which is highly difficult to use.<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_MNC5xgx_Ba0/SFeDwsUUXPI/AAAAAAAAAH8/BEMwLEJymmc/s1600-h/Nokia-N81-phone.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://4.bp.blogspot.com/_MNC5xgx_Ba0/SFeDwsUUXPI/AAAAAAAAAH8/BEMwLEJymmc/s320/Nokia-N81-phone.jpg" alt="" id="BLOGGER_PHOTO_ID_5212779966257978610" border="0" /></a><br /><span style="font-weight: bold; color: rgb(51, 0, 153); font-family: verdana;">3.Sony Ericcson W910i:</span><br />This is again a great phone from the table of sony ericcson.This phone has all he features that the other phones in the list had except for the fact that it does not have wi-fi.Well one may say why does one need wifi when you have 3g? But the fact is India does not have 3g,hence wifi comes into use.This phone has an inbuilt accelerometer which is of great use when you use internet as you can switch between landscape and portrait modes in a second.This phone cost around Rs.15000.<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_MNC5xgx_Ba0/SFeFnbiOlqI/AAAAAAAAAIE/uE08pGFz69w/s1600-h/w910.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://1.bp.blogspot.com/_MNC5xgx_Ba0/SFeFnbiOlqI/AAAAAAAAAIE/uE08pGFz69w/s320/w910.jpg" alt="" id="BLOGGER_PHOTO_ID_5212782006157350562" border="0" /></a><span style="font-family: verdana; font-weight: bold; color: rgb(51, 0, 153);">4.Lg Viewty:</span><br />Not many people know this phone and that could also be a reason for me to include this in my list.The best feature about this phone is that it has the best camera that any cellphone has in recent times.It can record videos at 120 fps which is a very unique feature in this cellphone.It also has a 3inch touch sensitive screen which is great to use.It cost around Rs.18000. It has all the features including a 5 Mp camera with flash,3g,edge,HSDPA ,a full scale browser.Try this phone if you do not want to follow the bandwagon.<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_MNC5xgx_Ba0/SFeHJ1gx2GI/AAAAAAAAAIM/gZy4NZTNkWE/s1600-h/00309_lg-viewty.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://2.bp.blogspot.com/_MNC5xgx_Ba0/SFeHJ1gx2GI/AAAAAAAAAIM/gZy4NZTNkWE/s320/00309_lg-viewty.jpg" alt="" id="BLOGGER_PHOTO_ID_5212783696757774434" border="0" /></a><br /><span style="font-family: verdana; font-weight: bold; color: rgb(51, 0, 153);">5.Nokia n78:</span><br />Finally the last spot goes to nokia n78.It has a 3.2 Mp camera with flash,all the other features in nokia n81 and has advanced GPS reciever.Advanced GPS reciever helps to find destination with voice commands over the phone. This is a paid feature and is available for trial for 3=4months when you buy this phone.It has nGage and nokia maps preinstalled in it.It is a great phone and the music sounds excellent.<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_MNC5xgx_Ba0/SFeIa4GVoEI/AAAAAAAAAIU/N1RSFzVYohM/s1600-h/n78-nokia.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://2.bp.blogspot.com/_MNC5xgx_Ba0/SFeIa4GVoEI/AAAAAAAAAIU/N1RSFzVYohM/s320/n78-nokia.jpg" alt="" id="BLOGGER_PHOTO_ID_5212785089021583426" border="0" /></a>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn'>sundaram</span>
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://sundargates.blogspot.com/2008/06/top-5-cellphones-of-week.html' rel='bookmark' title='permanent link'><abbr class='published' title='2008-06-17T02:08:00-07:00'>2:08 AM</abbr></a>
+</span>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='https://www.blogger.com/comment.g?blogID=2420990664367705514&postID=5726105961325175650' onclick=''>0
+comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1952740797'>
+<a href='http://www.blogger.com/post-edit.g?blogID=2420990664367705514&postID=5726105961325175650' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://www.blogger.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+Labels:
+<a href='http://sundargates.blogspot.com/search/label/apple' rel='tag'>apple</a>,
+<a href='http://sundargates.blogspot.com/search/label/cellphone' rel='tag'>cellphone</a>,
+<a href='http://sundargates.blogspot.com/search/label/iphone%203g' rel='tag'>iphone 3g</a>,
+<a href='http://sundargates.blogspot.com/search/label/nokia' rel='tag'>nokia</a>,
+<a href='http://sundargates.blogspot.com/search/label/shrishti' rel='tag'>shrishti</a>,
+<a href='http://sundargates.blogspot.com/search/label/sony%20ericcson' rel='tag'>sony ericcson</a>,
+<a href='http://sundargates.blogspot.com/search/label/w910i' rel='tag'>w910i</a>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+<h2 class='date-header'>Monday, June 16, 2008</h2>
+<div class='post hentry uncustomized-post-template'>
+<a name='2656811759805949551'></a>
+<h3 class='post-title entry-title'>
+<a href='http://sundargates.blogspot.com/2008/06/iphone-3g.html'>iPhone 3g</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body entry-content'>
+Hi guys,<br />It's been long since we all have been waiting for the iphone 3g.Though the first iphone  did make its debut in India,the second will surely hit the stores in India on July 11,2008. Thats great news isnt it?<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_MNC5xgx_Ba0/SFdlXwl9WsI/AAAAAAAAAHs/62OuDDJnLvs/s1600-h/3g-iphone.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 339px; height: 339px;" src="http://2.bp.blogspot.com/_MNC5xgx_Ba0/SFdlXwl9WsI/AAAAAAAAAHs/62OuDDJnLvs/s320/3g-iphone.jpg" alt="" id="BLOGGER_PHOTO_ID_5212746552560147138" border="0" /></a><br />The new iphone has 3g capablities,better camera with video recording and is available at a great price just Rs.10000 or less.That's great news isn't it?But the sad part just like the previous version the new one will also be unlocked. I think  apple should come out of its locking policies as they don't allow the users to choose GSm operator of their choice and it also means that you should have your cell phone number changed.Other than that I dont have any other complaint against the iPhone.In steve jobs interview, he said that n95 and palm treo are the major competitions to the iphone. However the cost of n95 is around Rs.28000 and that of palm treo is Rs.23000.However the cost of the new iphone is just Rs.9000 plus.so I think it's going to be a great buy.Also we all know the revolutionary features of the iphone.So I think it's going to be much easier for us to try the new iphone.<br /><br /><object height="344" width="425"><param name="movie" value="http://www.youtube.com/v/4yVQJ6jJPak&amp;hl=en"><embed src="http://www.youtube.com/v/4yVQJ6jJPak&amp;hl=en" type="application/x-shockwave-flash" height="344" width="425"></embed></object>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn'>sundaram</span>
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://sundargates.blogspot.com/2008/06/iphone-3g.html' rel='bookmark' title='permanent link'><abbr class='published' title='2008-06-16T23:51:00-07:00'>11:51 PM</abbr></a>
+</span>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='https://www.blogger.com/comment.g?blogID=2420990664367705514&postID=2656811759805949551' onclick=''>0
+comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1952740797'>
+<a href='http://www.blogger.com/post-edit.g?blogID=2420990664367705514&postID=2656811759805949551' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://www.blogger.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+Labels:
+<a href='http://sundargates.blogspot.com/search/label/dasavtharam' rel='tag'>dasavtharam</a>,
+<a href='http://sundargates.blogspot.com/search/label/iphone%203g' rel='tag'>iphone 3g</a>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+<div class='post hentry uncustomized-post-template'>
+<a name='503981429314647838'></a>
+<h3 class='post-title entry-title'>
+<a href='http://sundargates.blogspot.com/2008/06/dasavatharam.html'>Dasavatharam</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body entry-content'>
+Hi guys,<br />These days it has become a common thing to hype things around.But, it is to be noticed that only a few things live upto the expectations that  they  have created. Remember the iphone?But hey it lived up to its expectations for atleast apple lovers. So I'm not complaining as I'm too a apple lover.But lets also talk about things that have created a wave but not a huge one.If you prepare one such list I personally think Dasavatharam will be on top.I have seen the movie twice in theatres. So I think I'm in a position to review the movie.<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_MNC5xgx_Ba0/SFdak7jwNAI/AAAAAAAAAHI/IWuOq5mf1Go/s1600-h/dasa4_290408_800.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 386px; height: 290px;" src="http://1.bp.blogspot.com/_MNC5xgx_Ba0/SFdak7jwNAI/AAAAAAAAAHI/IWuOq5mf1Go/s320/dasa4_290408_800.jpg" alt="" id="BLOGGER_PHOTO_ID_5212734684214080514" border="0" /></a><br />The movie starts with kamal-the scientist giving a lecture in front of manmohan singh,george Bush and Karunanidhi.He starts narrating a incident which happenned in the 12th century.here comes kamal's second role as vaishnavite priest Rangarajan.The ruler of the period believes in saivism and asks his subjects not to worship lord vishnu.Hence he decides to throw the idol of vishnu into River.However rangarajan tries to stop that.But he is punished for this act and is also thrown along with the idol.This is the end of role two.<br />Next,the story of the scientist kamal begins.He is a biotech engineer working in USA.He develops some kind of bio-weapon similar to Anthrax.His boss sells this weapon to a terrorist outfit.Kamal knowing this steals the weapon and sends it to India in a package.Now kamal is chased by ex-CIA official chris Fletcher ehich again kamal.This role is the best in the film.In India the police handle this case to Balram Naidu(fourth kamal).This character is humourous and should be the second best in the film.In India the package containing the virus goes to asin's house in chidambaram.Asin is accompanied by her grandma which is the fifth Kamal in the film.Her portrayal is excellent.<br><br /><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/Ex8tzbHo9Go&hl=en"></param><embed src="http://www.youtube.com/v/Ex8tzbHo9Go&hl=en" type="application/x-shockwave-flash" width="425" height="344"></embed></object> <br><br />Then a japanese karate master(Sixth Kamal) comes to India to kill Chris Fletcher.In between kamal dons the role of a tall man and an activist to add some humour and emotions into the film. Finally whether the villain got the virus or the hero got it is the story.<br />Though the story isnt too good and explantory for the tsunami,The screenplay is excellent.had the film had a better story we should have surely enjoyed the film.Anyway the film is a must watch for all film buffs though you would have expected a better story.<br />I give it three out of five and a thumbs up.As for kamal's acting and screen play,I give it full ten out of ten though I am a Rajini fan.
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn'>sundaram</span>
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://sundargates.blogspot.com/2008/06/dasavatharam.html' rel='bookmark' title='permanent link'><abbr class='published' title='2008-06-16T23:30:00-07:00'>11:30 PM</abbr></a>
+</span>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='https://www.blogger.com/comment.g?blogID=2420990664367705514&postID=503981429314647838' onclick=''>0
+comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1952740797'>
+<a href='http://www.blogger.com/post-edit.g?blogID=2420990664367705514&postID=503981429314647838' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://www.blogger.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+<h2 class='date-header'>Monday, June 9, 2008</h2>
+<div class='post hentry uncustomized-post-template'>
+<a name='1058292660736618442'></a>
+<h3 class='post-title entry-title'>
+<a href='http://sundargates.blogspot.com/2008/06/day-2-at-blogging.html'>Day 2 at Blogging</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body entry-content'>
+<span><strong><i><span>Hi,</span></i></strong></span><br /><span><span><strong>This is my second day at blogging</strong></span></span><span>.</span> <span><strong><span>I wish to create a lot of stuff today in my blog starting from music page which will be quite interesting i believe, to a lot of funny games that is to be included in my page. Let's &#160;see how it all works.But for now, I'm geared up for the challenge and believe that I should be able to do it.I've also been visiting some blogs of my friends to review the type of stuff that would be unique in some ways atleast.It's quite difficult to start a blog and get it enhanced in a day.But then i believe that I should be able to do this in a day.Today I would also be creating a entry about the Top three in my School 'Shrishti'.well only some of them know about them thoroughly. I would like to discuss about them today in my blog.I think now i've to start doing some techie stuff. Ok bye then.</span></strong></span>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn'>sundaram</span>
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://sundargates.blogspot.com/2008/06/day-2-at-blogging.html' rel='bookmark' title='permanent link'><abbr class='published' title='2008-06-09T22:36:00-07:00'>10:36 PM</abbr></a>
+</span>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='https://www.blogger.com/comment.g?blogID=2420990664367705514&postID=1058292660736618442' onclick=''>0
+comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1952740797'>
+<a href='http://www.blogger.com/post-edit.g?blogID=2420990664367705514&postID=1058292660736618442' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://www.blogger.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+<!-- google_ad_section_end -->
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://sundargates.blogspot.com/search?updated-max=2008-06-09T22%3A36%3A00-07%3A00&max-results=10' id='Blog1_blog-pager-older-link' title='Older Posts'>Older Posts</a>
+</span>
+</div>
+<div class='clear'></div>
+<div class='blog-feeds'>
+<div class='feed-links'>
+Subscribe to:
+<a class='feed-link' href='http://sundargates.blogspot.com/feeds/posts/default' target='_blank' type='application/atom+xml'>Posts (Atom)</a>
+</div>
+</div>
+</div></div>
+</div>
+<div id='sidebar-wrapper'>
+<div class='sidebar section' id='sidebar'><div class='widget AdSense' id='AdSense1'>
+<div class='widget-content'>
+<script type="text/javascript"><!--
+google_ad_client="pub-2732616216461484";
+google_ad_host="pub-1556223355139109";
+google_ad_host_channel="00000+00035+00078";
+google_ad_width=160;
+google_ad_height=600;
+google_ad_format="160x600_as";
+google_ad_type="text";
+google_color_border="99D06C";
+google_color_bg="000000";
+google_color_link="99D06C";
+google_color_url="808080";
+google_color_text="808080";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2420990664367705514&widgetType=AdSense&widgetId=AdSense1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("AdSense1"));' target='configAdSense1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML4'>
+<h2 class='title'>Referral ads</h2>
+<div class='widget-content'>
+<script type="text/javascript"><!--
+google_ad_client = "pub-2732616216461484";
+google_ad_host = "pub-1556223355139109";
+google_ad_host_channel="00000+00035+00078";
+/* 160x600, created 6/17/08 */
+google_ad_slot = "9185361607";
+google_ad_width = 160;
+google_ad_height = 600;
+google_cpa_choice = ""; // on file
+//-->
+</script>
+<script 
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript">
+</script>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2420990664367705514&widgetType=HTML&widgetId=HTML4&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML4"));' target='configHTML4' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget LinkList' id='LinkList1'>
+<h2>Link List</h2>
+<div class='widget-content'>
+<ul>
+<li><a href='http://arrehmanmuzic.blogspot.com/'>A.R.Rahman Music</a></li>
+<li><a href='http://aerospace4all.blogspot.com/'>Aerospace Blog</a></li>
+<li><a href='http://bestofyoutubes.blogspot.com/'>Best of Youtube</a></li>
+<li><a href='http://pccorner4all.blogspot.com/'>Cars</a></li>
+<li><a href='http://englishfilms25.blogspot.com/'>English Films</a></li>
+<li><a href='http://formula14all.blogspot.com/'>Formula One</a></li>
+<li><a href='http://gadgetnguru.blogspot.com/'>Gadget Blog</a></li>
+<li><a href='http://rockingedge.blogspot.com/'>Gokky's Blog</a></li>
+<li><a href='http://indianpolitics4all.blogspot.com/'>Indian Politics</a></li>
+<li><a href='http://linuxwinwar.blogspot.com/'>Linux Blog</a></li>
+<li><a href='http://lovers4all.blogspot.com/'>Lover's Blog</a></li>
+<li><a href='http://sports2win.blogspot.com/'>Sports Blog</a></li>
+<li><a href='http://indiantennis4all.blogspot.com/'>Tennis Blog</a></li>
+<li><a href='http://theworldofcarz.blogspot.com/'>The World of Cars</a></li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2420990664367705514&widgetType=LinkList&widgetId=LinkList1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("LinkList1"));' target='configLinkList1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Poll' id='Poll1'>
+<h2 class='title'>Do you like my blog?</h2>
+<div class='widget-content' id='widget-content'>
+<iframe allowtransparency='true' frameborder='0' height='140' name='poll-widget-2443521163449371895' src='http://www.google.com/reviews/polls/display/-2443521163449371895/blogger_template/run_app?txtclr=%23808080&lnkclr=%23336699&chrtclr=%23336699&font=normal+normal+82%25+Verdana%2C+sans-serif&hideq=true&purl=http%3A%2F%2Fsundargates.blogspot.com%2F' style='border:none; width:100%;'></iframe>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2420990664367705514&widgetType=Poll&widgetId=Poll1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("Poll1"));' target='configPoll1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML1'>
+<h2 class='title'>Music</h2>
+<div class='widget-content'>
+<object width="250" height="340"><param value="http://media.imeem.com/pl/t8U84lVww7/aus=false/" name="movie"/><param value="transparent" name="wmode"/><param value="backColor=9966ff&primaryColor=000033&secondaryColor=663399&linkColor=330066" name="FlashVars"/><embed width="250" src="http://media.imeem.com/pl/t8U84lVww7/aus=false/" height="640" wmode="transparent" flashvars="backColor=9966ff&primaryColor=000033&secondaryColor=663399&linkColor=330066" type="application/x-shockwave-flash"></embed><a href="http://www.imeem.com/people/MXsYhn/playlist/tA_aZHTq/ilaiyaraja_music_playlist/">ilaiyaraja</a></object>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2420990664367705514&widgetType=HTML&widgetId=HTML1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target='configHTML1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML3'>
+<h2 class='title'>Video</h2>
+<div class='widget-content'>
+<script src="http://widgetserver.com/syndication/subscriber/InsertWidget.js?appId=39640075-4a0a-4da8-b389-83eb968c680f" type="text/javascript"></script><noscript>Get the <a href="http://www.widgetbox.com/widget/youtube">YouTube Videos</a> widget and many other <a href="http://www.widgetbox.com/galleryhome/">great free widgets</a> at <a href="http://www.widgetbox.com">Widgetbox</a>!</noscript>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2420990664367705514&widgetType=HTML&widgetId=HTML3&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML3"));' target='configHTML3' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget NewsBar' id='NewsBar1'>
+<h2 class='title'>Newsreel</h2>
+<div class='widget-content'>
+<div id='NewsBar1_bar'>
+<span class='newsBar-status'>Loading...</span>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2420990664367705514&widgetType=NewsBar&widgetId=NewsBar1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("NewsBar1"));' target='configNewsBar1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget BlogArchive' id='BlogArchive1'>
+<h2>Blog Archive</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<a class='post-count-link' href='http://sundargates.blogspot.com/search?updated-min=2008-01-01T00%3A00%3A00-08%3A00&updated-max=2009-01-01T00%3A00%3A00-08%3A00&max-results=11'>2008</a>
+<span class='post-count' dir='ltr'>(11)</span>
+<ul>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<a class='post-count-link' href='http://sundargates.blogspot.com/2008_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(11)</span>
+<ul class='posts'>
+<li><a href='http://sundargates.blogspot.com/2008/06/china-overtakes-us-in-online-population.html'>China overtakes US in Online Population:</a></li>
+<li><a href='http://sundargates.blogspot.com/2008/06/my-disappointments-this-year.html'>My Disappointments this Year:</a></li>
+<li><a href='http://sundargates.blogspot.com/2008/06/android-os-review.html'>ANDROID OS REVIEW</a></li>
+<li><a href='http://sundargates.blogspot.com/2008/06/do-we-need-iphone.html'>Do we need an iphone?</a></li>
+<li><a href='http://sundargates.blogspot.com/2008/06/creamy-layer.html'>The creamy layer</a></li>
+<li><a href='http://sundargates.blogspot.com/2008/06/top-three.html'>The Top three</a></li>
+<li><a href='http://sundargates.blogspot.com/2008/06/top-5-cellphones-of-week.html'>Top 5 cellphones of the week</a></li>
+<li><a href='http://sundargates.blogspot.com/2008/06/iphone-3g.html'>iPhone 3g</a></li>
+<li><a href='http://sundargates.blogspot.com/2008/06/dasavatharam.html'>Dasavatharam</a></li>
+<li><a href='http://sundargates.blogspot.com/2008/06/day-2-at-blogging.html'>Day 2 at Blogging</a></li>
+<li><a href='http://sundargates.blogspot.com/2008/06/back-with-bang.html'>Back with a Bang!!!</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2420990664367705514&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Slideshow' id='Slideshow1'>
+<h2 class='title'>Album</h2>
+<div class='widget-content'>
+<div class='slideshow-container' id='Slideshow1_slideshow'>
+<span class='slideshow-status'>Loading...</span>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2420990664367705514&widgetType=Slideshow&widgetId=Slideshow1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("Slideshow1"));' target='configSlideshow1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML2'>
+<div class='widget-content'>
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+sc_project=3793262; 
+sc_invisible=0; 
+sc_partition=40; 
+sc_security="1503b856"; 
+</script>
+
+<script src="http://www.statcounter.com/counter/counter_xhtml.js" type="text/javascript"></script><noscript><div class="statcounter"><a class="statcounter" href="http://www.statcounter.com/free_invisible_web_tracker.html"><img alt="free web tracker" src="http://c41.statcounter.com/3793262/0/1503b856/0/" class="statcounter"/></a></div></noscript>
+<!-- End of StatCounter Code -->
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2420990664367705514&widgetType=HTML&widgetId=HTML2&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML2"));' target='configHTML2' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget Profile' id='Profile1'>
+<h2>About Me</h2>
+<div class='widget-content'>
+<dl class='profile-datablock'>
+<dt class='profile-data'>sundaram</dt>
+</dl>
+<a class='profile-link' href='http://www.blogger.com/profile/02146981276921954302'>View my complete profile</a>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2420990664367705514&widgetType=Profile&widgetId=Profile1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("Profile1"));' target='configProfile1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div></div>
+</div>
+<!-- spacer for skins that want sidebar and main to be the same height-->
+<div class='clear'>
+</div>
+</div>
+<!-- end content-wrapper -->
+</div>
+<!--end center-->
+<div class='footer section' id='footer'><div id='footer-wrapper'>
+Design by:  <a href='http://www.finalsense.com/services/blog_templates/' shape='rect' title='Blogger Templates'>FinalSense</a>
+</div>
+</div>
+</div></div>
+<!-- end outer-wrapper -->
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="http://www.blogger.com/static/v1/widgets/995923812-widgets.js"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript" src="http://www.google.com/uds/solutions/newsbar/gsnewsbar.js"></script>
+<script type="text/javascript" src="http://www.google.com/uds/solutions/slideshow/gfslideshow.js"></script>
+<script type='text/javascript'>
+_WidgetManager._Init('http://www.blogger.com/rearrange?blogID=2420990664367705514', 'http://sundargates.blogspot.com/','2420990664367705514');
+_WidgetManager._SetPageActionUrl('http://www.blogger.com/display?blogID=2420990664367705514', 'CNYafK8uQPcXeJNjI4J5ouAMXy0:1261292310536');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'title': 'Free World', 'pageType': 'index', 'url': 'http://sundargates.blogspot.com/', 'homepageUrl': 'http://sundargates.blogspot.com/', 'enabledCommentProfileImages': true, 'searchLabel': '', 'searchQuery': '', 'pageName': '', 'pageTitle': 'Free World', 'encoding': 'UTF-8', 'locale': 'en', 'isPrivate': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Free World - Atom\42 href\75\42http://sundargates.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Free World - RSS\42 href\75\42http://sundargates.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Free World - Atom\42 href\75\42http://www.blogger.com/feeds/2420990664367705514/posts/default\42 /\76\n\74link rel\75\42EditURI\42 type\75\42application/rsd+xml\42 title\75\42RSD\42 href\75\42http://www.blogger.com/rsd.g?blogID\0752420990664367705514\42 /\076', 'meTag': '\74link rel\75\42me\42 href\75\42http://www.blogger.com/profile/02146981276921954302\42 /\76\n', 'openIdOpTag': '\74link rel\75\42openid.server\42 href\75\42http://www.blogger.com/openid-server.g\42 /\76\n', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var a\75window;function e(b){this.t\75{};this.tick\75function(c,h,d){d\75d?d:(new Date).getTime();this.t[c]\75[d,h]};this.tick(\42start\42,null,b)}var f\75new e;a.jstiming\75{Timer:e,load:f};try{a.jstiming.pt\75a.gtbExternal\46\46a.gtbExternal.pageT()||a.external\46\46a.external.pageT}catch(g){};a.tickAboveFold\75function(b){b\75b;var c\0750;if(b.offsetParent){do c+\75b.offsetTop;while(b\75b.offsetParent)}b\75c;b\74\075750\46\46a.jstiming.load.tick(\42aft\42)};var i\75false;function j(){if(!i){i\75true;a.jstiming.load.tick(\42firstScrollTime\42)}}a.addEventListener?a.addEventListener(\42scroll\42,j,false):a.attachEvent(\42onscroll\42,j); })();\74/script\076'}}]);
+_WidgetManager._SetSystemMarkup({'layout': {'varName': '', 'template': '\74div class\75\47widget-wrap1\47\76\n\74div class\75\47widget-wrap2\47\76\n\74div class\75\47widget-wrap3\47\76\n\74div class\75\47widget-content\47\76\n\74div class\75\47layout-title\47\76\74data:layout-title\76\74/data:layout-title\76\74/div\76\n\74a class\75\47editlink\47 expr:href\75\47data:widget.quickEditUrl\47 expr:onclick\75\47\46quot;return _WidgetManager._PopupConfig(document.getElementById(\\\46quot;\46quot; +       data:widget.instanceId + \46quot;\\\46quot;));\46quot;\47 target\75\47chooseWidget\47\76\74data:edit-link\76\74/data:edit-link\76\74/a\76\n\74/div\76\n\74/div\76\n\74/div\76\n\74/div\076'}, 'quickedit': {'varName': '', 'template': '\74div class\75\47clear\47\76\74/div\76\n\74span class\75\47widget-item-control\47\76\n\74span class\75\47item-control blog-admin\47\76\n\74a class\75\47quickedit\47 expr:href\75\47data:widget.quickEditUrl\47 expr:onclick\75\47\46quot;return _WidgetManager._PopupConfig(document.getElementById(\\\46quot;\46quot; +       data:widget.instanceId + \46quot;\\\46quot;));\46quot;\47 expr:target\75\47\46quot;config\46quot; + data:widget.instanceId\47 expr:title\75\47data:edit-link\47\76\n\74img alt\75\47\47 height\75\04718\47 src\75\47http://img1.blogblog.com/img/icon18_wrench_allbkg.png\47 width\75\04718\47/\76\n\74/a\76\n\74/span\76\n\74/span\76\n\74div class\75\47clear\47\76\74/div\076'}, 'all-head-content': {'varName': 'page', 'template': '\74data:blog.latencyHeadScript\76\74/data:blog.latencyHeadScript\76\n\74meta expr:content\75\47\46quot;text/html; charset\75\46quot; + data:page.encoding\47 http-equiv\75\47Content-Type\47/\76\n\74meta content\75\47true\47 name\75\47MSSmartTagsPreventParsing\47/\76\n\74meta content\75\47blogger\47 name\75\47generator\47/\76\n\74link href\75\47http://www.blogger.com/favicon.ico\47 rel\75\47icon\47 type\75\47image/vnd.microsoft.icon\47/\76\n\74link expr:href\75\47data:blog.url\47 rel\75\47canonical\47/\76\n\74data:blog.feedLinks\76\74/data:blog.feedLinks\76\n\74data:blog.meTag\76\74/data:blog.meTag\76\n\74data:blog.openIdOpTag\76\74/data:blog.openIdOpTag\076'}});
+_WidgetManager._RegisterWidget('_AdSenseView', new _WidgetInfo('AdSense1', 'sidebar',{'main': {'varName': '', 'template': '\74div class\75\47widget-content\47\76\n\74data:adCode\76\74/data:adCode\76\n\74b:include name\75\47quickedit\47\76\74/b:include\76\n\74/div\076'}}, document.getElementById('AdSense1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2 class\75\47title\47\76\74data:title\76\74/data:title\76\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74data:content\76\74/data:content\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\076'}}, document.getElementById('HTML4'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title\47\76\74h2\76\74data:title\76\74/data:title\76\74/h2\76\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74ul\76\n\74b:loop values\75\47data:links\47 var\75\47link\47\76\n\74li\76\74a expr:href\75\47data:link.target\47\76\74data:link.name\76\74/data:link.name\76\74/a\76\74/li\76\n\74/b:loop\76\n\74/ul\76\n\74b:include name\75\47quickedit\47\76\74/b:include\76\n\74/div\076'}}, document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PollView', new _WidgetInfo('Poll1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2 class\75\47title\47\76\74data:title\76\74/data:title\76\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47 id\75\47widget-content\47\76\n\74iframe allowtransparency\75\47true\47 expr:height\75\47data:iframeheight\47 expr:name\75\47\46quot;poll-widget\46quot; + data:pollid\47 expr:src\75\47data:iframeurl\47 frameborder\75\0470\47 style\75\47border:none; width:100%;\47\76\74/iframe\76\n\74b:include name\75\47quickedit\47\76\74/b:include\76\n\74/div\076'}}, document.getElementById('Poll1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2 class\75\47title\47\76\74data:title\76\74/data:title\76\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74data:content\76\74/data:content\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\076'}}, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2 class\75\47title\47\76\74data:title\76\74/data:title\76\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74data:content\76\74/data:content\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\076'}}, document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_NewsBarView', new _WidgetInfo('NewsBar1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2 class\75\47title\47\76\74data:title\76\74/data:title\76\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74div expr:id\75\47data:widget.instanceId + \46quot;_bar\46quot;\47\76\n\74span class\75\47newsBar-status\47\76Loading...\74/span\76\n\74/div\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\076'}}, document.getElementById('NewsBar1'), {'title': 'Newsreel', 'format': 'VERTICAL', 'expression': 'Apple, Google, Microsoft', 'linkNewWindow': true}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title\47\76\n\74h2\76\74data:title\76\74/data:title\76\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74div id\75\47ArchiveList\47\76\n\74div expr:id\75\47data:widget.instanceId + \46quot;_ArchiveList\46quot;\47\76\n\74b:if cond\75\47data:style \75\75 \46quot;HIERARCHY\46quot;\47\76\n\74b:include data\75\47data\47 name\75\47interval\47\76\74/b:include\76\n\74/b:if\76\n\74b:if cond\75\47data:style \75\75 \46quot;FLAT\46quot;\47\76\n\74b:include data\75\47data\47 name\75\47flat\47\76\74/b:include\76\n\74/b:if\76\n\74b:if cond\75\47data:style \75\75 \46quot;MENU\46quot;\47\76\n\74b:include data\75\47data\47 name\75\47menu\47\76\74/b:include\76\n\74/b:if\76\n\74/div\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\76\n\74/div\076'}, 'flat': {'varName': 'data', 'template': '\74ul\76\n\74b:loop values\75\47data:data\47 var\75\47i\47\76\n\74li class\75\47archivedate\47\76\n\74a expr:href\75\47data:i.url\47\76\74data:i.name\76\74/data:i.name\76\74/a\76 (\74data:i.post-count\76\74/data:i.post-count\76)\n      \74/li\76\n\74/b:loop\76\n\74/ul\076'}, 'menu': {'varName': 'data', 'template': '\74select expr:id\75\47data:widget.instanceId + \46quot;_ArchiveMenu\46quot;\47\76\n\74option value\75\47\47\76\74data:title\76\74/data:title\76\74/option\76\n\74b:loop values\75\47data:data\47 var\75\47i\47\76\n\74option expr:value\75\47data:i.url\47\76\74data:i.name\76\74/data:i.name\76 (\74data:i.post-count\76\74/data:i.post-count\76)\74/option\76\n\74/b:loop\76\n\74/select\076'}, 'interval': {'varName': 'intervalData', 'template': '\74b:loop values\75\47data:intervalData\47 var\75\47i\47\76\n\74ul\76\n\74li expr:class\75\47\46quot;archivedate \46quot; + data:i.expclass\47\76\n\74b:include data\75\47i\47 name\75\47toggle\47\76\74/b:include\76\n\74a class\75\47post-count-link\47 expr:href\75\47data:i.url\47\76\74data:i.name\76\74/data:i.name\76\74/a\76\n\74span class\75\47post-count\47 dir\75\47ltr\47\76(\74data:i.post-count\76\74/data:i.post-count\76)\74/span\76\n\74b:if cond\75\47data:i.data\47\76\n\74b:include data\75\47i.data\47 name\75\47interval\47\76\74/b:include\76\n\74/b:if\76\n\74b:if cond\75\47data:i.posts\47\76\n\74b:include data\75\47i.posts\47 name\75\47posts\47\76\74/b:include\76\n\74/b:if\76\n\74/li\76\n\74/ul\76\n\74/b:loop\076'}, 'toggle': {'varName': 'interval', 'template': '\74b:if cond\75\47data:interval.toggleId\47\76\n\74b:if cond\75\47data:interval.expclass \75\75 \46quot;expanded\46quot;\47\76\n\74a class\75\47toggle\47 href\75\47javascript:void(0)\47\76\n\74span class\75\47zippy toggle-open\47\76\46#9660;\46#160;\74/span\76\n\74/a\76\n\74b:else\76\74/b:else\76\n\74a class\75\47toggle\47 href\75\47javascript:void(0)\47\76\n\74span class\75\47zippy\47\76\n\74b:if cond\75\47data:blog.languageDirection \75\75 \46quot;rtl\46quot;\47\76\n          \46#9668;\46#160;\n        \74b:else\76\74/b:else\76\n          \46#9658;\46#160;\n        \74/b:if\76\n\74/span\76\n\74/a\76\n\74/b:if\76\n\74/b:if\076'}, 'posts': {'varName': 'posts', 'template': '\74ul class\75\47posts\47\76\n\74b:loop values\75\47data:posts\47 var\75\47i\47\76\n\74li\76\74a expr:href\75\47data:i.url\47\76\74data:i.title\76\74/data:i.title\76\74/a\76\74/li\76\n\74/b:loop\76\n\74/ul\076'}}, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_SlideshowView', new _WidgetInfo('Slideshow1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2 class\75\47title\47\76\74data:title\76\74/data:title\76\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74div class\75\47slideshow-container\47 expr:id\75\47data:widget.instanceId + \46quot;_slideshow\46quot;\47\76\n\74span class\75\47slideshow-status\47\76Loading...\74/span\76\n\74/div\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\076'}}, document.getElementById('Slideshow1'), {'title': 'Album', 'computedFeed': 'http://picasaweb.google.com/data/feed/base/user/sundargates/albumid/5212683703462338017?alt\75rss\46hl\75en_US', 'linkNewWindow': true, 'randomizeFeed': false, 'speed': 3000}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2 class\75\47title\47\76\74data:title\76\74/data:title\76\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74data:content\76\74/data:content\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\076'}}, document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ProfileView', new _WidgetInfo('Profile1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2\76\74data:title\76\74/data:title\76\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74b:if cond\75\47data:team \75\75 \46quot;true\46quot;\47\76\n\74ul\76\n\74b:loop values\75\47data:authors\47 var\75\47i\47\76\n\74li\76\74a expr:href\75\47data:i.userUrl\47\76\74data:i.display-name\76\74/data:i.display-name\76\74/a\76\74/li\76\n\74/b:loop\76\n\74/ul\76\n\74b:else\76\74/b:else\76\n\74b:if cond\75\47data:photo.url !\75 \46quot;\46quot;\47\76\n\74a expr:href\75\47data:userUrl\47\76\74img class\75\47profile-img\47 expr:alt\75\47data:photo.alt\47 expr:height\75\47data:photo.height\47 expr:src\75\47data:photo.url\47 expr:width\75\47data:photo.width\47/\76\74/a\76\n\74/b:if\76\n\74dl class\75\47profile-datablock\47\76\n\74dt class\75\47profile-data\47\76\74data:displayname\76\74/data:displayname\76\74/dt\76\n\74b:if cond\75\47data:showlocation \75\75 \46quot;true\46quot;\47\76\n\74dd class\75\47profile-data\47\76\74data:location\76\74/data:location\76\74/dd\76\n\74/b:if\76\n\74b:if cond\75\47data:aboutme !\75 \46quot;\46quot;\47\76\74dd class\75\47profile-textblock\47\76\74data:aboutme\76\74/data:aboutme\76\74/dd\76\74/b:if\76\n\74/dl\76\n\74a class\75\47profile-link\47 expr:href\75\47data:userUrl\47\76\74data:viewProfileMsg\76\74/data:viewProfileMsg\76\74/a\76\n\74/b:if\76\n\74b:include name\75\47quickedit\47\76\74/b:include\76\n\74/div\076'}}, document.getElementById('Profile1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main'));
+</script>
+</body>
+</html>

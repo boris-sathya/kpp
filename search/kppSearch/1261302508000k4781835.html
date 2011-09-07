@@ -1,0 +1,635 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xalan-nodeset="http://xml.apache.org/xalan" xmlns:bf="http://www.uspto.gov/bf" xml:lang="en" lang="en">
+
+
+
+
+<!--sites/uspto.gov/includes/general/head.inc (includes two jsp includes above this)-->
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>United States Patent and Trademark Office</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="/includes/c/reset-fonts-grids.css" type="text/css" media="all" charset="utf-8" />
+	<link rel="stylesheet" href="/includes/c/base-min.css" type="text/css" media="all" charset="utf-8" />	
+    <link rel="stylesheet" href="/includes/c/base.css" type="text/css" media="screen" charset="utf-8" />	
+    <link rel="stylesheet" href="/includes/c/print.css" type="text/css" media="print" charset="utf-8" />
+    <script type="text/javascript" src="/includes/j/yahoo-dom-event.js"></script>
+    <script type="text/javascript" src="/includes/j/selector-beta-min.js"></script>
+	<script type="text/javascript" src="/includes/j/base.js"></script>
+	<!--[if lte IE 7]>
+    <link rel="stylesheet" href="/includes/c/base-ie7.css" type="text/css" media="screen" charset="utf-8" />	
+    <![endif]-->
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" href="/includes/c/base-ie6.css" type="text/css" media="screen" charset="utf-8" />	
+    <script type="text/javascript" src="/includes/j/base-ie6.js"></script>	
+    <![endif]-->
+</head>
+    <body>
+        <div id="custom-doc" class="yui-t7">
+            <div id="hd">
+                <div id="identity"><!--sites/uspto.gov/includes/general/banner.inc-->
+
+<h1 title="United States Patent and Trademark Office">
+	<a href="/"><span class="logo"></span></a><span>United States Patent and Trademark Office</span>
+</h1>
+<h2>
+    <span>An Agency of the Department of Commerce</span>
+</h2></div>
+                <a href="#article" class="accessible">Skip over navigation</a>
+                <div id="globals"><!-- sites/uspto.gov/includes/general/global_links.inc -->
+<!-- Header content of the first line: Home, Help, FAQs, site index, contact us -->
+<p id="hd-extras">
+    <a href="/" class="first"><span>Home</span></a>
+    <a href="/ebc/indexebc.html"><span>Help</span></a>
+    <a href="/siteindex.jsp"><span>Site Index</span></a>
+    <a href="/about/contacts/index.jsp" class="last"><span>Contact Us</span></a>
+</p><!--sites/uspto.gov/includes/general/search.inc-->
+<!-- Search and how do I box on the top -->
+
+<form id="search" method="get" action="http://usasearch.gov/search">
+    <input name="affiliate" value="web-sdmg-uspto.gov" type="hidden" />
+    <input name="v:project" value="firstgov" type="hidden" />
+    <label for="search-input">Search:</label> 
+    <input name="query" id="query-field" type="text" /> 
+    <input value="go" class="button" type="submit" />
+</form>
+
+<form action="/cgi-bin/jump" method="post" class="select-form">
+    <label for="select-how">How do I:</label>
+	<span>
+    	<select id="select-how">
+            <option value="/" selected="selected"> - Select an Option - </option>
+            <option value="/patents/process/search/">Search for a patent?</option>
+            <option value="/trademarks/process/search/">Search for a trademark?</option>
+            <option value="/patents/process/file/efs/index.jsp">File a patent?</option>
+            <option value="/trademarks/process/file/">Register a trademark?</option>
+            <option value="/faq/g120005.jsp">Learn about Intellectual Property basics?</option>
+            <option value="/forms/index.jsp#patent">Access patent forms?</option>
+            <option value="/forms/index.jsp#TM">Access trademark forms?</option>
+            <option value="/curr_fees_pat">Access the current fee schedule?</option>
+            <option value="/main/faq/p481049.htm">Pay maintenance fees?</option>
+            <option value="/main/faq/g_2009mar09.htm">Determine if maintenance fees were paid?</option>
+            <option value="/main/faq/t120052.htm">Renew a trademark?</option>
+            <option value="http://ebiz1.uspto.gov/oems25p/">Get copies of patents and trademarks?</option>
+            <option value="/patents/process/status/">Check the status of a patent?</option>
+            <option value="/trademarks/process/status/">Check the status of a trademark?</option>
+            <option value="/about/contacts/#mail">Find USPTO addresses?</option>
+            <option value="/products/index.jsp">Find statistics?</option>
+            <option value="http://assignments.uspto.gov/assignments/">Search assignments?</option>
+            <option value="/patents/resources/index.jsp#heading-2">Find patent manuals?</option>
+            <option value="/trademarks/resources/index.jsp">Find trademark manuals?</option>
+            <option value="/products/library/ptdl/">Locate Libraries?</option>
+            <option value="/main/faq/g_2009mar09.htm">Check an invoice?</option>
+            <option value="/main/faq/g481076.htm">Set up an EFT account?</option>
+        </select>
+    </span>
+    <span><input type="submit" value="go" class="button"/></span>
+</form></div><!--sites/uspto.gov/includes/general/global_nav.inc-->
+
+<div id="nav-container" xmlns:bf="http://www.uspto.gov/bf">
+<ul id="nav" title="Main Navigation">
+<li class="first">
+<a href="/about/index.jsp"><span>About USPTO</span></a>
+<ul>
+<li class="first">
+<a href="/about/bios/index.jsp"><span>Executive Biographies</span></a>
+</li>
+<li>
+<a href="/about/stratplan/index.jsp"><span>Budget, Performance, and Planning</span></a>
+</li>
+<li>
+<a href="/about/stats/index.jsp"><span>Statistics</span></a>
+</li>
+<li>
+<a href="/about/contacts/index.jsp"><span>Contact Us</span></a>
+</li>
+<li>
+<a href="/about/vendor_info/index.jsp"><span>Vendor Information</span></a>
+</li>
+<li>
+<a href="/about/advisory/index.jsp"><span>Public Advisory Committees</span></a>
+</li>
+<li>
+<a href="/about/offices/index.jsp"><span>USPTO Offices</span></a>
+</li>
+<li>
+<a href="/about/nmti/index.jsp"><span>National Medal of Technology and Innovation</span></a>
+</li>
+<li class="last">
+<a href="http://www.uspto.gov/blog/" target="_blank"><span>Director's Forum</span></a>
+</li>
+</ul>
+</li>
+<li>
+<a href="/patents/index.jsp"><span>Patents</span></a>
+<ul>
+<li class="first">
+<a href="/patents/process/index.jsp"><span>Patent Process</span></a>
+</li>
+<li>
+<a href="/forms/index.jsp"><span>Patent Forms</span></a>
+</li>
+<li>
+<a href="/patents/stats/index.jsp"><span>Statistics</span></a>
+</li>
+<li>
+<a href="/patents/ebc/index.jsp"><span>Electronic Business Center</span></a>
+</li>
+<li>
+<a href="/patents/law/index.jsp"><span>Patent Laws, Regulations, Policies &amp; Procedures</span></a>
+</li>
+<li>
+<a href="/patents/resources/index.jsp"><span>Resources and Guidance</span></a>
+</li>
+<li>
+<a href="/patents/publications/index.jsp"><span>Office of Data Management</span></a>
+</li>
+<li>
+<a href="/patents/announce/index.jsp"><span>Announcements</span></a>
+</li>
+<li>
+<a href="/patents/init_events/index.jsp"><span>Initiatives &amp; Events</span></a>
+</li>
+<li>
+<a href="/patents/int_protect/index.jsp"><span>International Protection</span></a>
+</li>
+<li class="last">
+<a href="http://portal.uspto.gov/external/portal/emlocator" target="_blank"><span>Employee Locator</span></a>
+</li>
+</ul>
+</li>
+<li>
+<a href="/trademarks/index.jsp"><span>Trademarks</span></a>
+<ul>
+<li class="first">
+<a href="/trademarks/process/index.jsp"><span>Trademarks Process</span></a>
+</li>
+<li>
+<a href="/trademarks/notices/index.jsp"><span>News &amp; Notices</span></a>
+</li>
+<li>
+<a href="/trademarks/resources/index.jsp"><span>Manuals, Guides, Official Gazette</span></a>
+</li>
+<li>
+<a href="/trademarks/law/index.jsp"><span>Laws &amp; Regulations</span></a>
+</li>
+<li class="last">
+<a href="/teas/ContactUs.htm"><span>Contact Us</span></a>
+</li>
+</ul>
+</li>
+<li>
+<a href="/ip/index.jsp"><span>IP Law &amp; Policy</span></a>
+<ul>
+<li class="first">
+<a href="/ip/rules/index.jsp"><span>Rulemaking</span></a>
+</li>
+<li>
+<a href="/ip/global/index.jsp"><span>IP Policy and Enforcement</span></a>
+</li>
+<li>
+<a href="/ip/training/index.jsp"><span>Training and Education</span></a>
+</li>
+<li>
+<a href="/ip/events/index.jsp"><span>Training Programs &amp; Conferences</span></a>
+</li>
+<li>
+<a href="/ip/officegovaffairs.jsp"><span>Office of Governmental Affairs</span></a>
+</li>
+<li class="last">
+<a href="/ip/boards/index.jsp"><span>Boards and Counsel</span></a>
+</li>
+</ul>
+</li>
+<li>
+<a href="/products/index.jsp"><span>Products &amp; Services</span></a>
+<ul>
+<li class="first">
+<a href="/products/catalog/index.jsp"><span>Product Catalog</span></a>
+</li>
+<li>
+<a href="/products/library/index.jsp"><span>Locate Libraries</span></a>
+</li>
+<li>
+<a href="/products/events/index.jsp"><span>Training/Events</span></a>
+</li>
+<li class="last">
+<a href="/products/cis/index.jsp"><span>Customer Information Services</span></a>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://usptocareers.gov" target="_blank"><span>Careers</span></a>
+</li>
+<li>
+<a href="/inventors/index.jsp"><span>Inventors</span></a>
+<ul>
+<li class="first">
+<a href="/inventors/independent/index.jsp"><span>Independent Inventors</span></a>
+</li>
+<li>
+<a href="/inventors/patents.jsp"><span>Patents for Independent Inventors</span></a>
+</li>
+<li>
+<a href="/inventors/trademarks.jsp"><span>Trademarks for Independent Inventors</span></a>
+</li>
+<li>
+<a href="/inventors/scam_prevention/index.jsp"><span>Scam Prevention</span></a>
+</li>
+<li class="last">
+<a href="/inventors/iac/index.jsp"><span>Inventors Assistance</span></a>
+</li>
+</ul>
+</li>
+<li>
+<a href="/news/index.jsp"><span>News &amp; Notices</span></a>
+<ul>
+<li class="first">
+<a href="/news/pr/2009/index.jsp"><span>Press Releases</span></a>
+</li>
+<li>
+<a href="/news/speeches/2009/index.jsp"><span>Testimony and Speeches</span></a>
+</li>
+<li>
+<a href="/news/index_emergency.jsp"><span>Emergency Notices</span></a>
+</li>
+<li>
+<a href="/video/index.htm"><span>USPTO Videos</span></a>
+</li>
+<li>
+<a href="/news/og/index.jsp"><span>Official Gazette</span></a>
+</li>
+<li>
+<a href="/news/fedreg/fr_2009.jsp"><span>Federal Register Notices</span></a>
+</li>
+<li class="last">
+<a href="/news/pra/index.jsp"><span>Paperwork Reduction Act</span></a>
+</li>
+</ul>
+</li>
+<li>
+<a href="/ebc/indexebc.html"><span>eBusiness/Alerts</span></a>
+<ul>
+<li class="first">
+<a href="/ebc/indexebc.html"><span>Electronic Business Center </span></a>
+</li>
+<li class="last">
+<a href="/blog/ebiz/"><span>eBiz Alerts</span></a>
+</li>
+</ul>
+</li>
+<li>
+<a href="/faq/index.jsp"><span>FAQs</span></a>
+<ul>
+<li class="first">
+<a href="/faq/patents.jsp"><span>Patents FAQs</span></a>
+</li>
+<li>
+<a href="/faq/trademarks.jsp"><span>Trademarks FAQs</span></a>
+</li>
+<li>
+<a href="/faq/assignments.jsp"><span>Assignments</span></a>
+</li>
+<li>
+<a href="/faq/musicart.jsp"><span>Musicians and Artists</span></a>
+</li>
+<li>
+<a href="/faq/plugins/index.jsp"><span>Browser Plugins</span></a>
+</li>
+<li class="last">
+<a href="/faq/other.jsp"><span>Other Web Resources</span></a>
+</li>
+</ul>
+</li>
+<li class="last">
+<a href="/kids/index.jsp"><span>For Kids</span></a>
+</li>
+</ul>
+</div>
+
+</div>
+            <div id="bd">
+                <div id="yui-main">
+                    <div class="yui-b">
+                        <div class="yui-g">
+                            <div xmlns="" id="article" class="home">
+                                <div id="newsbar-container">
+                                    <div id="newsbar" class="clear-fix">
+                                        <div id="colAnim">
+                                            <div class="news">
+                                                <h2>Department of Commerce Announces Pilot Program for Green Innovations</h2>
+                                                <img src="/image/home_page/GreenTechSpeech.JPG" alt="U.S. Commerce Secretary Gary Locke listens as Under Secretary of Commerce for Intellectual Property and Director of the USPTO David Kappos explains the green technology patent application acceleration pilot program."><div dir="ltr">Secretary of Commerce Gary Locke and USPTO Director David Kappos announced the launch of a pilot program that will to accelerate the examination of certain &ldquo;green&rdquo; technology patent applications.</div>
+
+
+                                                <p>&nbsp;</p>
+                                                <a class="arrowLink" href="/news/pr/2009/09_33.jsp">Read More</a>
+                                            </div>
+                                            <div class="news">
+                                                <h2>USPTO Launches Application Exchange Pilot</h2>
+                                                <img src="/image/home_page/Small_inventors.JPG" alt="Small entity inventors"><div dir="ltr">The program,&nbsp;available now,&nbsp;will give small entity inventors having two or more patent applications currently pending greater control over the priority in which their applications are examined.&nbsp;&nbsp;</div>
+
+
+                                                <p>&nbsp;</p>
+                                                <a class="arrowLink" href="/news/pr/2009/09_26.jsp">Read More</a>
+                                            </div>
+                                            <div class="news">
+                                                <h2>PCT Task Force Public Meeting January 13</h2>
+                                                <img src="/image/home_page/madison_auditorium-282x103.jpg" alt="Attendees at meeting in USPTO Madison building auditorium."><p>The USPTO is conducting a public meeting on Wednesday, January 13, from 2:00 to 5:00 p.m., in Alexandria, Va., to solicit opinions on improvements in efficiency and operation of the PCT system. Requests to participate must be received by 5 p.m., Friday, January 8.</p>
+                                                <a class="arrowLink" href="/news/fedreg/PCT_Notice.pdf" target="_blank">Read More</a>
+                                            </div>
+                                            <div class="news">
+                                                <h2>New Rules for Docketing RCEs</h2>
+                                                <img src="/image/home_page/uspto_atrium_283x102.jpg" alt="USPTO Headquarters"><p>The USPTO recently posted new rules for docketing Requests for Continued Examination (RCEs) related to the new examiner production ("count") system.</p>
+                                                <a class="arrowLink" href="/patents/rce_handling_in_new_count_system.doc" target="_blank">Read more</a>
+                                            </div>
+                                            <div class="news">
+                                                <h2>U.S. Statement on Copyright Exceptions for Visually Impaired</h2>
+                                                <img src="/image/home_page/Csymbol.jpg" alt="Copyright symbol"><p>At a December 15 meeting of the WIPO Standing Committee on Copyright and Related Rights, the United States issued a statement on copyright exceptions and limitations for persons with print disabilities.&nbsp;</p>
+                                                <a class="arrowLink" href="http://www.uspto.gov/ip/global/copyrights/wipo_sccr_19session.pdf" target="_blank">Read more</a>
+                                            </div>
+                                            <div id="badges">
+                                                <a href="/news/pr/2009/09_33.jsp" class="badge here" title="Department of Commerce Announces Pilot Program for Green Innovations" rel="1">1</a><a href="/news/pr/2009/09_26.jsp" class="badge" title="USPTO Launches Application Exchange Pilot" rel="2">2</a><a href="/news/fedreg/PCT_Notice.pdf" target="_blank" class="badge" title="PCT Task Force Public Meeting January 13" rel="3">3</a><a href="/patents/rce_handling_in_new_count_system.doc" target="_blank" class="badge" title="New Rules for Docketing RCEs" rel="4">4</a><a href="http://www.uspto.gov/ip/global/copyrights/wipo_sccr_19session.pdf" target="_blank" class="badge" title="U.S. Statement on Copyright Exceptions for Visually Impaired" rel="5">5</a><a title="pause animation" ref="#" id="controller"></a>
+                                            </div>
+                                        </div><!--sites/uspto.gov/includes/general/home_dropdown.inc-->
+<!-- USPTO Self Service drop down menu -->
+
+<div class="col">
+	<span class="headline">USPTO Self Service</span>
+    <form method="post" action="/cgi-bin/jump" class="select-form">
+	    <label for="select-products">Information Services and Data Products:</label><br/>
+    	<select id="select-products">
+		   	<option value="/" selected="selected"> - Select a Product or Service - </option>
+			<option value="/products/catalog/">View All Products &amp; Services</option>
+            <optgroup label="Information Services">                                            
+		        <option value="/products/library/ptdl/">Patent &amp; Trademark Depository Libraries</option>
+                <option value="/products/library/search/">Public Search Facility</option>
+                <option value="/about/contacts/index.jsp">General Information Toll-Free Line</option>
+                <option value="/faq/assignments.jsp">Assignment Recordation</option>
+                <option value="/about/contacts/callcenters.jsp">Customer Support Centers</option>
+                <option value="/products/events/">Training Services</option>       
+            </optgroup>
+            <optgroup label="Data Products">
+                <option value="/products/catalog/patent_products/">Electronic Patent Products</option>
+                <option value="/products/catalog/trademark_products/">Electronic Trademark Products</option>
+                <option value="http://ebiz1.uspto.gov/oems25p/index.html">Certified Document Copies</option>
+            </optgroup>
+            
+        </select> 
+        <input type="submit" class="button" value="Go" />
+    </form>
+</div></div>
+                                </div>
+                                <div id="content">
+                                    <div id="homeContentTop"></div>
+                                    <div id="homeContent" class="clear-fix">
+                                        <div class="col first">
+                                            <h2>
+                                                <span class="image"><img src="/image/home_page/home-header-patents.png" alt="Patents"></span><span>Patents</span>
+                                            </h2>
+                                            <ol class="icon-list blue">
+                                                <li class="first">
+                                                    <div class="badge">1</div>
+                                                    <a href="/patents/basics.jsp"><strong>Patents Process</strong></a>
+                                                    <p>Visit the Patent Basics page</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge">2</div>
+                                                    <a href="http://patft.uspto.gov/" target="_blank"><strong>Search</strong></a>
+                                                    <p>Search the Patent Full-Text and Image Database (PatFT)</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge">3</div>
+                                                    <a href="/web/offices/ac/qs/ope/fee2009september15.htm"><strong>View Fee Schedule</strong></a>
+                                                    <p>Check on the current fees and information related to the patent process</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge">4</div>
+                                                    <a href="/patents/process/file/efs/index.jsp"><strong>File Online</strong></a>
+                                                    <p>Apply for a patent using the Electronic Filing System (EFS-Web)</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge">5</div>
+                                                    <a href="/patents/process/status/index.jsp"><strong>Check Status</strong></a>
+                                                    <p>Check the status via the Patent Application Information Retrieval (PAIR) system</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge">6</div>
+                                                    <a href="https://ramps.uspto.gov/eram/" target="_blank"><strong>Maintain/Pay Fees</strong></a>
+                                                    <p>Pay your maintenance fees online</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge">7</div>
+                                                    <a href="/patents/process/appeal/index.jsp"><strong>Appeal</strong></a>
+                                                    <p>Learn the appeal process via the Board of Patent Appeals and Interferences (BPAI)</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge">8</div>
+                                                    <a href="http://epas.uspto.gov/" target="_blank"><strong>Assign Ownership</strong></a>
+                                                    <p>via the Electronic Patent Assignment System (EPAS)</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge">9</div>
+                                                    <a href="/patents/ebc/index.jsp"><strong>Web Tools</strong></a>
+                                                    <p>Get web application links &amp; help via the Electronic Business Center (EBC)</p>
+                                                </li>
+                                                <li class="last">
+                                                    <div class="badge">10</div>
+                                                    <a href="/patents/init_events/pph/index.jsp"><strong>Patent Prosecution Highway</strong></a>
+                                                    <p></p>
+                                                </li>
+                                            </ol>
+                                            <p class="more">
+                                                <a href="/patents/index.jsp" class="arrowLink">More about Patents</a>
+                                            </p>
+                                        </div>
+                                        <div class="col">
+                                            <h2>
+                                                <span class="image"><img src="/image/home_page/home-header-trademarks.png" alt="Trademarks"></span><span>Trademarks</span>
+                                            </h2>
+                                            <ol class="icon-list red">
+                                                <li class="first">
+                                                    <div class="badge">1</div>
+                                                    <a href="/web/trademarks/workflow/start.htm"><strong>Trademark Basics</strong></a>
+                                                    <p>View Basic Information about Trademarks</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge">2</div>
+                                                    <a href="http://tess2.uspto.gov/bin/gate.exe?f=login&p_lang=english&p_d=trmk" target="_blank"><strong>Search Marks</strong></a>
+                                                    <p>Search pending and registered marks (TESS)</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge">3</div>
+                                                    <a href="/teas/e-TEAS/index.html"><strong>File Forms Online</strong></a>
+                                                    <p>File application and other documents online (TEAS)</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge">4</div>
+                                                    <a href="http://tarr.uspto.gov/" target="_blank"><strong>Check Status</strong></a>
+                                                    <p>Check the status of an application or registration (TARR)</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge">5</div>
+                                                    <a href="http://tmportal.uspto.gov/external/portal/tow" target="_blank"><strong>View Documents</strong></a>
+                                                    <p>View and download application and registration records (TDR)</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge">6</div>
+                                                    <a href="/trademarks/process/maintain/prfaq.jsp"><strong>Maintain/Renew a Registration</strong></a>
+                                                    <p>File documents to keep a registration active</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge">7</div>
+                                                    <a href="/curr_fees_tm.jsp"><strong>View Fee Schedule</strong></a>
+                                                    <p>Check the current trademark fees</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge">8</div>
+                                                    <a href="/trademarks/process/appeal/index.jsp"><strong>Trademark Trial and Appeal Board</strong></a>
+                                                    <p>Visit TTAB Home Page</p>
+                                                </li>
+                                                <li class="last">
+                                                    <div class="badge">9</div>
+                                                    <a href="/trademarks/process/assign.jsp"><strong>Assignments</strong></a>
+                                                    <p>Visit Assignments Home Page</p>
+                                                </li>
+                                            </ol>
+                                            <ul class="icon-list gray info">
+                                                <li class="first">
+                                                    <div class="badge"></div>
+                                                    <a href="/web/trademarks/madrid/madridindex.htm"><strong>Madrid Protocol</strong></a>
+                                                    <p></p>
+                                                </li>
+                                            </ul>
+                                            <p class="more">
+                                                <a href="/trademarks/index.jsp" class="arrowLink">More about Trademarks</a>
+                                            </p>
+                                        </div>
+                                        <div class="col last">
+                                            <h2>
+                                                <span class="image"><img src="/image/home_page/home-header-ipp.png" alt="IP Policy"></span><span>IP Policy</span>
+                                            </h2>
+                                            <ul class="icon-list gray info">
+                                                <li class="first">
+                                                    <div class="badge"></div>
+                                                    <a href="/ip/global/index.jsp"><strong>IP Policy and Enforcement</strong></a>
+                                                    <p>USPTO leads efforts to develop and strengthen both domestic and international IP protection</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge"></div>
+                                                    <a href="/ip/training/index.jsp"><strong>Training and Education</strong></a>
+                                                    <p>The Global IP Academy (GIPA) offers IP related programs around the world</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge"></div>
+                                                    <a href="/ip/boards/index.jsp"><strong>Boards and Counsel</strong></a>
+                                                    <p>General Counsel, Office of the Solicitor, Office of General Law, Office of Enrollment and Discipline, Board of Patent Appeals and Interferences, and Trademark Trial and Appeal Board</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge"></div>
+                                                    <a href="/ip/global/copyrights/index.jsp"><strong>Interested in Copyrights?</strong></a>
+                                                    <p>The USPTO advises the Administration on copyright protection and policy</p>
+                                                </li>
+                                                <li>
+                                                    <div class="badge"></div>
+                                                    <a href="/ip/global/stopfakes.jsp"><strong>Protecting Intellectual Property</strong></a>
+                                                    <p>Strategy Targeting Organized Piracy (STOP!) helps businesses protect their IP at home and abroad</p>
+                                                </li>
+                                                <li class="last">
+                                                    <div class="badge"></div>
+                                                    <a href="/ip/rules/index.jsp"><strong>Rulemaking</strong></a>
+                                                    <p>The USPTO continues to propose new initiatives to make its operations more efficient</p>
+                                                </li>
+                                            </ul>
+                                            <p class="more">
+                                                <a href="/ip/index.jsp" class="arrowLink">More about IP Law &amp; Policy</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div id="newsboxTopCurve"></div>
+                                    <div id="newsboxBottom" class="clear-fix">
+                                        <div class="col">
+                                            <a href="/about/stratplan/ar/index.jsp" class="headline">2009 Performance and Accountability Report</a><a href="/about/stratplan/ar/index.jsp"><img src="/image/home_page/par_100x100.jpg" alt="USPTO Performance and Accountability Report"></a>
+                                            <p>Access the 2009 Performance and Accountability Report.</p>
+                                            <a href="/about/stratplan/ar/index.jsp" class="arrowLink"><strong>Read more</strong></a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="http://www.uspto.gov/news/pr/2009/09-33.jsp" class="headline" target="_blank">USPTO Launches Patent Pendency Model</a><a href="http://www.uspto.gov/news/pr/2009/09-33.jsp" target="_blank"><img src="/image/home_page/spread.jpg" alt="spread"></a>
+                                            <p>The interactive <a href="http://www.uspto.gov/patents/stats/patent_pend_model.jsp" target="_blank">model</a> enables users to see how staffing and filing levels affect patent pendency.&nbsp;</p>
+                                            <a href="http://www.uspto.gov/news/pr/2009/09-33.jsp" target="_blank" class="arrowLink"><strong>Read More</strong></a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="http://www.uspto.gov/blog/" class="headline" target="_blank">&ldquo;Director&rsquo;s Forum&rdquo; Blog</a><a href="http://www.uspto.gov/blog/" target="_blank"><img src="/image/home_page/kappos_thmb.jpg" alt="Under Secretary Kappos"></a>
+                                            <p>The &ldquo;Director&rsquo;s Forum&rdquo; Blog offers an opportunity for the USPTO&rsquo;s stakeholders and the general public to interact with USPTO Director David Kappos.</p>
+                                            <a href="http://www.uspto.gov/blog/" target="_blank" class="arrowLink"><strong>Read more</strong></a>
+                                        </div>
+                                    </div>
+                                    <div id="newsboxBottomCurve"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ft" class="clear-fix"><!--sites/uspto.gov/includes/general/footer.inc-->
+<!-- Footer content in all the pages -->
+
+<div class="colLogos">
+	<a href="/cgi-bin/exitconf/internet_exitconf.pl?target=www.commerce.gov/" target="_blank" title="US Department of Commerce"><img src="/includes/i/footerDOCLogo.jpg" alt="US Department of Commerce" /></a><br/>
+    <a href="/cgi-bin/exitconf/internet_exitconf.pl?target=www.usa.gov/" target="_blank" title="USA.gov"><img src="/includes/i/footerUSALogo.jpg" alt="USA.gov" /></a>
+</div>
+<div class="col">
+	<ul class="footer">
+    	<li><a href="/accessibility.jsp">Accessibility</a></li>
+    	<li><a href="/privact.jsp">Privacy Policy</a></li>
+    	<li><a href="/termsofuse.jsp">Terms of Use</a></li>
+    	<li><a href="/faq/security.jsp">Security</a></li>
+    	<li><a href="/news/index_emergency.jsp">Emergencies/Security Alerts</a></li>
+    </ul>
+</div>
+<div class="col">
+	<ul class="footer">
+    	<li><a href="/about/stratplan/fair/index.jsp">Federal Activities Inventory Reform (FAIR) Act</a></li>
+    	<li><a href="/about/offices/cao/ocr/nofear/index.jsp">Notification and Federal Employee Antidiscrimination and Retaliation (NoFEAR) Act</a></li>
+	<li><a href="/about/stratplan/index.jsp">Budget &amp; Performance</a></li>
+    </ul>
+</div>
+<div class="col">
+	<ul class="footer">
+    	<li><a href="/ip/boards/foia_rr/index.jsp">Freedom of Information Act (FOIA)</a></li>
+    	<li><a href="/cgi-bin/exitconf/internet_exitconf.pl?target=www.osec.doc.gov/ocr/nofear/nofear.htm">Department of Commerce NoFEAR Act Report</a></li>
+    	<li><a href="/cgi-bin/exitconf/internet_exitconf.pl?target=www.regulations.gov">Regulations.gov</a></li>
+    	<li><a href="/cgi-bin/exitconf/internet_exitconf.pl?target=www.stopfakes.gov">STOP!Fakes.gov</a></li>
+    </ul>
+</div>
+<div class="col">
+	<ul class="footer">
+    	<li><a href="/ip/global/stopfakes.jsp">Strategy Targeting Organized Piracy (STOP!)</a></li>
+    	<li><a href="/news/media/ccpubguide.jsp">Copyright &amp; Publication Guidelines</a></li>
+    	<li><a href="/cgi-bin/exitconf/internet_exitconf.pl?target=www.doc.gov">Department of Commerce</a></li>
+	<li><a href="mailto:webmaster@uspto.gov">USPTO Webmaster</a></li>
+    </ul>
+</div>
+
+</div>
+        </div>
+        <div id="extra-div-1">
+            <span/>
+        </div>
+        <div id="extra-div-2">
+            <span/>
+        </div>
+        <div id="extra-div-3">
+            <span/>
+        </div>
+        <div id="extra-div-4">
+            <span/>
+        </div>
+        <div id="extra-div-5">
+            <span/>
+        </div>
+        <div id="extra-div-6">
+            <span/>
+        </div>
+    </body>
+</html>

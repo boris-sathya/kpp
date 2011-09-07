@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- MIT Campus Map Team and the MIT Department of Facilities -->
+<!-- Copyright 2009 Massachusetts Institute of Technology     -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xml:lang="en-US" lang="en-US">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Description" content="Interactive map of the MIT campus.">
+
+<noscript><meta http-equiv="refresh" content="0; URL=print.html" /></noscript>
+
+<link rel="icon" href="http://web.mit.edu/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://web.mit.edu/favicon.ico" 
+   type="image/x-icon" />
+
+<script type="text/javascript">
+if (location.href.indexOf(".mit.edu") == -1) {
+   var new_location = location.href;
+   if (new_location.charAt(new_location.length - 1) == '/') {
+      new_location = new_location.slice(0, new_location.length - 1);
+   }
+   location.href = new_location + ".mit.edu/";
+}
+</script>
+<link rel="stylesheet" href="http://web.mit.edu/styles/mit-daily-colors.css" type="text/css" />
+<link rel="stylesheet" href="all.css" type="text/css" />
+<link rel="stylesheet" href="mit_campus_map.print.css" media="print" type="text/css" />
+<!-- whereis.mit.edu -->
+<script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA25g_4SeALKFnGhEYiE2_RxSXM5SZ_YzMbfQJ4HjX-RpjLllX3hS8KP_HrRmBHtblCqByiX2zg_8mNw"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+<script type="text/javascript" src="all.js"></script>
+<title>MIT Campus Map</title>
+
+</head>
+
+<body onload="javascript:startLoadMap();" onunload="javascript:unload();">
+
+<div id="container">
+
+  <div id="beta" style="position: absolute; right: 0px; top: 20px;">
+    <img src="beta-65.png"/>
+  </div>
+  
+  <!-- top navigation bar -->
+
+  <div id="navbar">
+    <div id="navbar_mit">
+       
+      <span class="headerLink">
+       <a href="about.html" class="topnav">
+       about the map</a>
+      </span>
+
+      <span class="headerLink">
+       <a href="print.html" class="topnav">
+       printable maps</a>
+      </span>
+
+      <span class="headerLink">
+       <a href="directions.html" 
+          class="topnav">directions to MIT</a>
+      </span>
+
+      <span class="headerLink">
+       <a href="http://web.mit.edu/campus-map/pdf/mit-accessibility-color-2009.pdf" target="_blank" 
+          class="topnav">accessibility</a>
+      </span>
+
+    <span style="position: absolute; right: 16px;"><!-- style="width: 64px;"-->
+    <a href="about.html#feedback" id="feedbacklink" class="navbut">feedback</a>
+    </span>
+    </div>
+  </div>
+
+
+  <!-- main body -->
+  <div id="mainbody">
+
+    <!-- heading -->
+    <form action="" onsubmit="onSubmit(); return false;">
+     <div id="heading">
+      <a href="http://web.mit.edu/">
+      <img src="http://web.mit.edu/campus-map/images/logo.gif" 
+           width="64" height="36" alt="MIT"
+	   style="border: 0px; vertical-align: middle;" /></a>
+
+      <span id="cmtitle">campus map</span>
+      <span>
+    <!-- search -->
+    <input id="query" disabled="disabled" type="text" style="width: 300px; vertical-align: middle;"/>
+    <input id="submit_button" type="submit" disabled="disabled" 
+       value="Search Map" style="vertical-align: middle;"/>
+    <input id="reset_button" type="reset" disabled="disabled" 
+       value="Clear All" onclick="javascript:map.clearAll();" style="vertical-align: middle;" />
+    </span>
+    <img id="loader_image" src="" alt="Loading Status" 
+       style="visibility: hidden; display: none;"/>
+    <!-- end map search controls -->
+    </div> <!-- end heading -->
+    </form>
+
+
+    <div id="optionsbar" class="mithome_bgmit_b">
+      <div style="position: relative;">
+
+      <span id="collapse" style="display: none;"> <a href="" onclick="toggleResultsPane(); return false;" class="mithome_textdim_f" title="Show Results">Show Results &raquo;</a></span>
+
+      <span id="expand"> <a href="" onclick="toggleResultsPane(); return false;" class="mithome_textdim_f" title="Hide Search Results">&laquo; Expand Map</a></span>
+      <ul>
+<!--       <li><span class="barlink"><a href="" class="mithome_textdim_f">Map Options</a></span></li> -->
+      <li><span class="barlink"><a href="" title="Print page" onclick="closeLink(); window.print(); return false;" class="mithome_textdim_f">Print</a></span></li>
+      <li><span class="barlink"><a href="" id="mailink" onclick="generateEmail();" class="mithome_textdim_f" title="Email a link to this map">Send</a></span></li>
+      <li><span class="barlink"><a href="" onclick="toggleLink(); return false;" class="mithome_textdim_f" title="Link to this map">Link</a></span></li>
+
+      </ul>
+      </div>
+    </div>
+
+
+    <!-- map -->
+    <div id="map_container">
+
+      <div id="maplink" style="display: none;">
+	<div id="maplink_close" onclick="closeLink(); return false;"></div>
+	<div>
+	  Copy and paste link into <strong>email</strong> or
+	   <strong>IM</strong>:
+	</div>
+	<div><input id="maplink_box"/></div>
+      </div>
+
+      <div id="map">
+         <div id="map_javascript_error">
+	 <h1 style="margin-top: 100px; text-align: center;">
+         Please Wait
+	 </h1>
+
+	 <h3 style="text-align: center;">the bits are flowing slowly today</h3>
+	 </div>
+      </div>
+
+      <div id="search_results" class="search_results">
+
+      <h4 style="margin-top: 0px; font-size: 16px;">
+      Welcome to the MIT Campus Map</h4>
+
+
+      <div id="welcometext">
+      <div style="margin-bottom: 20px;">
+      You can <strong>pan</strong> the map by dragging it with your mouse.
+      <strong>Enlarge</strong> (zoom) the map using the
+      <strong>+</strong> and <strong>-</strong> controls to the right.
+      </div>
+
+      <div>Other things you can do:</div>
+
+      <ul style="margin-left: 0px; padding-left: 20px;">
+       <li style="margin-bottom: 15px;">Search the map, e.g.,
+       <br />    
+       <a href="" onclick="map.search('visitor center'); return false;" style="text-decoration: underline;">visitor center</a>
+       <br />
+       <a href="" onclick="map.search('food'); return false;" style="text-decoration: underline;">food</a>
+       <br />
+       <a href="" onclick="map.search('hotels'); return false;" style="text-decoration: underline;">hotels</a>
+       </li>
+
+       <li style="margin-bottom: 15px;">Find buildings and landmarks, e.g.,
+       <br />
+       <a href="" onclick="map.search('stata center'); return false;" style="text-decoration: underline;">stata center</a>
+       <br />
+       <a href="" onclick="map.search('building 46'); return false;" style="text-decoration: underline;">building 46</a>
+       <br />
+       <a href="" onclick="map.search('kresge'); return false;" style="text-decoration: underline;">kresge</a>
+       <br />
+       <a href="" onclick="map.search('visitor parking'); return false;" style="text-decoration: underline;">visitor parking</a>
+       </li>
+
+       <li style="margin-bottom: 15px;">
+       Click on any map location to get more information.
+       </li>
+
+       <li style="margin-bottom: 15px;">
+       <span id="clicktype">Right </span>click on individual location markers to remove them.
+       </li>
+       </ul>
+       </div>  <!-- end welcometext -->
+       </div> <!-- end search_results -->
+    </div>
+    <!-- end map container -->
+
+  </div> <!-- end mainbody -->
+
+<div id="footerContainer">
+<div class="footer">
+massachusetts institute of technology &nbsp; &#149; &nbsp; <a href="" onclick="map.search('MIT'); return false;">77 massachusetts avenue</a> &nbsp; &#149; &nbsp; cambridge, ma 02139 &nbsp; &#149; &nbsp; 617-253-1000
+</div>
+</div>
+
+</div> <!-- end container -->
+
+<div id="feedbackbox">
+We would be delighted to hear your comments and suggestions. Please contact us
+at: <br/><a href="mailto:campus-map@mit.edu">campus-map@mit.edu</a>
+</div>
+
+<div id="quicksearchbox"> 
+    <form action="http://web.mit.edu/cgi-bin/search-route" method="post"
+      class="searchborder" style="padding: 5px;" id="quicksearch">
+       <div>
+         <label>
+	 <input type="radio" name="engine" tabindex="2" value="0" checked="checked" />
+         MIT Google</label>
+
+	 <label>
+         <input type="radio" name="engine" tabindex="3" value="1" />
+         People</label>
+
+	 <label>
+         <input type="radio" name="engine" tabindex="4" value="7" />
+         Offices
+	 </label>
+
+         <br />
+	 <input name="terms" type="text" tabindex="5" id="quicksearchterms" 
+	   size="20" />
+
+         <input type="submit" tabindex="6" name="Submit" id="gobut" value="Go" />
+	 <br />
+         <a href="http://web.mit.edu/search.html">More Options</a>
+
+	 </div>
+	 </form>
+</div>
+
+<div id="loading">
+  Loading...
+</div>
+<!-- end search box table layer //-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7440685-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

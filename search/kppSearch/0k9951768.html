@@ -1,0 +1,542 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:webmasters@gnu.org" />
+<link rel="icon" type="image/png" href="/graphics/gnu-head-mini.png" />
+<meta name="ICBM" content="42.256233,-71.006581" />
+<meta name="DC.title" content="gnu.org" />
+
+
+
+<title>Guide to Translating www.gnu.org Web Pages - GNU Project - Free Software Foundation (FSF)</title>
+
+<style type="text/css" media="all">
+@import url('/style.css');
+</style>
+
+<style type="text/css" media="print">
+@import url('/print.css');
+</style>
+</head>
+
+<body>
+<div id="toplinks"><span class="netscape4"><a href="#content">Skip to content</a> |  | <a href="#searcher">Skip to search</a> | </span><a href="#translations">Translations of this page</a></div>
+
+
+<div id="null-wrapper">
+
+      <div id="header">
+
+        <div class="inner" style="position: relative;">
+
+
+<!-- <div id="fssbox">
+
+  <p class="netscape4"><a href="#navigation">Skip to navigation</a></p>
+
+  <h1>Sign up for the <em>Free Software Supporter</em></h1>
+
+  <p>A monthly update on GNU and the FSF</p>
+  <form action="http://lists.gnu.org/mailman/subscribe/info-fsf"
+	method="post">
+    <p><input type="text" id="frmEmail" name="email" size="15" maxlength="80" value="you@example.com" onfocus="this.value=''" /> &nbsp; <input type="submit" value="Ok" /></p>
+  </form>
+</div> -->
+
+<div style="width: 340px; height: 110px; position: absolute; top: -5px; right: 1px"><script type="text/javascript">
+var fsf_widget_size = "gnu";
+var fsf_associate_id = "2442";
+</script>
+<script type="text/javascript" src="http://static.fsf.org/nosvn/v/widget.js"></script>
+  </div>
+
+
+
+        <h1 id="logo"><a href="/">The GNU Operating System</a></h1>
+
+
+      </div>
+
+      </div>
+
+      <div id="navigation">
+        <div class="inner">
+        <ul>
+          <li id="tabAboutGNU"><a href="/gnu/gnu.html">History</a></li>
+          <li id="tabPhilosophy"><a href="/philosophy/philosophy.html">Philosophy</a></li>
+          <li id="tabLicenses"><a href="/licenses/licenses.html">Licenses</a></li>	  
+          <li id="tabSoftware"><a href="/software/software.html">Downloads</a></li>
+          <li><a href="/help/help.html">Help&nbsp;GNU</a></li>
+          <li id="joinfsftab"><a href="https://www.fsf.org/associate/support_freedom?referrer=4052">Join the FSF!</a></li>
+        </ul>
+
+	    	  	  <div id="searcher">
+
+  <form method="get" action="http://www.gnu.org/cgi-bin/estseek.cgi">
+   <div><label class="netscape4" for="phrase">Search:</label>
+   <input name="phrase" id="phrase" type="text" size="18" accesskey="s" value="Why GNU/Linux?" />
+   <input type="submit" value="Search" /></div>
+                                </form>
+                        </div>
+
+        </div>
+      </div>
+
+
+<div id="content" class="inner">
+
+   
+<h2>Guide to Translating www.gnu.org Web Pages</h2>
+
+<div class="announcement">
+  <blockquote><p>If you want to submit a translation or help
+  translation efforts, please contact the relevant existing
+  team <a href="#TranslationsUnderway">below</a>.  If there is no team
+  established for your language, please write
+  to <a href="mailto:web-translators@gnu.org">
+  &lt;web-translators@gnu.org&gt;</a> after
+  reading the <a href="/software/trans-coord/manual/">manuals</a>.
+  </p></blockquote>
+</div>
+
+<a href="/graphics/atypinggnu.html"><img src="/graphics/gnu-type-sm.jpg"
+ alt=" [image of the typing GNU] " width="137" height="114" /></a>
+
+<h3 id="SEC1">General Guide</h3>
+<ul>
+  <li>Before doing anything, please read
+    <ul>
+      <li>the <a href="/server/standards/readme_index.html">Guidelines</a>
+for GNU Web Site Volunteers, </li>
+      <li>the <a href="/server/fsf-html-style-sheet.html">FSF HTML
+Style Sheet</a>,
+	http://www.gnu.org/server/fsf-html-style-sheet.html </li>
+      <li>the <a href="/software/trans-coord/manual/">GNUN</a>
+      manuals.</li>
+    </ul>
+  </li>
+  <li>After reading this page, refer to the <a
+ href="#TranslationsUnderway">Translations Underway</a> list, and check
+if there is already a team formed for the language you want to
+translate to. If not, contact <a
+href="mailto:web-translators@gnu.org">&lt;web-translators@gnu.org&gt;</a>,
+and ask if you can start a new team for your language.</li>
+</ul>
+
+<h3 id="LanguageCodes">Language Codes</h3>
+<ul>
+  <li><a href="http://www.loc.gov/standards/iso639-2/php/code_list.php">ISO
+    639</a> gives the two-letter language codes in its 2<sup>nd</sup>
+    column.  If a two-letter language code is not assigned, 3-letter
+    (ISO 639-2) can be used.  Later versions of RFC 1766 and ISO 639
+    may exist.</li>
+
+  <li>If ISO 639 does not have a code, do some research and find
+  out the right one to use. ISO 3166 gives the codes for countries.
+  Language and country codes do not have to be the same. It is a
+  mistake to assume a country code can be substituted for a
+  language code &mdash; unless you verify it against a standard.</li>
+</ul>
+
+<h3 id="SEC3">What to Translate</h3>
+<ul>
+  <li>Documents should be converted together with their &ldquo;glue
+  pages&rdquo;, such as home.html and philosophy/philosophy.html.</li>
+  <li>Don't translate anything under these directories:
+  <dl>
+  <dt><code>/software/</code> </dt>
+  <dd>We leave that area up to each maintainer. But if you
+  want to help a maintainer do translations, ask hir (him or her).
+  </dd>
+  <dt><code>/brave-gnu-world/</code></dt>
+  <dd>Here's how to <a href="/brave-gnu-world/translations.html">help
+translate</a> <cite>Brave GNU World</cite>. </dd>
+  </dl></li>
+      <li>When translating &ldquo;GNU's Not Unix,&rdquo; please ensure
+that the translation remains recursive. If a recursive translation
+cannot be conceived, use the following format: &ldquo;GNU's Not
+Unix&rdquo; (GNU &auml;r inte Unix).
+  </li>
+</ul>
+
+<h3 id="SEC3.1">Translating the home page</h3>
+<ul>
+    <li>The translated homepage must include the full list of
+        translations via SSI.<br/>
+
+        The required SSI tag looks like this:
+        <pre>
+            &lt;!--#include file="translations.include" --&gt;
+        </pre>
+    </li>
+
+    <li>If you provide a new home page translation you must update the
+        <code>translations.include</code> file. The file is stored in
+        the GNU webservers root directory.
+    </li>
+</ul>
+
+<h3 id="SEC4">Linking Other Documents</h3>
+<ul>
+  <li>All links are relative to the web server root, meaning
+that they should link to, for example, /software/software.html
+and not just software.html. </li>
+  <li>Link should be made pointing to a translated page if it exists,
+else made pointing to the English original. You should NOT make
+links that depend upon content negotiation. One reason is that
+they will fail on mirror servers that do not do content
+negotiation. </li>
+</ul>
+
+<h3 id="SEC5">Translations into Other Languages</h3>
+<ul>
+  <li>The top and bottom of all translations (including the
+English original) should contain links to other translations of
+the document when such exists. See the <a
+ href="/boilerplate.html">http://www.gnu.org/boilerplate.html</a> for an
+example on how to do this. </li>
+</ul>
+
+<h3 id="SEC6">Filenames</h3>
+<ul>
+  <li>Translations should be named <code>PAGENAME.LG.html</code>
+where <code>LG</code> is
+the <a href="#LanguageCodes">language code</a>.
+For example, a German translation of home.html should be
+named <code>home.de.html</code>.</li>
+  <li>There exists a symlink <code>index.html</code> pointing to some
+other file <code>other.html</code>.  Create a symlink
+named <code>index.LG.html</code> pointing to the correct
+translation <code>other.LG.html</code>.</li>
+</ul>
+
+<h3 id="SEC6A">Tools to Help Translators</h3>
+<ul>
+  <li>See <a href="/software/gnun/">GNUnited Nations</a>.</li>
+</ul>
+
+<h3 id="SEC7">Keeping Translations Current</h3>
+<ul>
+  <li>For all translations to be kept current, you should subscribe to
+the <a href="http://lists.gnu.org/mailman/listinfo/www-commits">www-commits</a>
+mailing list.  Then you will get sent one email for each page that is
+modified in cvs (for the www module).  The traffic is around 4-5 mails
+per day, more on weekends. It's suggested that you save all such email
+and burst through them about once a week to make sure the translations
+are current.  You may also use <code>make report TEAM=LANG</code> if
+you have <a href="/software/gnun/">GNUN</a> installed.</li>
+</ul>
+
+<h3 id="TranslationsUnderway">Translations Underway</h3>
+
+<p>
+The language code is followed by the name of the language, and the
+name and e-mail address of the translation team leader.</p>
+
+<p>
+Translation Teams:
+</p>
+<ul>
+<!-- Please keep this list alphabetical-->
+<li><code>??</code> - This place is reserved for your name, when you
+form a translation team for another language.
+</li>
+<li><code>!!</code> - Contact the Translation Managers
+at <a href="mailto:web-translators@gnu.org">&lt;web-translators@gnu.org&gt;</a>
+if you would like to form a Translation Team and be listed as the
+translation team lead for your language.
+</li>
+<li><code>ar</code>
+- <a href="https://savannah.nongnu.org/projects/www-ar">Arabic</a>
+(<a href="https://savannah.gnu.org/users/mbf">Hossam Hossny</a>,
+<a href="https://savannah.gnu.org/users/hatem">Hatem Hossny</a>)
+</li>
+<li><code>az</code> - Azerbaijani
+(<a href="https://savannah.gnu.org/users/igrar">Igrar Huseynov</a>)
+</li>
+<li><code>bg</code>
+- <a href="https://savannah.gnu.org/projects/www-bg">Bulgarian</a>
+(<a href="https://savannah.gnu.org/users/yavor">Yavor Doganov</a>)
+</li>
+<li><code>bn</code>
+- <a href="https://savannah.gnu.org/projects/www-bn">Bengali</a>
+(<a href="https://savannah.gnu.org/users/suzan">Khandakar Mujahidul Islam</a>)
+</li>
+<li><code>ca</code>
+- <a href="https://savannah.gnu.org/projects/www-ca">Catalan</a>
+(<a href="https://savannah.gnu.org/users/puigpe">Miquel Puigpelat</a>)
+</li>
+<li><code>cs</code>
+- <a href="https://savannah.gnu.org/projects/www-cs">Czech</a>
+(<a href="https://savannah.gnu.org/users/mkysela">Martin Kysela</a>)
+</li>
+<li><code>da</code>
+- <a href="https://savannah.gnu.org/projects/www-da">Danish</a>
+(<a href="https://savannah.gnu.org/users/erikg">Erik Gravgaard</a>)
+</li>
+<li><code>de</code>
+- <a href="https://savannah.gnu.org/projects/www-de">German</a>
+(<a href="https://savannah.gnu.org/users/ri_st">Richard Steuer</a>)
+</li>
+<li><code>el</code>
+- <a href="https://savannah.gnu.org/projects/www-el">Greek</a>
+(<a href="https://savannah.gnu.org/users/gzarkadas">Georgios Zarkadas</a>)
+</li>
+<li><code>eo</code>
+- <a href="https://savannah.gnu.org/projects/www-eo">Esperanto</a>
+(<a href="https://savannah.gnu.org/users/civodul">Ludovic Court&egrave;s</a>)
+</li>
+<li><code>es</code>
+- <a href="https://savannah.gnu.org/projects/www-es">Spanish</a>
+(<a href="https://savannah.gnu.org/users/xavi_">Xavier Reina</a>)
+</li>
+<li><code>fa</code>
+- <a href="https://savannah.gnu.org/projects/www-fa">Farsi/Persian</a>
+(<a href="https://savannah.gnu.org/users/someeh">A. E. Some&lsquo;eh</a>)
+</li>
+<li><code>fi</code>
+- <a href="https://savannah.gnu.org/projects/www-fi">Finnish</a>
+(<a href="https://savannah.gnu.org/users/solarius">Ville</a>)
+</li>
+<li><code>fr</code>
+- <a href="https://savannah.gnu.org/projects/www-fr">French</a>
+(New coordinator needed, please contact <a href="mailto:trad-gnu@april.org">
+&lt;trad-gnu@april.org&gt;</a> and <a href="mailto:web-translators@gnu.org">
+&lt;web-translators@gnu.org&gt;</a>)
+</li>
+<li><code>he</code>
+- <a href="https://savannah.gnu.org/projects/www-he">Hebrew</a> 
+(New coordinator needed, please
+contact <a href="mailto:web-translators@gnu.org">
+&lt;web-translators@gnu.org&gt;</a>)
+</li>
+<li><code>id</code>
+- <a href="https://savannah.gnu.org/projects/www-id">Indonesian</a>
+(<a href="https://savannah.gnu.org/users/rms46">Rahmat M. Samik-Ibrahim</a>)
+</li>
+<li><code>it</code>
+- <a href="https://savannah.gnu.org/projects/www-it">Italian</a>
+(<a href="https://savannah.gnu.org/users/pescetti">Andrea Pescetti</a>)
+</li>
+<li><code>ja</code>
+- <a href="https://savannah.gnu.org/projects/www-ja">Japanese</a>
+(<a href="https://savannah.gnu.org/users/mhatta">Masayuki Hatta</a>)
+</li>
+<li><code>ko</code> - Korean (Song Chang-hun,
+<a href="mailto:chsong@gnu.org">&lt;chsong@gnu.org&gt;</a>)
+</li>
+<li><code>ku</code>
+ - <a href="https://savannah.gnu.org/projects/www-ku">Kurdish</a>
+(<a href="https://savannah.gnu.org/users/ulas">Abdullah Ulas</a>)
+</li>
+<li><code>ml</code>
+- <a href="https://savannah.gnu.org/projects/www-ml">Malayalam</a>
+(<a href="https://savannah.gnu.org/users/aeshyamae">Shyam Karanattu</a>)
+</li>
+<li><code>nl</code>
+- <a href="https://savannah.gnu.org/projects/www-nl">Dutch</a>
+(<a href="https://savannah.gnu.org/users/tuijldert">Tom Uijldert</a>)
+</li>
+<li><code>nn</code> - Norwegian Nynorsk
+(<a href="https://savannah.gnu.org/users/att">Andreas Tolfsen</a>,
+permanent coordinator needed)
+</li>
+<li><code>nb</code>
+- <a href="https://savannah.gnu.org/projects/www-nb">Norwegian Bokm&aring;l</a>
+(<a href="https://savannah.gnu.org/users/att">Andreas Tolfsen</a>)
+</li>
+<li><code>pl</code> - Polish (Wojciech
+Kotwica <a href="mailto:wkotwica@post.pl">
+&lt;wkotwica@post.pl&gt;</a>, <a href="http://www.gnu.org.pl">Polish
+translation team</a>)
+</li>
+<li><code>pt</code> - Portuguese 
+(New coordinator needed, please
+contact <a href="mailto:web-translators@gnu.org">
+&lt;web-translators@gnu.org&gt;</a>)
+</li>
+<li><code>pt-br</code>
+- <a href="https://savannah.gnu.org/projects/www-pt-br">Brazilian
+Portuguese</a>
+(New coordinator needed, please
+contact <a href="mailto:web-translators@gnu.org">
+&lt;web-translators@gnu.org&gt;</a>)
+</li>
+<li><code>ro</code>
+- <a href="https://savannah.gnu.org/projects/www-ro">Romanian</a>
+(<a href="https://savannah.gnu.org/users/buzdugan">Laurentiu Buzdugan</a>)
+</li>
+<li><code>ru</code>
+- <a href="https://savannah.nongnu.org/projects/www-ru">Russian</a>
+(<a href="https://savannah.gnu.org/users/jimcrow">Anatoly A. Kazantsev</a>)
+</li>
+<li><code>sk</code>
+- <a href="https://savannah.nongnu.org/projects/www-sk">Slovak</a>
+(<a href="https://savannah.gnu.org/users/dominiks">Dominik Smatana</a>)
+</li>
+<li><code>sq</code>
+- <a href="https://savannah.gnu.org/projects/www-sq">Albanian</a>
+(<a href="https://savannah.gnu.org/users/beso">Besnik Bleta</a>)
+</li>
+<li><code>sr</code>
+- <a href="https://savannah.gnu.org/projects/www-sr">Serbian</a>
+(<a href="https://savannah.gnu.org/users/Ctpajgep">Strahinya Radich</a>)
+</li>
+<li><code>ta</code>
+- <a href="https://savannah.gnu.org/projects/www-ta">Tamil</a>
+(<a href="https://savannah.gnu.org/users/amachutechie">Sri Ramadoss</a>)
+</li>
+<li><code>th</code>
+- <a href="https://savannah.gnu.org/projects/www-th">Thai</a>
+(<a href="https://savannah.gnu.org/users/chaitat">Chaitat Piriyasatit</a>)
+</li>
+<li><code>tl</code>
+- <a href="https://savannah.gnu.org/projects/www-tl">Tagalog</a> 
+(The team is being reformed, please
+contact <a href="mailto:web-translators@gnu.org">
+&lt;web-translators@gnu.org&gt;</a>)
+</li>
+<li><code>tr</code>
+- <a href="https://savannah.gnu.org/projects/www-tr">Turkish</a>
+(<a href="https://savannah.gnu.org/users/exalted">Ali Servet D&ouml;nmez</a>)
+</li>
+<li><code>uk</code>
+- <a href="https://savannah.gnu.org/projects/www-uk">Ukrainian</a>
+(<a href="https://savannah.nongnu.org/users/sudyr">Evgeniy Sudyr</a>)
+</li>
+<li><code>zh-cn</code>
+- <a href="https://savannah.gnu.org/projects/www-zh-cn">Simplified Chinese</a>
+(<a href="https://savannah.gnu.org/users/zeuux">Bill Xu</a>,
+<a href="https://savannah.gnu.org/users/chxiaobin">Chen Xiaobin</a>)
+</li>
+<li><code>zh-tw</code>
+- <a href="https://savannah.gnu.org/projects/www-zh-cn/">Traditional Chinese</a>
+(<a href="https://savannah.gnu.org/users/zeuux">Bill Xu</a>,
+<a href="https://savannah.gnu.org/users/chxiaobin">Chen Xiaobin</a>)
+</li>
+<!-- Please keep this list alphabetical                  -->
+</ul>
+Note that
+<ul>
+  <li><code>en</code> - English </li>
+</ul>
+is a special case.  The bulk of the site is written in English, which
+is the de-facto language of the GNU Project.  We <em>occasionally</em>
+need original documents written in other languages translated into
+English.  It is best to notify the team leader of your language that
+you volunteer, because we always contact them first.  If there is no
+team and you are willing to help with this, please
+contact <a href="mailto:web-translators@gnu.org">
+&lt;web-translators@gnu.org&gt;</a>.
+
+<h3 id="Notes">Final Notes</h3>
+
+If you translate a page for www.gnu.org, please insert the following
+tag, in the <code>&lt;HEAD&gt;...&lt;/HEAD&gt;</code>
+(or <code>&lt;head&gt;</code> for xhtml) section.
+Where <code>web-translators-es@gnu.org</code> is the forwarding
+address for your translations team:
+  <br />
+
+  <pre>
+  &lt;link rev="translated" href="mailto:web-translators-es@gnu.org"&nbsp;/&gt;
+  </pre>
+
+</div>
+
+
+              <div class="inner" id="backtotop">
+<p><a href="#header">back to top</a></p>
+</div>
+
+<div class="inner">
+
+<h2>Check out other Free Software Foundation campaigns</h2>
+
+<ul>
+  <li><a href="http://defectivebydesign.org/">Defective by Design</a>, a campaign against Digital Restrictions Management (DRM)</li>
+  <li><a href="http://windows7sins.org/">Windows 7 Sins</a>, the case against Microsoft and proprietary software</li>
+  <li><a href="http://playogg.org/">PlayOgg</a> &mdash; support free media formats</li>
+</ul>
+
+</div>
+
+
+<div id="footer">
+<p>
+Please send FSF &amp; GNU inquiries to 
+<a href="mailto:gnu@gnu.org">&lt;gnu@gnu.org&gt;</a>.
+There are also <a href="/contact/">other ways to contact</a> 
+the FSF.
+<br />
+Please send broken links and other corrections or suggestions to
+<a href="mailto:web-translators@gnu.org">&lt;web-translators@gnu.org&gt;</a>.
+</p>
+
+<p>
+Please see the 
+<a href="/server/standards/README.translations.html">Translations
+README</a> for information on coordinating and submitting
+translations of this article.
+</p>
+
+<p>
+Copyright &copy; 1999, 2004, 2006, 2007, 2008, 2009 Free Software
+Foundation, Inc.</p>
+<p>Verbatim copying and distribution of this entire article is
+permitted in any medium, provided this notice is preserved.
+</p>
+
+<p>
+Updated:
+<!-- timestamp start -->
+$Date: 2009/10/25 12:20:49 $
+<!-- timestamp end -->
+</p>
+</div>
+<!-- All pages on the GNU web server should have the section about    -->
+<!-- verbatim copying.  Please do NOT remove this without talking     -->
+<!-- with the webmasters first. --> 
+<!-- Please make sure the copyright date is consistent with the document -->
+<!-- and that it is like this "2001, 2002" not this "2001-2002." -->
+
+<div id="translations">
+<h4>Translations of this page</h4>
+
+<!-- Please keep this list alphabetical by language code. -->
+<!-- Comment what the language is for each type, i.e. de is German. -->
+<!-- Write the language name in its own language (Deutsch) in the text. -->
+<!-- If you add a new language here, please -->
+<!-- advise web-translators@gnu.org and add it to -->
+<!--  - /home/www/html/server/standards/README.translations.html -->
+<!--  - one of the lists under the section "Translations Underway" -->
+<!--  - if there is a translation team, you also have to add an alias -->
+<!--  to mail.gnu.org:/com/mailer/aliases -->
+<!-- Please also check you have the 2 letter language code right, cf. -->
+<!-- <http://www.loc.gov/standards/iso639-2/php/code_list.php> -->
+<!-- If ISO 639-1 code is not available, use the 3 letter ISO 639-2. -->
+<!-- Please use W3C normative character entities. -->
+
+<ul class="translations-list">
+<!-- Arabic -->
+<li><a href="/server/standards/README.translations.ar.html">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</a>&nbsp;[ar]</li>
+<!-- Catalan -->
+<li><a href="/server/standards/README.translations.ca.html">catal&#x00e0;</a>&nbsp;[ca]</li>
+<!-- English -->
+<li><a href="/server/standards/README.translations.html">English</a>&nbsp;[en]</li>
+<!-- Spanish -->
+<li><a href="/server/standards/README.translations.es.html">espa&#x00f1;ol</a>&nbsp;[es]</li>
+<!-- French -->
+<li><a href="/server/standards/README.translations.fr.html">fran&#x00e7;ais</a>&nbsp;[fr]</li>
+<!-- Indonesian -->
+<li><a href="/server/standards/README.translations.id.html">Bahasa Indonesia</a>&nbsp;[id]</li>
+<!-- Ukrainian -->
+<li><a href="/server/standards/README.translations.uk.html">&#x0443;&#x043a;&#x0440;&#x0430;&#x0457;&#x043d;&#x0441;&#x044c;&#x043a;&#x0430;</a>&nbsp;[uk]</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

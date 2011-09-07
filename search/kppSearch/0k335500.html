@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      / â??
+      Xiph
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/trac/css/trac.css" type="text/css" /><link rel="stylesheet" href="/trac/css/browser.css" type="text/css" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Xiph" />
+    <script type="text/javascript" src="/trac/js/jquery.js"></script><script type="text/javascript" src="/trac/js/trac.js"></script><script type="text/javascript" src="/trac/js/search.js"></script><script type="text/javascript" src="/trac/js/expand_dir.js"></script><script type="text/javascript" src="/trac/js/keyboard_nav.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/trac/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#jumploc input").hide();
+        $("#jumploc select").change(function () {
+          this.parentNode.parentNode.submit();
+        })
+          /* browsers using old WebKits have issues with expandDir... */
+          var webkit_rev = /AppleWebKit\/(\d+)/.exec(navigator.userAgent);
+          if ( !webkit_rev || (521 - webkit_rev[1]).toString()[0] == "-" )
+            enableExpandDir(null, $("#dirlist tr"), {
+                action: 'inplace',
+                range_min_secs: '63314338622',
+                range_max_secs: '63396988038'
+            });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="https://trac.xiph.org/"><img src="/images/trac-xiph2.png" alt="Xiph" height="58" width="331" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/prefs">Preferences</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li class="last"><a href="/about">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li class="active"><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+            <li class="first "><a href="/changeset/16759/">Last Change</a></li><li class="last"><a href="/log/">Revision Log</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="browser">
+      <h1>
+    <a class="pathentry first" title="Go to root directory" href="/browser">root</a>
+    <br style="clear: both" />
+  </h1>
+      <div id="jumprev">
+        <form action="" method="get">
+          <div>
+            <label for="rev">
+              View revision:</label>
+            <input type="text" id="rev" name="rev" size="6" />
+          </div>
+        </form>
+      </div>
+      <div id="jumploc">
+        <form action="" method="get">
+          <div class="buttons">
+            <label for="preselected">Visit:</label>
+            <select id="preselected" name="preselected">
+              <option selected="selected"></option>
+              <optgroup label="branches">
+                <option value="/browser/trunk">trunk</option><option value="/browser/branches/branch-beta2-rewrite">branches/branch-beta2-rewrite</option><option value="/browser/branches/branch_beta3">branches/branch_beta3</option><option value="/browser/branches/branch_jackoggsvorbis">branches/branch_jackoggsvorbis</option><option value="/browser/branches/branch_monty_20010708">branches/branch_monty_20010708</option><option value="/browser/branches/branch_monty_20010901">branches/branch_monty_20010901</option><option value="/browser/branches/branch_monty_20011009">branches/branch_monty_20011009</option><option value="/browser/branches/branch_monty_20011217">branches/branch_monty_20011217</option><option value="/browser/branches/branch_monty_20020303">branches/branch_monty_20020303</option><option value="/browser/branches/branch_monty_20020507">branches/branch_monty_20020507</option><option value="/browser/branches/branch_postbeta2">branches/branch_postbeta2</option><option value="/browser/branches/dir.xiph.org">branches/dir.xiph.org</option><option value="/browser/branches/etheora-0.1">branches/etheora-0.1</option><option value="/browser/branches/etheora-0.1.1">branches/etheora-0.1.1</option><option value="/browser/branches/giles">branches/giles</option><option value="/browser/branches/holger">branches/holger</option><option value="/browser/branches/jack">branches/jack</option><option value="/browser/branches/kcarnold_randomwork_20010806">branches/kcarnold_randomwork_20010806</option><option value="/browser/branches/kcarnold_work">branches/kcarnold_work</option><option value="/browser/branches/libogg2-branch">branches/libogg2-branch</option><option value="/browser/branches/lowmem-branch">branches/lowmem-branch</option><option value="/browser/branches/lowmem-no-byte">branches/lowmem-no-byte</option><option value="/browser/branches/monty-branch-20010404">branches/monty-branch-20010404</option><option value="/browser/branches/monty-vorbis-aotuv-branch">branches/monty-vorbis-aotuv-branch</option><option value="/browser/branches/monty_branch_20000524">branches/monty_branch_20000524</option><option value="/browser/branches/monty_branch_20000623">branches/monty_branch_20000623</option><option value="/browser/branches/monty_branch_20000724">branches/monty_branch_20000724</option><option value="/browser/branches/monty_branch_20001226">branches/monty_branch_20001226</option><option value="/browser/branches/monty_branch_rc4">branches/monty_branch_rc4</option><option value="/browser/branches/new_acoustics_pending_merge_20000328">branches/new_acoustics_pending_merge_20000328</option><option value="/browser/branches/oddsock">branches/oddsock</option><option value="/browser/branches/ogg2-arc">branches/ogg2-arc</option><option value="/browser/branches/ogg2-theora">branches/ogg2-theora</option><option value="/browser/branches/ogg2-vorbis">branches/ogg2-vorbis</option><option value="/browser/branches/oggdsf_ce_port">branches/oggdsf_ce_port</option><option value="/browser/branches/oggdsf_libspeex_1.1.12_r11188">branches/oggdsf_libspeex_1.1.12_r11188</option><option value="/browser/branches/oggdsf_new_demux">branches/oggdsf_new_demux</option><option value="/browser/branches/pem">branches/pem</option><option value="/browser/branches/release_0_7_1">branches/release_0_7_1</option><option value="/browser/branches/segher-20010328">branches/segher-20010328</option><option value="/browser/branches/segher-20010328-01">branches/segher-20010328-01</option><option value="/browser/branches/speex-branches">branches/speex-branches</option><option value="/browser/branches/theora-1.0">branches/theora-1.0</option><option value="/browser/branches/theora-gumboot">branches/theora-gumboot</option><option value="/browser/branches/theora-monty-post-1-1">branches/theora-monty-post-1-1</option><option value="/browser/branches/theora-multithread">branches/theora-multithread</option><option value="/browser/branches/theora-oil">branches/theora-oil</option><option value="/browser/branches/theora-playtime">branches/theora-playtime</option><option value="/browser/branches/theora_multithread_decode_omp">branches/theora_multithread_decode_omp</option><option value="/browser/branches/theora_multithread_decode_pthread">branches/theora_multithread_decode_pthread</option><option value="/browser/branches/volsung_20010721">branches/volsung_20010721</option><option value="/browser/branches/volsung_flush">branches/volsung_flush</option><option value="/browser/branches/volsung_kc_20011011">branches/volsung_kc_20011011</option><option value="/browser/branches/vorbis-aotuv">branches/vorbis-aotuv</option><option value="/browser/branches/vorbis-malloccheck">branches/vorbis-malloccheck</option><option value="/browser/branches/vorbis-tahseen">branches/vorbis-tahseen</option><option value="/browser/branches/vp32">branches/vp32</option><option value="/browser/branches/xiph-qt">branches/xiph-qt</option>
+              </optgroup><optgroup label="tags">
+                <option value="/browser/tags/ao?rev=13358">tags/ao</option><option value="/browser/tags/ezstream?rev=16384">tags/ezstream</option><option value="/browser/tags/ffmpeg2theora?rev=16589">tags/ffmpeg2theora</option><option value="/browser/tags/libogg-1.1.4rc1?rev=16075">tags/libogg-1.1.4rc1</option><option value="/browser/tags/mgm?rev=14931">tags/mgm</option><option value="/browser/tags/monty-prebranch-20010404?rev=6090">tags/monty-prebranch-20010404</option><option value="/browser/tags/monty_pre_pranch_20000623?rev=6010">tags/monty_pre_pranch_20000623</option><option value="/browser/tags/monty_prebranch_20000724?rev=6002">tags/monty_prebranch_20000724</option><option value="/browser/tags/new_acoustics_premerge_20000508?rev=6009">tags/new_acoustics_premerge_20000508</option><option value="/browser/tags/ogg?rev=16167">tags/ogg</option><option value="/browser/tags/ogg_1_0_release_candidate_4_nonpublic?rev=6054">tags/ogg_1_0_release_candidate_4_nonpublic</option><option value="/browser/tags/paranoia-III-10-0?rev=15006">tags/paranoia-III-10-0</option><option value="/browser/tags/paranoia-III-10-1?rev=15159">tags/paranoia-III-10-1</option><option value="/browser/tags/paranoia-III-10-2?rev=15306">tags/paranoia-III-10-2</option><option value="/browser/tags/paranoia-III-10pre0?rev=11815">tags/paranoia-III-10pre0</option><option value="/browser/tags/paranoia-III-10pre2?rev=14895">tags/paranoia-III-10pre2</option><option value="/browser/tags/paranoia-III-alpha1?rev=6073">tags/paranoia-III-alpha1</option><option value="/browser/tags/paranoia-III-alpha2?rev=6075">tags/paranoia-III-alpha2</option><option value="/browser/tags/paranoia-III-alpha3?rev=6074">tags/paranoia-III-alpha3</option><option value="/browser/tags/paranoia-III-alpha4?rev=6070">tags/paranoia-III-alpha4</option><option value="/browser/tags/paranoia-III-alpha5?rev=6069">tags/paranoia-III-alpha5</option><option value="/browser/tags/paranoia-III-alpha6?rev=6072">tags/paranoia-III-alpha6</option><option value="/browser/tags/paranoia-III-alpha7?rev=6071">tags/paranoia-III-alpha7</option><option value="/browser/tags/paranoia-III-alpha8?rev=6068">tags/paranoia-III-alpha8</option><option value="/browser/tags/paranoia-III-alpha9?rev=6067">tags/paranoia-III-alpha9</option><option value="/browser/tags/paranoia-III-alpha9-1?rev=6052">tags/paranoia-III-alpha9-1</option><option value="/browser/tags/paranoia-III-alpha9-2?rev=6089">tags/paranoia-III-alpha9-2</option><option value="/browser/tags/paranoia-III-alpha9-3?rev=6053">tags/paranoia-III-alpha9-3</option><option value="/browser/tags/paranoia-III-alpha9-4?rev=6049">tags/paranoia-III-alpha9-4</option><option value="/browser/tags/paranoia-III-alpha9-5?rev=6079">tags/paranoia-III-alpha9-5</option><option value="/browser/tags/paranoia-III-alpha9-6?rev=6051">tags/paranoia-III-alpha9-6</option><option value="/browser/tags/paranoia-III-alpha9-7?rev=6050">tags/paranoia-III-alpha9-7</option><option value="/browser/tags/paranoia-III-alpha9-8?rev=6047">tags/paranoia-III-alpha9-8</option><option value="/browser/tags/positron-1_0?rev=6055">tags/positron-1_0</option><option value="/browser/tags/pre-fp-merge?rev=5978">tags/pre-fp-merge</option><option value="/browser/tags/pre-libogg2-branch?rev=5992">tags/pre-libogg2-branch</option><option value="/browser/tags/pre-lowmem-branch?rev=6082">tags/pre-lowmem-branch</option><option value="/browser/tags/pre-rel-1-0-branch?rev=6092">tags/pre-rel-1-0-branch</option><option value="/browser/tags/pre-segher-20010328?rev=6039">tags/pre-segher-20010328</option><option value="/browser/tags/pre-segher-20010328-01?rev=6085">tags/pre-segher-20010328-01</option><option value="/browser/tags/pre_branch_2000328?rev=6000">tags/pre_branch_2000328</option><option value="/browser/tags/pre_branch_jackoggsvorbis?rev=5993">tags/pre_branch_jackoggsvorbis</option><option value="/browser/tags/pre_branch_postbeta2?rev=6080">tags/pre_branch_postbeta2</option><option value="/browser/tags/pre_monty_branch_20000524?rev=5997">tags/pre_monty_branch_20000524</option><option value="/browser/tags/pre_monty_branch_20001226?rev=5990">tags/pre_monty_branch_20001226</option><option value="/browser/tags/prebranch_beta3?rev=6091">tags/prebranch_beta3</option><option value="/browser/tags/prebranch_monty_20010708?rev=6048">tags/prebranch_monty_20010708</option><option value="/browser/tags/prebranch_monty_20010901?rev=5998">tags/prebranch_monty_20010901</option><option value="/browser/tags/prebranch_monty_20011009?rev=6008">tags/prebranch_monty_20011009</option><option value="/browser/tags/prebranch_monty_20011217?rev=5995">tags/prebranch_monty_20011217</option><option value="/browser/tags/prebranch_monty_20020303?rev=5999">tags/prebranch_monty_20020303</option><option value="/browser/tags/prebranch_monty_20020507?rev=6086">tags/prebranch_monty_20020507</option><option value="/browser/tags/prebranch_monty_rc4?rev=5991">tags/prebranch_monty_rc4</option><option value="/browser/tags/public-beta-1?rev=13337">tags/public-beta-1</option><option value="/browser/tags/release_0_2?rev=6003">tags/release_0_2</option><option value="/browser/tags/snatch-release-20011116?rev=6061">tags/snatch-release-20011116</option><option value="/browser/tags/souffleur?rev=14789">tags/souffleur</option><option value="/browser/tags/speex-tags?rev=13116">tags/speex-tags</option><option value="/browser/tags/tarkin?rev=13343">tags/tarkin</option><option value="/browser/tags/theora?rev=16602">tags/theora</option><option value="/browser/tags/theora-1.0?rev=15490">tags/theora-1.0</option><option value="/browser/tags/vorbis?rev=16247">tags/vorbis</option><option value="/browser/tags/vorbis-java?rev=13521">tags/vorbis-java</option><option value="/browser/tags/xiph-qt?rev=16135">tags/xiph-qt</option>
+              </optgroup>
+            </select>
+            <input type="submit" value="Go!" title="Jump to the chosen preselected path" />
+          </div>
+        </form>
+      </div>
+        <table class="listing" id="dirlist">
+          <thead>
+            <tr>
+                <th class="name asc">
+                  <a title="Sort by name (descending)" href="/browser/?desc=1">Name</a>
+                </th>
+                <th class="size">
+                  <a title="Sort by size" href="/browser/?order=size">Size</a>
+                </th>
+              <th class="rev">Rev</th>
+                <th class="date">
+                  <a title="Sort by date" href="/browser/?order=date">Age</a>
+                </th>
+              <th class="change">Last Change</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+      <tr class="odd">
+        <td class="name">
+          <a class="dir" title="View Dir" href="/browser/branches">branches</a>
+        </td>
+        <td class="size"><span title=" bytes"></span></td>
+        <td class="rev">
+          <a title="View Revision Log" href="/log/branches?rev=16759">16519</a>
+        </td>
+        <td class="age" style="border-color: rgb(240,136,150)">
+          <a class="timeline" href="/timeline?from=2009-08-25T23%3A03%3A50Z-0700&amp;precision=second" title="2009-08-25T23:03:50Z-0700 in Timeline">4 months</a>
+        </td>
+        <td class="change">
+          <span class="author">xiphmont:</span>
+          <span class="change">
+              Correct same bug setting pixel aspect ration on y4o input
+          </span>
+        </td>
+      </tr>
+      <tr class="even">
+        <td class="name">
+          <a class="dir" title="View Dir" href="/browser/experimental">experimental</a>
+        </td>
+        <td class="size"><span title=" bytes"></span></td>
+        <td class="rev">
+          <a title="View Revision Log" href="/log/experimental?rev=16759">16306</a>
+        </td>
+        <td class="age" style="border-color: rgb(235,136,155)">
+          <a class="timeline" href="/timeline?from=2009-07-20T17%3A24%3A32Z-0700&amp;precision=second" title="2009-07-20T17:24:32Z-0700 in Timeline">5 months</a>
+        </td>
+        <td class="change">
+          <span class="author">giles:</span>
+          <span class="change">
+              Remove an obsolete branch.
+          </span>
+        </td>
+      </tr>
+      <tr class="odd">
+        <td class="name">
+          <a class="dir" title="View Dir" href="/browser/icecast">icecast</a>
+        </td>
+        <td class="size"><span title=" bytes"></span></td>
+        <td class="rev">
+          <a title="View Revision Log" href="/log/icecast?rev=16759">16691</a>
+        </td>
+        <td class="age" style="border-color: rgb(249,136,141)">
+          <a class="timeline" href="/timeline?from=2009-11-04T21%3A32%3A02Z-0800&amp;precision=second" title="2009-11-04T21:32:02Z-0800 in Timeline">7 weeks</a>
+        </td>
+        <td class="change">
+          <span class="author">karl:</span>
+          <span class="change">
+              kh18 update. The important/visible stuff
+. memory corruption fix in  â?¦
+          </span>
+        </td>
+      </tr>
+      <tr class="even">
+        <td class="name">
+          <a class="dir" title="View Dir" href="/browser/releases">releases</a>
+        </td>
+        <td class="size"><span title=" bytes"></span></td>
+        <td class="rev">
+          <a title="View Revision Log" href="/log/releases?rev=16759">16699</a>
+        </td>
+        <td class="age" style="border-color: rgb(249,136,141)">
+          <a class="timeline" href="/timeline?from=2009-11-05T13%3A41%3A22Z-0800&amp;precision=second" title="2009-11-05T13:41:22Z-0800 in Timeline">7 weeks</a>
+        </td>
+        <td class="change">
+          <span class="author">giles:</span>
+          <span class="change">
+              Add checksums for the cortado 0.5.1 builds.
+          </span>
+        </td>
+      </tr>
+      <tr class="odd">
+        <td class="name">
+          <a class="dir" title="View Dir" href="/browser/tags">tags</a>
+        </td>
+        <td class="size"><span title=" bytes"></span></td>
+        <td class="rev">
+          <a title="View Revision Log" href="/log/tags?rev=16759">16602</a>
+        </td>
+        <td class="age" style="border-color: rgb(244,136,146)">
+          <a class="timeline" href="/timeline?from=2009-10-01T11%3A11%3A51Z-0700&amp;precision=second" title="2009-10-01T11:11:51Z-0700 in Timeline">3 months</a>
+        </td>
+        <td class="change">
+          <span class="author">giles:</span>
+          <span class="change">
+              Move a misplaced tag.
+          </span>
+        </td>
+      </tr>
+      <tr class="even">
+        <td class="name">
+          <a class="dir" title="View Dir" href="/browser/trunk">trunk</a>
+        </td>
+        <td class="size"><span title=" bytes"></span></td>
+        <td class="rev">
+          <a title="View Revision Log" href="/log/trunk?rev=16759">16759</a>
+        </td>
+        <td class="age" style="border-color: rgb(254,136,136)">
+          <a class="timeline" href="/timeline?from=2009-12-19T13%3A15%3A15Z-0800&amp;precision=second" title="2009-12-19T13:15:15Z-0800 in Timeline">37 hours</a>
+        </td>
+        <td class="change">
+          <span class="author">giles:</span>
+          <span class="change">
+              Use /bin/echo explictly in autogen.sh so -n works on MacOS X.
+On MacOS X,  â?¦
+          </span>
+        </td>
+      </tr>
+      <tr class="odd">
+        <td class="name">
+          <a class="dir" title="View Dir" href="/browser/websites">websites</a>
+        </td>
+        <td class="size"><span title=" bytes"></span></td>
+        <td class="rev">
+          <a title="View Revision Log" href="/log/websites?rev=16759">16751</a>
+        </td>
+        <td class="age" style="border-color: rgb(254,136,136)">
+          <a class="timeline" href="/timeline?from=2009-12-16T20%3A40%3A07Z-0800&amp;precision=second" title="2009-12-16T20:40:07Z-0800 in Timeline">4 days</a>
+        </td>
+        <td class="change">
+          <span class="author">jm:</span>
+          <span class="change">
+              updated soundjack link
+          </span>
+        </td>
+      </tr>
+      <tr class="even">
+        <td class="name">
+          <a class="dir" title="View Dir" href="/browser/websites-new">websites-new</a>
+        </td>
+        <td class="size"><span title=" bytes"></span></td>
+        <td class="rev">
+          <a title="View Revision Log" href="/log/websites-new?rev=16759">12935</a>
+        </td>
+        <td class="age" style="border-color: rgb(136,136,255)">
+          <a class="timeline" href="/timeline?from=2007-05-09T13%3A17%3A02Z-0700&amp;precision=second" title="2007-05-09T13:17:02Z-0700 in Timeline">3 years</a>
+        </td>
+        <td class="change">
+          <span class="author">sping:</span>
+          <span class="change">
+              Remove /websites-new/xspf.org in consensus with Lucas Gonze and Ralph  â?¦
+          </span>
+        </td>
+      </tr>
+
+          </tbody>
+        </table>
+      <div id="help">
+        <strong>Note:</strong> See <a href="/wiki/TracBrowser">TracBrowser</a>
+        for help on using the browser.
+      </div>
+      <div id="anydiff">
+        <form action="/diff" method="get">
+          <div class="buttons">
+            <input type="hidden" name="new_path" value="/" />
+            <input type="hidden" name="old_path" value="/" />
+            <input type="hidden" name="new_rev" value="16759" />
+            <input type="hidden" name="old_rev" value="16759" />
+            <input type="submit" value="View changes..." title="Select paths and revs for Diff" />
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/trac/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right"><a href="http://xiph.org">xiph.org</a> :: <a href="http://vorbis.com">vorbis.com</a> :: <a href="http://icecast.org">icecast.org</a> :: <a href="http://speex.org">speex.org</a> :: <a href="http://flac.sf.net">flac.sf.net</a> :: <a href="http://theora.org">theora.org</a> :: <a href="http://xiph.org/paranoia/"> paranoia</a></p>
+    </div>
+  </body>
+</html>

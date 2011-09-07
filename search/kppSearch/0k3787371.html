@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="icon" href="/images/logos/xiph.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="/images/logos/xiph.ico" type="image/x-icon"/>
+  <link rel="stylesheet" title="Default 50em Width" media="screen" href="/css/screen.css" type="text/css"/>
+  <link rel="alternate stylesheet" title="Xiph.org 50em Width" media="screen" href="/css/screen-2.css" type="text/css"/>
+
+<!-- Enter custom page information and styles here -->
+
+<title>Xiph.org: Ogg</title>
+</head>
+<body>
+<div id="xiphbar_outer" style="@import url(/common/xiphbar.css);">
+<table id="xiphbar" border="0" cellpadding="0" cellspacing="0">
+<tr>
+
+  <td>
+    <img id="xiphbanner" src="http://xiph.org/images/logos/xiphbar.png" 
+         alt="Xiph logo" width="231" height="17"/>
+  </td>
+
+  <td id="xiphlinks" align="right">
+    <a href="http://www.xiph.org/">Xiph.org</a>
+    <a href="http://www.vorbis.com/">Vorbis</a>
+    <a href="http://www.theora.org/">Theora</a>
+    <a href="http://www.icecast.org/">Icecast</a>
+    <a href="http://www.speex.org/">Speex</a>
+    <a href="http://www.celt-codec.org/">CELT</a>
+    <a href="http://flac.sourceforge.net/">FLAC</a>
+    <a href="http://www.xspf.org/">XSPF</a>
+  </td>
+
+</tr>
+</table>
+</div>
+
+
+<div id="thepage">
+
+<div id="xiphlogo">
+  <a href="http://www.xiph.org/"><img src="/images/logos/fish_xiph_org.png" alt="Fish Logo and Xiph.org"/></a>
+</div>
+
+<div id="navbar">
+  <ul>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/press/">Press</a></li>
+    <li><a href="/donate/">Donate</a></li>
+    <li><a href="/contact/">Contact</a></li>
+    <li><a href="http://wiki.xiph.org/index.php/Main_Page">Wiki</a></li>
+  </ul>
+  <ul>
+    <li><a href="/downloads/">Downloads</a></li>
+    <li><a href="http://trac.xiph.org/">Bugs</a></li>
+    <li><a href="/doc/">Documentation</a></li>
+  </ul>
+  <ul>
+    <li><a href="/#resources">Resources by Project</a></li>
+  </ul>
+</div>
+
+<div id="banners"></div>
+
+<div id="content">
+
+<!--  All your page content goes here  -->
+
+<h1>The Ogg container format</h1>
+
+<p>
+Ogg is a multimedia container format, and the native file
+and stream format for the Xiph.org multimedia codecs. As
+with all Xiph.org technology is it an open format free
+for anyone to use.
+</p>
+
+<p>
+As with most container formats it encapsulates raw compressed
+data and allows the interleaving of audio and video data inside
+a single convient format. Other examples of container formats
+are Quicktime <tt>.mov</tt>, the MPEG program stream, and AVI.
+</p>
+
+<p>
+In addition to encapsulation and interleave of multiple data
+streams, Ogg provides packet framing, error detection, 
+and periodic timestamps for seeking, and in a small, bounded
+percentage bitrate overhead.
+</p>
+
+<p>
+Ogg is a stream oriented container, meaning it can be written
+and read in one pass, making it a natural fit for internet 
+streaming and use in processing pipelines. This stream orientation
+is the major design difference over other file-based container
+formats.
+</p>
+
+<h2>Documentation</h2>
+
+<p>Technical documentation on the Ogg container is available for the 
+following areas:</p>
+
+<ul>
+<li><a href="/ogg/doc/oggstream.html">General structural overview</a></li>
+<li><a href="/ogg/doc/framing.html">Detailed header and parsing specification</a></li>
+<li><a href="/ogg/doc/ogg-multiplex.html">Issues and practices for multiplexed Ogg streams</a></li>
+<li><a href="/ogg/doc/skeleton.html">The Ogg Skeleton Metadata Bitstream</a></li>
+</ul>
+
+<p>The recommended MIME type for Ogg files and network streams depends on content.  For video, audio, and applications there's <tt>video/ogg</tt>, <tt>audio/ogg</tt> and <tt>application/ogg</tt> respectively.</p>
+
+<ul>
+<li><a href="/ogg/doc/libogg/">API Documentation for the libogg reference implementation</a></li>
+</ul>
+
+<p>The Ogg bitstream format is also documented in the following IETF 
+RFCs:</p>
+
+<ul>
+<li><a href="/ogg/doc/rfc3533.txt">RFC 3533</a> The Ogg Encapsulation Format Version 0
+(<a href="http://ietf.org/rfc/rfc3533.txt">IETF mirror</a>)</li>
+<li><a href="/ogg/doc/rfc5334.txt">RFC 5334</a> Ogg Media Types
+(<a href="http://ietf.org/rfc/rfc5334.txt">IETF mirror</a>)</li>
+</ul>
+
+<p>
+
+</div><!-- content -->
+
+<div id="copyright">
+  <p>The Xiph Fish Logo and the Vorbis.com many-fish logos are 
+  trademarks (&trade;) of Xiph.Org.<br/>
+
+  These pages &copy; 1994 - 2009 Xiph.Org. All rights reserved.</p>
+
+  <p style="color:#FFFFFF;"><!--#config timefmt="%B %d, %Y" -->Last Modified: <!--#echo var="LAST_MODIFIED" --></p>
+</div>
+
+</div><!-- thepage -->
+
+</body>
+</html>
+

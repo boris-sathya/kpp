@@ -1,0 +1,297 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Apple - Where to Buy</title>
+	<meta http-equiv="pics-label" content='(pics-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://www.apple.com" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://www.apple.com" r (n 0 s 0 v 0 l 0))'>
+	<meta http-equiv="Expires" content="Fri, 26 Mar 1999 23:59:59 GMT">
+	<meta name="Author" content="Apple Inc.">
+	<meta name="Category" content="">
+	<meta name="Description" content="">
+	<meta name="viewport" content="width=1024"/>
+<script src="http://images.apple.com/global/scripts/lib/prototype.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://images.apple.com/global/scripts/lib/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://images.apple.com/global/scripts/browserdetect.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://images.apple.com/global/scripts/apple_core.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://images.apple.com/global/scripts/search_decorator.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="http://images.apple.com/global/scripts/store_selector.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="http://images.apple.com/global/nav/styles/nav.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="http://images.apple.com/global/styles/base.css" type="text/css" charset="utf-8">
+	
+	<style type="text/css">
+/*		#main a:link, #main a:visited, #main a:active { text-decoration:none; }
+		#main a:hover { text-decoration: underline; }*/
+		#content { padding-left: 0; padding-right: 0; }
+		#buynow { margin-top: -35px; margin-left: 20px; }
+
+		#main .grid3col { margin-top: 30px; }
+		
+		#main h2 { font-weight: normal; color: #76797c; border-bottom: 1px solid #bdc2c6; padding-bottom: .3em; margin: 0 0 .5em 0; }
+		#main #shoponline { background: url(http://images.apple.com/buy/images/shoponline_20090402.jpg) no-repeat left top; }
+		#main #shopretail { background: url(http://images.apple.com/buy/images/shopretail.jpg) no-repeat left top;  }
+		#main #findareseller { background: url(http://images.apple.com/buy/images/findareseller.jpg) no-repeat left top; }
+		#main #shoponline, #main #shopretail, #main #findareseller { width: 313px; height: 269px; text-indent: -9999px; }
+		#main #shoponline h2, #main #shopretail h2, #main #findareseller h2 { border: 0; }
+
+		form#store-selector { margin-top: -65px; margin-left: 20px; }
+		select#locationMenu, select#storeMenu { width: 175px; font-size: 11px; position: relative; }
+		select#locationMenu { margin: 4px 0 8px 0; }
+		select#storeMenu { margin: 0 0 3px 0; }
+		
+		form#reseller-search { margin-top: -35px; margin-left: 20px; }
+	</style>
+	<script type="text/javascript" charset="utf-8">
+		Event.observe(window, 'load', function() {
+			var initStoreSelector = function(requestedCountryName) {
+				return (function(response) {
+					var responseDocument = response.responseXML.documentElement;
+					var countriesWithStores = responseDocument.getElementsByTagName('country');
+					var requestedCountry = null;
+					for(var i = 0; i < countriesWithStores.length; i++) {
+						var country = countriesWithStores[i];
+						if (country.getAttribute('name') == requestedCountryName) {
+							requestedCountry = country;
+							break;
+						}
+					}
+					new StoreSelector(requestedCountry, $('locationMenu'), $('storeMenu'), false, 'store');
+				});
+			}
+			new Ajax.Request('/main/rss/retail/stores.xml', {
+				method: 'get',
+				onSuccess: initStoreSelector("United States")})
+		});
+	</script>
+</head>
+<body>
+	<script src="http://images.apple.com/global/nav/scripts/shortcuts.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var searchSection = 'global';
+	var searchCountry = 'us';
+</script>
+<div id="globalheader">
+	<!--googleoff: all-->
+	<ul id="globalnav">
+		<li id="gn-apple"><a href="/">Apple</a></li>
+		<li id="gn-store"><a href="http://store.apple.com">Store</a></li>
+		<li id="gn-mac"><a href="/mac/">Mac</a></li>
+		<li id="gn-ipoditunes"><a href="/itunes/">iPod + iTunes</a></li>
+		<li id="gn-iphone"><a href="/iphone/">iPhone</a></li>
+		<li id="gn-downloads"><a href="/downloads/">Downloads</a></li>
+		<li id="gn-support"><a href="/support/">Support</a></li>
+	</ul>
+	<!--googleon: all-->
+	<div id="globalsearch">
+			<form action="http://searchcgi.apple.com/cgi-bin/sp/nph-searchpre11.pl" method="post" class="search" id="g-search">
+			<div>
+				<input type="hidden" value="utf-8" name="oe" id="search-oe">
+				<input type="hidden" value="p" name="access" id="search-access">
+				<input type="hidden" value="us_only" name="site" id="search-site">
+				<input type="hidden" value="lang_en" name="lr" id="search-lr">
+				<label for="sp-searchtext"><span class="prettyplaceholder">Search</span><input type="search" name="q" id="sp-searchtext" class="g-prettysearch applesearch" accesskey="s"></label>
+			</div>
+		</form>
+		<div id="sp-results"><div class="inside"></div></div>
+	</div>
+</div>
+
+	<div id="top">
+<!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+<script type="text/javascript">
+/* RSID: */
+var s_account="appleglobal,appleusbuy"
+</script>
+
+
+<script type="text/javascript" src="http://images.apple.com/global/metrics/js/s_code_h.js"></script>
+
+<script type="text/javascript">
+s.pageName=AC.Tracking.pageName()+" (US)";
+s.server=""
+s.channel="www.us.buy"
+s.pageType=""
+s.prop1=""
+s.prop2=""
+s.prop3=""
+s.prop4=document.URL;
+s.prop5=""
+
+/* E-commerce Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events=""
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)</script>
+<!-- End SiteCatalyst code version: H.8. -->
+</div>
+
+	<div id="container">
+		<div id="main">
+			<div id="content">
+			
+<h1><img src="http://images.apple.com/buy/images/index_title.gif" alt="Where can I buy Apple Products?" width="442" height="30"></h1>
+
+<div class="grid3col">
+	<div class="column first">
+		<div id="shoponline">
+			<h2>Shop Online.</h2>
+			<p>Direct from Apple. 24-hours a day, or call 1-800-MY APPLE (1-800-692-7753)</p>
+		</div>
+		<p id="buynow"><a href="http://store.apple.com/"><img src="http://images.apple.com/buy/images/shopnow.gif" alt="Shop now" width="96" height="19" border="0"></a></p>
+	</div>
+	<div class="column">
+		<div id="shopretail">
+			<h2>Shop Retail.</h2>
+			<p>Visit a retail store and test drive an Apple product today.</p>
+		</div>
+		<form id="store-selector">
+			<div>				
+				<select name="state" id="locationMenu">
+					<option selected="selected" value="">Select a State</option>
+				</select>
+				
+				<select name="store" disabled="disabled" id="storeMenu">
+					<option selected="selected" value="">Select an Apple Store</option>
+				</select>
+			</div>
+		</form>
+	</div>
+	<div class="column last">
+		<div id="findareseller">
+			<h2>Find a Reseller.</h2>
+			<p>Thousands of Apple resellers can help you discover the Apple product thats right for you.</p>
+		</div>
+		<form action="http://www.apple.com/buy/locator/index.html" method="get" accept-charset="utf-8" id="reseller-search">
+			<label for="resellersearch">City and State or Zip
+				<input type="text" name="q" id="resellersearch" class="reseller prettysearch">
+			</label>
+		</form>
+	</div>
+</div>
+
+<div class="grid3col">
+	<div class="column first">
+		<h2>Are discounts available?</h2>
+		<h3><a href="/education/store/">Apple Store for Education</a></h3>
+		<p>Get discounts at the Apple Store for Education, 24 hours a day.</p>
+		
+		<h3><a href="/r/store/government/">Apple Government Stores</a></h3>
+		<p>Powerful solutions at special prices for government agencies and employees.</p>
+		
+		<h3><a href="/promo/">Product Promotions</a></h3>
+		<p>Find out about the latest promotional discounts on Apple products.</p>
+		
+		
+		<h2>More Stores</h2>
+		<h3><a href="/smallbusiness/store/">Apple Store for Business</a></h3>
+		<p>Find a variety of recommendations to meet your business needs.</p>
+		
+		<h3><a href="http://store.apple.com/Catalog/US/Images/intlstoreroutingpage.html">International Apple Stores</a></h3>
+		<p>Buy directly from a worldwide Apple Online Store near you.</p>
+				
+	</div>
+	<div class="column">
+		<h2>Is financing available?</h2>
+		<h3><a href="http://store.apple.com/1-800-MY-APPLE/WebObjects/AppleStore?instantcredit=yes">Financing</a></h3>
+		<p>Get a new Mac for a great low monthly rate.</p>
+		
+		<h3><a href="/financing/">Customer Financing for Education</a></h3>
+		<p>Get instant financing on Apple computers, software, and accessories.</p>
+		
+		<h3><a href="/education/financing/">Leasing for Schools and Universities</a></h3>
+		<p>Design a leasing program that&#146;s right for your institution.</p>
+		
+		<h3><a href="/financing/leases/commercial/">Leasing for Businesses</a></h3>
+		<p>Several lease options designed to fit your business needs.</p>
+		
+		
+		<h2>Support</h2>
+		<h3><a href="/support/products/">AppleCare Products and Services</a></h3>
+		<p>A range of service and support products to meet your needs.</p>
+		
+		<h3><a href="http://www.info.apple.com/usen/cip/">Do-It-Yourself Repair and Upgrade</a></h3>
+		<p>Install replacement parts or memory upgrades quickly and easily.</p>
+		
+		<h3><a href="/buy/locator/service/">Service Provider Locator</a></h3>
+		<p>Find an Apple Retail Store or Apple Authorized Service Provider.</p>
+		
+		<h3><a href="/training/">Apple Training</a></h3>
+		<p>High-quality training on Apple products and technologies worldwide.</p>
+
+	</div>
+	<div class="column last">
+		<h2>Authorized Resellers</h2>
+		<h3><a href="http://solutionprofessionals.apple.com/catalog/">Apple Catalog &amp; Internet Resellers</a></h3>
+		<p>Shop online for Apple and a wide-ranging selection of third-party solutions.</p>
+		
+		<h3><a href="http://solutionprofessionals.apple.com/resellers/">Apple Corporate Resellers</a></h3>
+		<p>Valuable IT lifecycle services for integrating and managing customized Mac and multi-platform solutions in your existing environment.</p>
+		
+		<h3><a href="http://solutionprofessionals.apple.com/asc/">Apple Solution Consultants</a></h3>
+		<p>Get direct, personalized assistance from Apple employees in the Apple Shops found in select Best Buy locations across the U.S.</p>
+		
+		<h3><a href="http://solutionprofessionals.apple.com/Specialists/">Apple Specialists</a></h3>
+		<p>Installation, service, and support for Mac-based solutions geared for small and medium businesses.</p>
+		
+		<h3><a href="http://solutionprofessionals.apple.com/var/">Apple Value Added Resellers</a></h3>
+		Comprehensive implementation and integration services for audio, broadcast, film, photography, publishing, and video professionals.</p>
+		
+		<h2>Training &amp; Services</h2>
+		<h3><a href="http://consultants.apple.com/">Apple Consultants Network</a></h3>
+		<p>Easily locate a certified consultant to help you with your technology solution.</p>
+
+		<h3><a href="http://solutionprofessionals.apple.com/aasp/">Apple Authorized Service Providers</a></h3>
+		<p>Service for Apple products from certified technicians using genuine Apple parts.</p>
+				
+		<h3><a href="http://solutionprofessionals.apple.com/aatc/">Apple Authorized Training Centers</a></h3>
+		<p>Comprehensive curriculum and certification exams - delivered exclusively by Apple Certified Trainers.</p>
+		
+		<h3><a href="http://seminars.apple.com/">Seminars, Training &amp; Events</a></h3>
+		<p>Find out about the latest seminars, training and events worldwide.</p>
+		
+	</div>
+</div>
+			</div><!--/content-->
+		</div><!--/main-->
+	</div><!--/container-->
+	<div id="globalfooter">
+		<div id="breadory">
+				<ol id="breadcrumbs">
+					<li class="home"><a href="/">Home</a></li>
+					<li>Where to Buy</li>
+				</ol>
+			
+		</div><!--/breadcrumbs-->
+		<p class="gf-buy">Shop the <a href="/store/">Apple Online Store</a> (1-800-MY-APPLE), visit an <a href="/retail/">Apple Retail Store</a>, or find a <a href="/buy/locator/">reseller</a>.</p>
+
+<ul class="gf-links piped">
+	<li><a href="/about/" class="first">Apple Info</a></li>
+	<li><a href="/sitemap/">Site Map</a></li>
+	<li><a href="/hotnews/">Hot News</a></li>
+	<li><a href="/rss/">RSS Feeds</a></li>
+	<li><a href="/contact/" class="contact_us">Contact Us</a></li>
+	<li><a href="/choose-your-country/" class="choose" title="Choose your country or region."><img src="http://images.apple.com/home/elements/worldwide_us.png" alt="United States" width="22" height="22"></a></li>
+</ul>
+	
+<div class="gf-sosumi">
+	<p>Copyright © 2009 Apple Inc. All rights reserved.</p>
+	<ul class="piped">
+		<li><a href="/legal/terms/site.html" class="first">Terms of Use</a></li>
+		<li><a href="/legal/privacy/">Privacy Policy</a></li>
+	</ul>
+</div>
+
+
+	</div><!--/globalfooter-->
+</body>
+</html>

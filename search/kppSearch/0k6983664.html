@@ -1,0 +1,570 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+		<meta http-equiv="Content-Language" content="en-us" />
+		
+		<title>Adobe - Adobe Reader download - All versions</title> 
+	
+<link rel="shortcut icon" href="http://wwwimages.adobe.com/www.adobe.com/favicon.ico" type="image/x-icon" />
+<!--master.com.adobe.cfm -->
+<!-- http://www.adobe.com/lib/com.adobe.ssi -->
+<!-- com.adobe.ssi,v 1.12 2008/07/29 06:49:04 kahamed Exp -->
+<script type="text/javascript" src="http://wwwimages.adobe.com/www.adobe.com/lib/com.adobe/_all.js"></script>
+<link type="text/css" rel="stylesheet" href="http://wwwimages.adobe.com/www.adobe.com/lib/com.adobe/template/screen.css" media="screen" charset="utf-8" />
+<link type="text/css" rel="stylesheet" href="http://wwwimages.adobe.com/www.adobe.com/lib/com.adobe/template/print.css" media="print" charset="utf-8" />
+<script type="text/javascript" src="http://wwwimages.adobe.com/www.adobe.com/lib/com.adobe/template/fixH1Size.js"></script>
+<!-- $Id: com.adobe.search.buddy.ssi,v 1.4 2008/08/19 20:48:55 mok Exp $ -->
+<script type="text/javascript" src="http://wwwimages.adobe.com/www.adobe.com/lib/com.adobe/module/SearchBuddy.js"></script>
+<script type="text/javascript">
+document.observe('dom:loaded', function() {
+	new SearchBuddy();
+});
+</script>
+	<script type="text/javascript" src="http://wwwimages.adobe.com/www.adobe.com/lib/yui/_all_adc_yui.js"></script> 
+<script type="text/javascript">adobe.Dwt.require("user", "swf", "dropdown", "form", "pod", "tooltip", "sifr", "carousel");</script>
+
+    <script type="text/javascript" src="http://wwwimages.adobe.com/www.adobe.com/downloadcenter/js/reader.js"></script>
+	<script type="text/javascript" src="http://wwwimages.adobe.com/www.adobe.com/downloadcenter/js/deeppurple.js"></script>
+    <script type="text/javascript">
+    
+    // store any addon offers in json format that user might be 
+    // eligible for (based on their *actual* ua string)
+    var addonsjson = [];
+    var locPathToAdobe = "http://www.adobe.com";
+    
+	registerOnLoad(function() {    
+			try {
+				new RDC().bootstrap(true);
+			}
+			catch (e) {
+				errorHandler(e);
+		  }
+	    });
+
+    </script>
+    
+    <link href="http://wwwimages.adobe.com/www.adobe.com/downloadcenter/css/reader.css" rel="stylesheet" rev="stylesheet" type="text/css" media="screen" charset="utf-8" /><script type='text/javascript'>var locale = 'en';</script></head>
+<body>
+<!--googleoff: all--><a href="/help/accessibility.html" tabindex="1" id="accesslink">Accessibility</a><!--googleon: all--> <!--googleoff: index-->
+<!--$Revision: 1.29.4.1 $-->
+<form id="globalnav-search" class="en" name="globalnav-search" method="get" action="http://www.adobe.com/go/gnav_search" accept-charset="utf-8">
+	<dl id="globalnav" class="clear-after">
+		<dt id="adobe-logo"><a href="http://www.adobe.com/go/gn_home_logo"><img id="adobe-logo-lq" src="http://wwwimages.adobe.com/www.adobe.com/ubi/globalnav/include/adobe-lq.png" alt="Adobe" width="43" height="72" /><img id="adobe-logo-hq" src="http://wwwimages.adobe.com/www.adobe.com/ubi/globalnav/include/adobe-hq.png" alt="Adobe" width="55" height="67" /></a></dt>
+		<dd id="site-search">
+			<input type="hidden" name="loc" value="en_us" />
+			<input title="Search Adobe.com..." type="text" id="search-input" name="term" autocomplete="off" />
+			<button type="submit" id="search-submit" class="icon-replace search">Search</button>
+			<script type="text/javascript">
+				adobe.InputTitleOverlay.init("search-input");
+			</script>
+		</dd>
+		<dd id="user-menu">
+			<ul id="user-menu-list" class="pipe compact">
+				<li id="greeting" style="display:none"><a>Welcome <span id="screenName"></span></a></li>
+				<li id="account" style="background-image: none"><a href="http://www.adobe.com/cfusion/membership/index.cfm?loc=en_us&nl=1">Your account</a></li>
+				<li id="signout" style="display:none"><a href="http://www.adobe.com/cfusion/membership/logout.cfm">Sign out</a></li>
+				<li id="globalnav-cart"><a href="http://www.adobe.com/go/gn_cart" class="icon-replace cart">Your cart</a></li>
+				<li id="help"><a href="http://www.adobe.com/go/gn_contact">Contact</a></li>
+				<li id="international"><a href="http://www.adobe.com/go/gn_intl">United States (Change)</a></li>
+			</ul>
+			<script type="text/javascript">
+				var greeting = document.getElementById('greeting'),
+				screenName = document.getElementById('screenName'),
+				accountLink = document.getElementById('account'),
+				signout = document.getElementById('signout');
+				
+				if(greeting && signout && screenName) {					
+					var screenNameValue = adobe.Cookie.get("SCREENNAME"),
+					rememberMe = adobe.Cookie.get('RMID'),
+					authenticAdobeId = adobe.Cookie.get('AUID');
+					
+					if(screenNameValue) {
+						registerOnReady(function() {
+							screenName.innerHTML = screenNameValue;
+						});
+					}
+					
+					if(rememberMe) {
+						greeting.style.display="";
+						accountLink.style.backgroundImage = "";
+					}
+					
+					if(authenticAdobeId) {
+						greeting.style.display="";
+						signout.style.display="";
+						accountLink.style.backgroundImage = "";
+					}
+				}
+			</script>
+		</dd>
+		<dd id="site-menu">
+			<ul id="site-menu-dropdown" class="d-dropdown compact">
+				<li><a class="dropdown-tab" href="http://www.adobe.com/go/gn_sol">Solutions</a>
+					<dl class="dropdown-pane">
+						<dt>Industries</dt>
+                        <dd><a href="http://www.adobe.com/go/gntray_ind_broadcast_media">Broadcast and media</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_ind_education">Education</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_ind_enterprise">Enterprise</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_ind_finance">Financial services</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_ind_govt">Government</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_ind_lifesciences">Life sciences</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_ind_manufacturing">Manufacturing</a></dd>
+						<dt class="divide">Solutions</dt>
+						<dd><a href="http://www.adobe.com/go/gntray_sol_consumer_photo_video">Consumer photo and video</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_sol_elearning">eLearning and training</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_sol_hr">Human resources</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_sol_mobile_digital_home">Mobile and digital home</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_sol_print_publishing">Print publishing</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_sol_pro_photography">Pro photography</a></dd>
+                        <dd><a href="http://www.adobe.com/go/gntray_sol_professionalvideo">Professional video</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_sol_ria">Rich Internet applications</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_sol_technical_comm">Technical communication</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_sol_web_conferencing">Web conferencing</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_sol_web_publishing">Web design</a></dd>
+						<dt class="divide last-title"><a href="http://www.adobe.com/go/gntray_sol_more">All industries and solutions &#8250;</a></dt>
+					</dl>
+				</li>
+				<li><a class="dropdown-tab" href="http://www.adobe.com/go/gn_prod">Products</a>
+					<ul class="dropdown-pane">
+						<li><a href="http://www.adobe.com/go/gntray_prod_acrobat_connect_pro_home">Acrobat Connect Pro</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_prod_acrobat_family_home">Acrobat</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_prod_air_home">Adobe AIR</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_prod_after_effects_home">After Effects</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_prod_coldfusion_home">ColdFusion</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_prod_creative_suite_family_home">Creative Suite family</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_prod_dreamweaver_home">Dreamweaver</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_prod_flash_platform_home">Flash Platform</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_prod_flash_home">Flash Professional</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_prod_flex_home">Flex</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_prod_illustrator_home">Illustrator</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_prod_indesign_home">InDesign</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_prod_livecycle_home">LiveCycle ES</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_prod_mobile_devices_home">Mobile products</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_prod_omniture_home">Omniture</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_prod_online_services">Online services</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_prod_photoshop_family_home">Photoshop family</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_prod_premiere_home">Adobe Premiere Pro</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_prod_scene7_ondemand_home" target="mm_window">Scene7 OnDemand</a></li>
+						<li class="divide"><a href="http://www.adobe.com/go/gntray_prod_products">All products &#8250;</a></li>
+					</ul>
+				</li>
+				<li><a class="dropdown-tab" href="http://www.adobe.com/go/gn_supp">Support</a>
+					<ul class="dropdown-pane">
+						<li><a href="http://www.adobe.com/go/gn_supp_support">Support home</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_supp_ask">Ask Adobe Support</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_supp_cs_home">Customer Service</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_supp_kb">Knowledgebase</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_supp_books">Books</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_supp_train_home">Training and certification</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_supp_programs">Support programs</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_supp_forums_home">Forums</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_supp_updates">Updates</a></li>
+						<li class="divide"><a href="http://www.adobe.com/go/gntray_supp_more">More &#8250;</a></li>
+					</ul>
+				</li>
+				<li><a class="dropdown-tab" href="http://www.adobe.com/go/gn_comm">Communities</a>
+					<dl class="dropdown-pane">
+						<dt>By user</dt>
+						<dd><a href="http://www.adobe.com/go/gntray_comm_designers">Designers</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_comm_devnet">Developers</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_comm_educators_students">Educators and students</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_comm_partners">Partners</a></dd>
+						<dt class="divide">By resource</dt>
+						<dd><a href="http://www.adobe.com/go/gntray_comm_labs" target="mm_window">Adobe Labs</a></dd>
+                        <dd><a href="http://www.adobe.com/go/gntray_comm_adobetv" target="_blank">Adobe TV</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_comm_forums">Forums</a></dd>
+                        <dd><a href="http://www.adobe.com/go/gntray_comm_user_groups">User groups</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_comm_exchange_home">Exchange/Marketplace</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_comm_xd" target="mm_window">Experience Design</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_comm_blogs" target="mm_window">Blogs</a></dd>
+					</dl>
+				</li>
+				<li><a class="dropdown-tab" href="http://www.adobe.com/go/gn_comp">Company</a>
+					<ul class="dropdown-pane">
+						<li><a href="http://www.adobe.com/go/gntray_comp_aboutadobe">About Adobe</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_comp_press">Press</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_comp_investor_relations">Investor Relations</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_comp_corporate_responsibility">Corporate responsibility</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_comp_atl">Advanced Technology Labs</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_comp_careers">Careers</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_comp_showcase">Customer Showcase</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_comp_events">Events</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_comp_contact_adobe">Contact Adobe</a></li>
+						<li><a href="http://www.adobe.com/go/gntray_comp_become_affiliate">Become an affiliate</a></li>
+						<li class="divide"><a href="http://www.adobe.com/go/gntray_comp_company_more">More &#8250;</a></li>
+					</ul>
+				</li>
+				<li><a class="dropdown-tab" href="http://www.adobe.com/go/gn_dl">Downloads</a>
+					<dl class="dropdown-pane">
+						<dd><a href="http://www.adobe.com/go/gntray_dl_downloads">Downloads home</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_dl_trialdownloads">Trial downloads</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_dl_updates">Updates</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_dl_exchange">Exchange/Marketplace</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_dl_airmarketplace">Get AIR applications</a></dd>
+                        <dt class="divide">Readers and Players</dt>
+                        <dd><a href="http://www.adobe.com/go/gntray_dl_get_reader">Get Adobe Reader</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_dl_getflashplayer">Get Flash Player</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_dl_getair">Get Adobe AIR</a></dd>
+                        <dd><a href="http://www.adobe.com/go/gntray_dl_getshockwaveplayer">Get Shockwave Player</a></dd>
+						<dt class="divide last-title"><a href="http://www.adobe.com/go/gntray_dl_more">More &#8250;</a></dt>
+					</dl>
+				</li>
+				<li><a href="http://www.adobe.com/go/gn_store" class="dropdown-tab">Store</a>
+					<dl class="dropdown-pane">
+						<dd><a href="http://www.adobe.com/go/gntray_store">Store home</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_store_software">Software</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_store_fonts">Fonts</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_store_books">Books</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_store_programs">Support programs</a></dd>
+						<dd><a href="http://www.adobe.com/go/gntray_store_your_hist">Your account</a></dd>
+                        <dd><a href="http://www.adobe.com/go/gntray_store_offers">Store offers</a></dd>
+						<dt class="divide"><a href="http://www.adobe.com/go/gntray_store_mvlp">Volume licensing</a></dt>
+                        <dd><a href="http://www.adobe.com/go/gntray_store_vl_options">Licensing options</a></dd>
+                        <dd><a href="http://www.adobe.com/go/gntray_store_vl_howtobuy">How to buy</a></dd>
+                        <dd><a href="http://www.adobe.com/go/gntray_store_vl_licensees">Current licensees</a></dd>
+						<dd class="divide"><a href="http://www.adobe.com/go/gntray_store_purchase_options">Other ways to buy &#8250;</a></dd>
+					</dl>
+				</li>
+			</ul>
+		</dd>
+	</dl>
+<noscript>
+<div id="globalnav-noscript">You may not have everything you need to view certain sections of Adobe.com. Please see our <a href="http://www.adobe.com/go/gn_sitereqs">site requirements</a>.</div>
+</noscript>
+</form>
+<!--googleon: index-->
+
+<div id="layoutLogic" class="L0">
+	
+		<div id="L0C1" class="pod p0 columns-2-Abb-A">
+			
+			<div id="L0C1-body" class="pod-body"> 
+		<ol id="depthpath" class="path menu">
+			<li><a href="http://www.adobe.com/go/gn_home">Home</a></li>
+			<li><a href="http://www.adobe.com/go/gn_dl/">Downloads</a></li>
+			<li class="last-child"><a href="http://www.adobe.com/products/reader/">Adobe Reader</a></li>
+		</ol>
+		<h1 id="pageHeader" class="macromedia">Adobe Reader</h1>
+
+    <h2>Download new and previous versions of Adobe Reader</h2>
+    
+    <h3>Step 1 of 2</h3>
+	
+    <form action="" name="downloadForm" id="downloadForm" method="get">
+        
+		
+
+
+<p id="error-message" class="error" style="display: none">
+	
+		Please select an item from the drop-down field(s) below.
+	
+</p>
+	
+<p class="inputBlock">
+	
+        <label class="top" for="select_os">Select an operating system</label>
+	
+    <select name="select_os" id="select_os">
+        <option value="-1">
+    
+        Select an OSâ?¦
+    </option>
+    
+    	<option value="Win7">Windows 7</option>
+        <option value="WinVista">Windows Vista</option>	
+        <option value="WinXPSP3">Windows XP SP3</option>	
+        <option value="WinXPSP2">Windows XP SP2</option>                    
+        <option value="Win2008">Windows Server 2008</option>                   
+        <option value="Win2003">Windows Server 2003</option>
+    
+    
+        <option value="Win2000SP4">Windows 2000 SP4</option>
+        <option value="Win2000">Windows 2000 SP2 - SP3</option>
+    
+    
+        <option value="WinNT6">Windows NT SP6</option>
+    
+    
+		<option value="MacIntel_1060">Mac OS Intel 10.5.6 - 10.6.0</option>
+        <option value="MacIntel_1055">Mac OS Intel 10.4.11 - 10.5.5</option>
+        <option value="MacIntel_10410">Mac OS Intel 10.4.4 - 10.4.10</option>
+        <option value="MacPPC_1060">Mac OS PowerPC 10.5.6 - 10.6.0</option>                   
+        <option value="MacPPC_1055">Mac OS PowerPC 10.4.11 - 10.5.5</option> 
+        <option value="MacPPC_10410">Mac OS PowerPC 10.2.8 - 10.4.10</option>
+    
+                      
+        <option value="Linux_bin">Linux - x86 (.bin)</option>                  
+        <option value="Linux_tar_gz">Linux - x86 (.tar.gz)</option>
+        <option value="Linux_rpm">Linux - x86 (.rpm)</option>
+        <option value="Linux_tar_bz2">Linux - x86 (.tar.bz2)</option>                    
+        <option value="Linux_deb">Linux - x86 (.deb)</option>
+        <option value="Solaris_bin">Solaris - x86-32 (.bin)</option>
+        <option value="Solaris_tar_bz2">Solaris - x86-32 (.tar.bz2)</option>
+        <option value="Solaris_pkg_bz2">Solaris - x86-32 (.pkg.bz2)</option>
+        <option value="Solaris_SPARC_tar_gz">Solaris - SPARC (.tar.gz)</option>
+        <option value="Solaris_SPARC_tar_bz2">Solaris - SPARC (.tar.bz2)</option>
+        <option value="IBM_AIX">AIX (.tar.gz)</option>
+        <option value="HP_UX">HP-UX (.tar.gz)</option>
+    
+	
+		<option value="Mobile">Mobile</option>
+	
+    </select></p>
+<br />
+
+<p class="inputBlock">
+    <label class="top" for="select_language" id="language_label">Select a language</label>
+    <select name="select_language" id="select_language">
+        <option value="Arabic">Arabic</option>
+        <option value="Basque">Basque </option>
+        <option value="Bulgarian">Bulgarian</option>
+        <option value="Simplified_Chinese">Chinese (Simplified)</option>
+        <option value="Traditional_Chinese">Chinese (Traditional)</option>
+        <option value="Catalan">Catalan</option>
+        <option value="Croatian">Croatian</option>
+        <option value="Czech">Czech</option>
+        <option value="Danish">Danish</option>
+        <option value="Dutch">Dutch</option>
+        <option value="English" selected="selected">English</option>
+        <option value="English (UK)">English (UK)</option>                
+        <option value="Estonian">Estonian</option>
+        <option value="Finnish">Finnish</option>
+        <option value="French">French</option>
+        <option value="German">German</option>
+        <option value="Greek">Greek</option>
+        <option value="Hebrew">Hebrew</option>
+        <option value="Hungarian">Hungarian</option>
+        <option value="Italian">Italian</option>                
+        <option value="Japanese">Japanese</option>
+        <option value="Korean">Korean</option>
+        <option value="Latvian">Latvian</option>
+        <option value="Lithuanian">Lithuanian</option>
+        <option value="Norwegian">Norwegian</option>
+        <option value="Polish">Polish</option>
+        <option value="Portuguese_Brazilian">Portuguese</option>
+        <option value="Romanian">Romanian</option>
+        <option value="Russian">Russian</option>                
+        <option value="Slovakian">Slovakian</option>
+        <option value="Slovenian">Slovenian</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Swedish">Swedish</option>
+        <option value="Turkish">Turkish</option>
+        <option value="Ukrainian">Ukrainian</option>
+    </select></p>
+	<p id="mobileLanguage" style="display:none;"><strong>Language: </strong>English</p>
+
+    <p>
+    	<span class="buttonBlock">
+            <button id="buttonContinue" name="buttonContinue" type="button" class="button callout-button callout-prominent">Continue</button>
+            <span id="ajaxloading" style="display:none;">
+                <img src="http://wwwimages.adobe.com/www.adobe.com/products/acrobat/images/ajax-loader.gif" alt="" />
+            </span>
+        </span>
+    </p>
+
+        
+        <h2 id="unavailable" style="display:none;">A version of Reader is not available for this configuration.</h2>        
+    	<div id="JSError"></div>
+        <div id="step2" style="display:none;">
+            <h3 class="grdhdtopreader">Step 2 of 2</h3>
+            <h4 id="selectVersion">Select a version of Adobe Reader for <span id="selectedPlatform"></span>, <span id="selectedLanguage"></span>:</h4>
+        
+            <br />
+        
+            <p id="latestversion_string">Latest version</p>
+        
+            <table class="max" cellspacing="0" cellpadding="0" id="readerTable">
+            <tr>
+                <td class="leftCol" width="175">
+                    <table border="0" cellspacing="0" cellpadding="0" id="offers_table">
+                    
+                    </table><!--   offers_table   -->
+                </td>
+                <td id="rightInfoDiv" class="selected" rowspan="3">
+                    <div class="columns-2-Abb-A clip-bottom">
+                        <p><a href="/products/reader/systemreqs/" id="system_requirements" target="_blank">System Requirements</a></p>
+                    </div>
+                    
+                    <div class="columns-2-Abb-bb">
+                        <h4 class="txtright"><span id="clientfilesize"></span>&nbsp;MB</h4>
+                    </div>
+                    
+                    <br class="clear-both" />
+                    
+                    <div id="addonoffers" style="display:none;">
+                        <p><strong>Also install:</strong></p>
+                        
+                        <div class="columns-2-Abb-A clip-bottom">
+                                <p class="pullout-item"><input type="checkbox" id="addon" name="addon" value="" checked="checked" />
+                                <label for="addon" id="addonlabel"><strong>Free Google Toolbar</strong> (optional)</label></p>
+                        </div>
+                        
+                        <div class="columns-2-Abb-bb">
+                            <h4 class="txtright"><span id="addonfilesize">0</span>&nbsp;MB</h4>
+                        </div>
+                        
+                        <br class="clear-both" />
+							
+						<div id="gtb" style="display:none;">
+							
+
+
+<p style="display:none;"><strong><strong>Free Google Toolbar</strong> (optional)</strong></P>
+<p><img src="http://wwwimages.adobe.com/www.adobe.com/downloadcenter/images/addons/gtb/gtb.jpg" width="322" height="54" alt="Google toolbar" /></p>
+<p>Search Google from any web page, block pop-ups</p>
+<p><a href="http://www.google.com/support/toolbar/bin/static.py?page=features.html&hl=en&v=4" target="_blank">Learn more</a> | 
+   <a href="http://www.google.com/support/toolbar/bin/static.py?page=privacy.html&hl=en" target="_blank">Privacy policy</a> |
+   <a href="http://www.google.com/accounts/TOS?hl=en" target="_blank">License</a></p>
+
+						</div>
+						<div id="mss" style="display:none;">
+	                    	
+
+
+<p id="addonnamedisplay_mss" style="display:none;"><strong>Free McAfee Security Scan (optional) </strong></P>
+<p><img src="http://wwwimages.adobe.com/www.adobe.com/downloadcenter/images/addons/mss/mss.jpg" width="322" height="31" alt="McAfee Security Scan" /></p>
+<p>Check the status of your PC security.</p>
+<p><a href="https://liteapps.mcafee.com/apps/mss/1.0/affid/0/en-us/help.html" target="_blank">Learn more</a> | 
+   <a href="http://home.mcafee.com/root/campaign.aspx?cid=64986 " target="_blank">Privacy policy</a> |
+   <a href="http://home.mcafee.com/root/campaign.aspx?cid=64985" target="_blank">License</a></p>
+
+						</div>
+                        
+                        <br class="clear-both" />
+                        
+                        <h4 class="txtright">Total : <br /><span id="totalfilesize"></span>&nbsp;MB</h4>
+                    </div><!--   addonoffers   -->
+                    
+                    <br />
+                    
+                    <p class="txtcenter">
+						<a class="download-button" id="buttonDownload" href="../thankyou/">Download now</a>	
+					</p>
+                    
+                    <input type="hidden" name="eventname" id="eventname" value="readerotherversions" />
+                </td>
+            </tr>    
+            </table>
+        
+            <br />
+            
+            <p>Adobe may use the Adobe Download Manager to seamlessly install your software. By downloading software from the Adobe web site, you agree to the terms of our license agreements, including that you agree not to use Adobe Reader software with any other software, plug-in or enhancement which uses or relies on Adobe Reader when converting or transforming PDF files into other file formats. Please read the following license agreements before downloading:</p>
+            <ul class="link-list">
+                <li><a href="http://www.adobe.com/products/eulas/" target="_blank">Adobe Reader license agreement</a></li>
+            </ul>   
+        </div>
+    </form>
+    
+    
+<script type="text/javascript">
+	// SiteCatalyst code version: G.7.
+	// Copyright 1997-2004 Omniture, Inc. More info available at http://www.omniture.com
+	var s_pageName = 'get.adobe.com: Reader: en: landing page';
+	var s_server = '';
+	var s_channel = 'get.adobe.com: Reader';
+	var s_pageType = '';
+	var s_prop1 = '';
+	var s_prop2 = '';
+	var s_prop3 = '';
+	var s_prop4 = '';
+	var s_prop5 = '';
+	var s_prop40 = '';
+	var s_prop41 = '';
+	var s_prop38 = '';
+	var s_campaign = '';
+	var s_state = '';
+	var s_zip = '';
+	var s_events = '';
+	var s_products = '';
+	var s_purchaseID = '';
+	var s_eVar1 = '';
+	var s_eVar2 = '';
+	var s_eVar3 = '';
+	var s_eVar4 = '';
+	var s_eVar5 = '';
+	var s_eVar21 = '';
+	var s_eVar37 = '';
+	var s_eVar40 = '';
+	var adobeHostURL = 'http://www.adobe.com';
+	
+	var s_code=' ';
+	var s_accountName='mxmacromedia';
+
+	function sendAnalyticsEvent(str){var ns=s_accountName;if(str!=null)ns+=','+str;void(s_gs(ns));}
+</script>
+<script type="text/javascript" src="http://wwwimages.adobe.com/www.adobe.com/uber/js/omniture_s_code.js"></script>
+<script type="text/javascript">
+	s_wds(s_accountName);
+	s_ca(s_accountName);
+	if (navigator.appVersion.indexOf('MSIE')>=0) document.write(unescape('%3C')+'\!-'+'-');
+
+	registerOnLoad(sendAnalyticsEvent);
+</script>
+<noscript><img src="http://stats.adobe.com/b/ss/mxmacromedia/1/G.7--NS/0" height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: G.7. -->
+
+    
+</div>
+		</div>
+	
+			<div id="L0C2" class="columns-2-Abb-bb">
+				
+<div class="dyn-pod p2">	
+	<br />
+    
+        <h4><a href="http://www.adobe.com/support/downloads/">Adobe Reader updates</a></h4>
+        <p>Get the latest updates available for your version of AdobeÂ® ReaderÂ®.</p>
+        
+        <h4><a href="http://www.adobe.com/products/acrobat/distribute.html">Distribute Adobe Reader</a> </h4>
+        <p>Find out how to distribute Adobe Reader software on an intranet, CD, or other media.</p>
+	
+
+    <h4>More info</h4>
+
+    <ul class="link-list">
+        <li><a href="http://www.adobe.com/products/reader/" title="Learn more about Adobe Reader">Adobe Reader</a></li>
+        <li><a href="http://www.adobe.com/products/acrobat/readerforsymbian.html" title="Learn more about Adobe Reader for Symbian OS">Adobe Reader for Symbian OSâ?¢</a></li>
+        <li><a href="http://www.adobe.com/products/acrobat/readerforppc.html" title="Learn more about Adobe Reader for Pocket PC">Adobe Reader for Pocket PC</a></li>
+        <li><a href="http://www.adobe.com/products/acrobat/readerforpalm.html" title="Learn more about Adobe Reader for Palm OS">Adobe Reader for Palm OSÂ®</a></li>
+        <li><a href="http://www.adobe.com/products/acrobat/adobepdf.html" title="Learn more about Adobe PDF">What is Adobe PDF?</a></li>
+    </ul>
+</div>
+
+			</div>
+		
+	<br class="clear-both" />
+</div>
+ <!--googleoff: index--><!-- global footer $Revision: 1.10 $ -->
+<div id="globalfooter">
+	<ul class="pipe menu">
+		<li><a href="http://www.adobe.com/go/gftray_foot_careers">Careers</a></li>
+		<li><a href="http://www.adobe.com/go/gftray_foot_privacy_security">Online Privacy Policy</a></li>
+		<li><a href="http://www.adobe.com/go/gftray_foot_terms">Terms of Use</a></li>
+		<li><a href="http://www.adobe.com/go/gftray_foot_contact_adobe">Contact us</a></li>
+		<li><a href="http://www.adobe.com/go/gftray_foot_accessibility">Accessibility</a></li>
+		<li><a href="http://www.adobe.com/go/gftray_foot_report_piracy">Report piracy</a></li>
+		<li><a href="http://www.adobe.com/go/gftray_foot_permissions_trademarks">Permissions and trademarks</a></li>
+		<li><a href="http://www.adobe.com/go/gftray_foot_product_license_agreements">Product license agreements</a></li>
+		<li><a href="http://www.adobe.com/go/gftray_foot_feedback">Send feedback</a></li>
+	</ul>
+	<div class="pullout-right right-125">
+		<p id="privacy" class="pullout-item"><a href="http://www.adobe.com/go/gftray_foot_truste" target="_blank"><img src="http://wwwimages.adobe.com/www.adobe.com/images/globalnav/truste_seal_eu.gif" alt="Reviewed by TRUSTe: site privacy statement" width="116" height="33" id="trustelogo" /></a></p>
+		<p id="copyright">Copyright &copy; 2009 Adobe Systems Incorporated. <a href="http://www.adobe.com/go/gftray_all_rights_reserved">All rights reserved</a>.</p>
+		<p id="terms">Use of this website signifies your agreement to the <a href="http://www.adobe.com/go/gftray_foot_terms">Terms of Use</a> and <a href="http://www.adobe.com/go/gftray_foot_privacy_security">Online Privacy Policy (updated 07-14-2009)</a>.</p>
+		<p id="searchengine">Search powered by <a href="http://www.google.com/" target="new">Google&trade;</a></p>
+	</div>
+</div>
+<!--googleon: index-->
+
+<img id="flash_pixel" name="flash_pixel" src="http://wwwimages.adobe.com/www.adobe.com/images/pixel.gif" width="1" height="1" alt="" />
+</body>
+</html>

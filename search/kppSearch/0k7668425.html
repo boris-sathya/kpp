@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Census Bureau Home Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="DC.title" content="Census Bureau Home Page" />
+<meta name="DC.description" content="The Census Bureau Web Site provides on-line access to our data, publications, and products." />
+<meta name="DC.creator" content="The Internet Staff, US Census Bureau" />
+<meta name="DC.date.created" scheme="ISO8601" content="1994-03-01" />
+<meta name="DC.date.reviewed" scheme="ISO8601"  content="2009-12-16" />
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US" />
+<meta name="Keywords" content="Census 2000, 2010 Census, population data, government data, county business patterns, historical data, manufacturing, transportation, international trade, homeownership, American Housing Survey, TIGER/Line, NAICS, population estimates, us statistics, American Factfinder" />
+<link rel="alternate" type="application/rss+xml" title="Latest Releases" href="/Press-Release/www/releases/index.xml" />
+<link rel="alternate" type="application/rss+xml" title="New on Census.gov" href="/newonsite/index.xml" />
+<link rel="alternate" type="application/rss+xml" title="Key Economic Indicators" href="/briefrm/indicator.xml" />
+<link rel="alternate" type="application/rss+xml" title="Census Product Update" href="/mp/www/cpu/index.xml" />
+<link href="/main/css/home5.css" type="text/css" rel="stylesheet" media="all" />
+<!--[if lt IE 7]>
+<style type="text/css" media="all">
+.search {padding: 10px 10px 0 10px;}
+td.leftNav {width: 174px; padding: 0;}
+td.leftNav img {margin: 0 auto 0 -3px; text-align: center; padding: 0;}
+</style>
+<![endif]-->
+<script type="text/javascript" language="JavaScript">
+function clearfield(t)  {
+        t.value = "";
+        }
+</script>
+<script type="text/javascript" language="JavaScript">
+function reload (reloads) {
+  load('/main/.in/popclocks.inc');
+  setTimeout(do_reload(reloads+1), (reloads > 9 ? 60000 : 6000));
+}
+</script>
+<script type="text/javascript" language="JavaScript" src="/main/.in/pop_update.js"></script>
+<!--
+<script type="text/javascript" language="javascript" src="main/javascript/scriptaculous.js"></script>
+<script type="text/javascript" language="javascript">
+    new Ajax.PeriodicalUpdater('imageContainer','main/.in/ajax/bannerLoader.php',
+                                {   method: 'get',
+                                    frequency: 6,
+                                    decay: 0,
+                                    onSuccess: function(transport){
+                                        Effect.SlideDown($('imageContainer'));
+                                    }
+                                });
+
+    function updateClickCount( imageName ){
+        var url = 'main/.in/ajax/clickCounter.php?imagename='+ imageName
+        new Ajax.Request(url,{method:'get'});
+    }
+</script>
+-->
+<!-- annual web survey - remove Sept 30 -->
+<!-- Foresee Survey -->
+<script type="text/javascript" src="/fsrscripts/foresee-trigger.js"></script>
+<!-- End Foresee Survey -->
+<!--Flash JS-->
+<script src="/main/javascript/AC_RunActiveContent.js" type="text/javascript"></script>
+<!--end Flash JS-->
+</head>
+<body onload="setup()">
+<span class="advisory">
+
+</span>
+<table align="center"
+summary="census bureau's home page portal - left side is main navigation, middle is secondary navigation, right side has data access tools" class="main">
+  <tr>
+    <td colspan="3" id="cb_header" class="maincontainer" title="US Census Bureau, www.census.gov"><span class="hide"> <a href="http://www.census.gov/" >US Census Bureau</a> <a href="#SKIP" title="Skip Navigation" >Skip this top of page navigation</a></span>
+      <div class="topNav"> <a href="http://ask.census.gov/" title="faqs">FAQs</a> <span class="mid"><a href="/main/www/a2z/"
+        title="subjects a to z">Subjects A to Z</a></span> <a href="/main/www/help.html" title="need help?">Help</a>
+        <form id="search" name="gs" method="get" action="http://search.census.gov/search">
+          <span class="search">
+          <label for="st"><a href="/main/www/srchtool.html" title="search census.gov">SEARCH:</a></label>
+          <input name="q" id="st" type="text" value="" size="25" maxlength="100" />
+          &nbsp;
+          <input  name="Submit" type="image" src="/main/www/img/home/go.gif" alt="GO" align="top" size="17" />
+          <input type="hidden" name="entqr" value="0" />
+          <input type="hidden" name="ud" value="1" />
+          <input type="hidden" name="output" value="xml_no_dtd" />
+          <input type="hidden" name="oe" value="UTF-8" />
+          <input type="hidden" name="ie" value="UTF-8" />
+          <input type="hidden" name="client" value="default_frontend" />
+          <input type="hidden" name="proxystylesheet" value="default_frontend" />
+          <input type="hidden" name="site" value="census" />
+          </span>
+        </form>
+      </div>
+      <span class="hide"><a name="SKIP" id="SKIP"> </a> </span> </td>
+  </tr>
+  <tr>
+    <td class="leftNav"><span class="hide"> <a href="#SKIP2" title="Skip Navigation">Skip this left
+      side navigation</a></span>
+      <ul id="navLeft">
+        <li>
+          			<!-- Edit URL and IMG SRC -->
+			<a href="/Press-Release/www/releases/archives/facts_for_features_special_editions/014405.html"><img src="/pubinfo/www/features/img/holidays2.png" border="0" width="174" height="70" alt="2009 Holiday Facts for Features" /></a>
+
+        </li>
+        <li><a href="/newonsite">New on the Site</a></li>
+        <li><a href="/main/www/access.html">Data Tools</a></li>
+        <li><a href="http://factfinder.census.gov/">American FactFinder</a></li>
+        <li><a href="/hrd/www/index.html">Jobs@Census</a></li>
+        <li><a href="/mp/www/cat/">Catalog</a></li>
+        <li><a href="/prod/www/titles.html" class="leftNav">Publications</a></li>
+        <li><a href="/survey_participants/">Are You in a Survey?</a></li>
+        <li><a href="/aboutus/">About the Bureau</a></li>
+        <li><a href="/field/www/">Regional Offices</a></li>
+        <li><a href="/procur/www/index.html">Doing Business with Us</a></li>
+        <li><a href="/aboutus/other.html">Related Sites</a></li>
+        <li class="none">
+          <object data="/mso/www/rotation/banner_rotator_v8.swf" type="application/x-shockwave-flash" width="175" height="70" title="Banner Rotator">
+            <param name="movie" value="/mso/www/rotation/banner_rotator_v8.swf" />
+            <param name="quality" value="high" />
+          </object>
+        </li>
+      </ul>
+      <a name="SKIP2" id="SKIP2"> </a> </td>
+    <td class="center"><span class="hide"> <a href="#SKIP3" title="Skip Navigation">Skip this center section </a></span>
+      <table cellpadding="6" border="0" summary="The section provides navigation to many subject areas">
+ <tr align="center">
+          <td colspan="2" valign="middle" class="text"><!-- banner image -->
+          </td>
+        </tr>
+        <tr>
+          <!-- Census 2010 -->
+          <td valign="top" align="right"><br />
+            <a href="http://2010.census.gov/2010census/"><img src="/main/www/m-img/c2010.gif" alt="Census 2010
+ Topics" width="69" height="41" border="0" /></a> </td>
+          <td align="left" valign="middle" class="text"><a href="http://2010.census.gov/2010census/">2010 Census</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="http://2010.census.gov/news/">News</a> &nbsp;<strong>&#183;</strong>&nbsp; <a title="Census in schools" href="/schools/">Census in Schools</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="http://2010.census.gov/campus/" title="Census on Campus">Census on Campus</a> &nbsp;<strong>&#183;</strong>&nbsp; <a title="Current local data" href="/acs/www/">American Community Survey</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/main/www/cen2000.html">Census 2000</a> </td>
+        </tr>
+        <!-- People -->
+        <tr>
+          <td class="subjectlink"><a href="/population/www/">People&nbsp;&amp; Households</a> </td>
+          <td align="left" valign="middle" class="text"><a href="/popest/estimates.php">Estimates</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/population/www/projections/popproj.html" title="Population Projections">Projections</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/hhes/www/housing.html" title="Housing Statistics">Housing</a> &nbsp;&nbsp;<strong>&#183;</strong>&nbsp; <a href="/hhes/www/income/income.html" title="Income Statistics">Income</a> | <a href="/hhes/www/income/statemedfaminc.html">State&nbsp;Median&nbsp;Income</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/hhes/www/poverty/poverty.html" title="Poverty Statistics">Poverty</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/hhes/www/hlthins/hlthins.html" title="Health Insurance Coverage">Health&nbsp;Insurance</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/ipc/www/">International</a> &nbsp;&nbsp;<strong>&#183;</strong>&nbsp; <a href="/genealogy/www/">Genealogy</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/population/www/" title="More demographic topics">More</a> </td>
+        </tr>
+        <!-- Business -->
+        <tr>
+          <td class="subjectlink"><a href="/econ/">Business&nbsp;&amp; Industry</a> </td>
+          <td align="left" valign="middle" class="text"><a href="/econ/census07/">Economic Census</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/econhelp/">Get&nbsp;Help&nbsp;with&nbsp;Your&nbsp;Form</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/cgi-bin/briefroom/BriefRm">Economic&nbsp;Indicators</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/naics/">NAICS</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/econ/sbo/">Survey of Business Owners</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/govs/">Government</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/econ/estats/index.html" title="e-stats">E-Stats</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/foreign-trade/www/">Foreign&nbsp;Trade</a>&nbsp;|&nbsp;<a href="/foreign-trade/schedules/b/">Export&nbsp;Codes</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="http://lehd.did.census.gov/led/">Local&nbsp;Employment Dynamics</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/econ/www/" title="More business topics">More</a> </td>
+        </tr>
+        <!-- Geo -->
+        <tr>
+          <td class="subjectlink"><a href="/geo/www/">Geography</a> </td>
+          <td align="left" valign="middle" class="text"><a title="Create Maps" href="/geo/www/maps">Maps</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/geo/www/tiger/">TIGER</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/geo/www/gazetteer/gazette.html">Gazetteer</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/geo/www/" title="More geography topics">More</a> </td>
+        </tr>
+        <!-- News -->
+        <tr>
+          <td class="subjectlink"><a href="/pubinfo/www/news/">Newsroom</a> </td>
+          <td align="left" valign="middle" class="text"><a title="Latest News Releases" href="/Press-Release/www/releases/">Releases</a> &nbsp;<strong>&#183;</strong> &nbsp;<a title="Facts For Features" href="/Press-Release/www/releases/archives/facts_for_features_special_editions/">Facts
+            For Features</a> &nbsp;<strong>&#183;</strong>&nbsp; <a title="Fast Facts by Race" href="/pubinfo/www/hotlinks.html">Minority&nbsp;Links</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/multimedia/">Multimedia Gallery</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/pubinfo/www/subscriptions.html">Embargo/News Release Subscription</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/pubinfo/www/news/" title="The newsroom">More</a> </td>
+        </tr>
+        <tr>
+          <td valign="top" align="right" class="subject"> Special Topics </td>
+          <td align="left" valign="middle" class="text"><a href="/survey_participants/related_information/phishing_email_scams_bogus_census_web_sites.html" title="Phishing, email scams and bogus Census Web sites">Phishing &amp; Email Scams</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/Press-Release/www/emergencies/">Census Bureau Data and Emergency Preparedness</a> &nbsp;<strong>&#183;</strong>&nbsp; <a title="events and schedules" href="http://www.calendarwiz.com/cens1sample">Events&nbsp;Calendar</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/mso/www/training/" title="training on using census data">Training</a> &nbsp;<strong>&#183; </strong>&nbsp; <a title="Uncle Sam's Reference Shelf" href="/compendia/statab/">Statistical&nbsp;Abstract</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="http://www.fedstats.gov/">FedStats</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="http://www.usa.gov/">USA.gov</a> &nbsp;<strong>&#183;</strong>&nbsp; <a href="/recovery/index.html" title="Recovery Act at the Census Bureau">Recovery Act at the Census Bureau</a> </td>
+        </tr>
+      </table>
+      <span class="hide"><a name="SKIP3" id="SKIP3"> </a></span> </td>
+    <td class="right" ><span class="hide"> <a href="#SKIP4" title="Skip Navigation">Skip this left
+      side navigation</a></span>
+      <h2>Data Finders</h2>
+      <!-- popclock -->
+      <div id="replace">
+        <h3><a href="http://www.census.gov/main/www/popclock.html">Population Clocks</a></h3>
+<div id="popclocks"><span id="usclocktext">U.S. </span><span id="usclocknum">308,190,859</span><br />
+<span id="wclocktext">World </span><span id="wclocknum">6,791,229,404</span><br />
+<span id="clocktime">10:22 UTC
+ (EST+5) Dec 20, 2009
+</span></div>
+      </div>
+      <br />
+      <h4>Population Finder</h4>
+      <div id="aff">
+        <div class="geo">
+          <script type="text/javascript" src="/main/www/popfinder.js"></script>
+          <noscript>
+          Enable Javascript for access to this tool or see data available from
+          the <a href="/acs/www/">American Community Survey</a>.
+          </noscript>
+          <form action="" name="affpop" id="affpop" onsubmit="goPopFinder(); return false;">
+            <input name="_event" type="hidden" value="Search" />
+            <span class="selgeolabel">
+            <label for="CityTown">city/ town, county, or zip</label>
+            </span><br />
+            <input class="form" name="_name" id="CityTown" size="24" value="" type="text" />
+            <br />
+            <span class="selgeolabel">
+            <label for="State">or state</label>
+            </span><br />
+            <select name="_state" id="State" onkeypress="if (event.keyCode == 13)
+                { goPopFinder(); return false; }
+                else { return true; }">
+              <option value="">Select a state</option>
+              <option value="04000US01">Alabama</option>
+              <option value="04000US02">Alaska</option>
+              <option value="04000US04">Arizona</option>
+              <option value="04000US05">Arkansas</option>
+              <option value="04000US06">California</option>
+              <option value="04000US08">Colorado</option>
+              <option value="04000US09">Connecticut</option>
+              <option value="04000US10">Delaware</option>
+              <option value="04000US11">District of Columbia</option>
+              <option value="04000US12">Florida</option>
+              <option value="04000US13">Georgia</option>
+              <option value="04000US15">Hawaii</option>
+              <option value="04000US16">Idaho</option>
+              <option value="04000US17">Illinois</option>
+              <option value="04000US18">Indiana</option>
+              <option value="04000US19">Iowa</option>
+              <option value="04000US20">Kansas</option>
+              <option value="04000US21">Kentucky</option>
+              <option value="04000US22">Louisiana</option>
+              <option value="04000US23">Maine</option>
+              <option value="04000US24">Maryland</option>
+              <option value="04000US25">Massachusetts</option>
+              <option value="04000US26">Michigan</option>
+              <option value="04000US27">Minnesota</option>
+              <option value="04000US28">Mississippi</option>
+              <option value="04000US29">Missouri</option>
+              <option value="04000US30">Montana</option>
+              <option value="04000US31">Nebraska</option>
+              <option value="04000US32">Nevada</option>
+              <option value="04000US33">New Hampshire</option>
+              <option value="04000US34">New Jersey</option>
+              <option value="04000US35">New Mexico</option>
+              <option value="04000US36">New York</option>
+              <option value="04000US37">North Carolina</option>
+              <option value="04000US38">North Dakota</option>
+              <option value="04000US39">Ohio</option>
+              <option value="04000US40">Oklahoma</option>
+              <option value="04000US41">Oregon</option>
+              <option value="04000US42">Pennsylvania</option>
+              <option value="04000US72">Puerto Rico</option>
+              <option value="04000US44">Rhode Island</option>
+              <option value="04000US45">South Carolina</option>
+              <option value="04000US46">South Dakota</option>
+              <option value="04000US47">Tennessee</option>
+              <option value="04000US48">Texas</option>
+              <option value="04000US49">Utah</option>
+              <option value="04000US50">Vermont</option>
+              <option value="04000US51">Virginia</option>
+              <option value="04000US53">Washington</option>
+              <option value="04000US54">West Virginia</option>
+              <option value="04000US55">Wisconsin</option>
+              <option value="04000US56">Wyoming</option>
+            </select>
+            <input onclick="JavaScript:goPopFinder"
+                name="Submit" src="/main/www/img/home/go.gif"
+                alt="GO" size="23" align="top" type="image" />
+            <br />
+            <input name="_county" value="on" type="hidden" />
+            <input name="_cityTown" value="on" type="hidden" />
+            <input name="_zip" value="on" type="hidden" />
+            <input name="_sse" value="on" type="hidden" />
+            <input name="_lang" value="en" type="hidden" />
+            <input name="pctxt" type="hidden" value="fph" />
+          </form>
+        </div>
+      </div>
+      <!-- End PopFinder here -->
+      <br />
+      <!-- begin QF here -->
+      <h4>Find An Area Profile with <a href="http://quickfacts.census.gov/"><strong>QuickFacts</strong></a></h4>
+      <div id="qf">
+        <div class="qfgeo">
+          <form action="/cgi-bin/location" id="selqf" name="selqf" method="post">
+            <span class="reader">For the following combo box, to make a selection, press enter then alt plus down arrow and use the up and down arrows.</span> <span class="selqflabel">
+            <label for="qfselection">Select a state to begin</label>
+            </span><br />
+            <span class="selgeolabel">
+            <select size="1" id="qfselection" name="Location" onchange="location=document.selqf.qfselection.options[document.selqf.qfselection.selectedIndex].value;">
+              <option value="http://quickfacts.census.gov/qfd/states/01000.html">Select a state</option>
+              <option value="http://quickfacts.census.gov/qfd/states/01000.html">Alabama</option>
+              <option value="http://quickfacts.census.gov/qfd/states/02000.html">Alaska</option>
+              <option value="http://quickfacts.census.gov/qfd/states/04000.html">Arizona</option>
+              <option value="http://quickfacts.census.gov/qfd/states/05000.html">Arkansas</option>
+              <option value="http://quickfacts.census.gov/qfd/states/06000.html">California</option>
+              <option value="http://quickfacts.census.gov/qfd/states/08000.html">Colorado</option>
+              <option value="http://quickfacts.census.gov/qfd/states/09000.html">Connecticut</option>
+              <option value="http://quickfacts.census.gov/qfd/states/10000.html">Delaware</option>
+              <option value="http://quickfacts.census.gov/qfd/states/11000.html">District
+              of Columbia</option>
+              <option value="http://quickfacts.census.gov/qfd/states/12000.html">Florida</option>
+              <option value="http://quickfacts.census.gov/qfd/states/13000.html">Georgia</option>
+              <option value="http://quickfacts.census.gov/qfd/states/15000.html">Hawaii</option>
+              <option value="http://quickfacts.census.gov/qfd/states/16000.html">Idaho</option>
+              <option value="http://quickfacts.census.gov/qfd/states/17000.html">Illinois</option>
+              <option value="http://quickfacts.census.gov/qfd/states/18000.html">Indiana</option>
+              <option value="http://quickfacts.census.gov/qfd/states/19000.html">Iowa</option>
+              <option value="http://quickfacts.census.gov/qfd/states/20000.html">Kansas</option>
+              <option value="http://quickfacts.census.gov/qfd/states/21000.html">Kentucky</option>
+              <option value="http://quickfacts.census.gov/qfd/states/22000.html">Louisiana</option>
+              <option value="http://quickfacts.census.gov/qfd/states/23000.html">Maine</option>
+              <option value="http://quickfacts.census.gov/qfd/states/24000.html">Maryland</option>
+              <option value="http://quickfacts.census.gov/qfd/states/25000.html">Massachusetts</option>
+              <option value="http://quickfacts.census.gov/qfd/states/26000.html">Michigan</option>
+              <option value="http://quickfacts.census.gov/qfd/states/27000.html">Minnesota</option>
+              <option value="http://quickfacts.census.gov/qfd/states/28000.html">Mississippi</option>
+              <option value="http://quickfacts.census.gov/qfd/states/29000.html">Missouri</option>
+              <option value="http://quickfacts.census.gov/qfd/states/30000.html">Montana</option>
+              <option value="http://quickfacts.census.gov/qfd/states/31000.html">Nebraska</option>
+              <option value="http://quickfacts.census.gov/qfd/states/32000.html">Nevada</option>
+              <option value="http://quickfacts.census.gov/qfd/states/33000.html">New
+              Hampshire</option>
+              <option value="http://quickfacts.census.gov/qfd/states/34000.html">New
+              Jersey</option>
+              <option value="http://quickfacts.census.gov/qfd/states/35000.html">New
+              Mexico</option>
+              <option value="http://quickfacts.census.gov/qfd/states/36000.html">New
+              York</option>
+              <option value="http://quickfacts.census.gov/qfd/states/37000.html">North
+              Carolina</option>
+              <option value="http://quickfacts.census.gov/qfd/states/38000.html">North
+              Dakota</option>
+              <option value="http://quickfacts.census.gov/qfd/states/39000.html">Ohio</option>
+              <option value="http://quickfacts.census.gov/qfd/states/40000.html">Oklahoma</option>
+              <option value="http://quickfacts.census.gov/qfd/states/41000.html">Oregon</option>
+              <option value="http://quickfacts.census.gov/qfd/states/42000.html">Pennsylvania</option>
+              <option value="http://quickfacts.census.gov/qfd/states/44000.html">Rhode
+              Island</option>
+              <option value="http://quickfacts.census.gov/qfd/states/45000.html">South
+              Carolina</option>
+              <option value="http://quickfacts.census.gov/qfd/states/46000.html">South
+              Dakota</option>
+              <option value="http://quickfacts.census.gov/qfd/states/47000.html">Tennessee</option>
+              <option value="http://quickfacts.census.gov/qfd/states/48000.html">Texas</option>
+              <option value="http://quickfacts.census.gov/qfd/states/49000.html">Utah</option>
+              <option value="http://quickfacts.census.gov/qfd/states/50000.html">Vermont</option>
+              <option value="http://quickfacts.census.gov/qfd/states/51000.html">Virginia</option>
+              <option value="http://quickfacts.census.gov/qfd/states/53000.html">Washington</option>
+              <option value="http://quickfacts.census.gov/qfd/states/54000.html">West
+              Virginia</option>
+              <option value="http://quickfacts.census.gov/qfd/states/55000.html">Wisconsin</option>
+              <option value="http://quickfacts.census.gov/qfd/states/56000.html">Wyoming</option>
+              <option value="http://quickfacts.census.gov/qfd/states/00000.html">USA</option>
+            </select>
+            </span>
+            <noscript>
+            <input type="image" alt="Go" src="/main/www/img/home/go.gif" name="Submit" />
+            </noscript>
+          </form>
+          <br />
+        </div>
+      </div>
+      <!-- end QF here -->
+      <br />
+      <!-- Latest indicator include here -->
+      <h3>Latest Economic Indicators</h3>
+<ul class="econIndic">
+<li><a href="http://www.census.gov/starts">Housing Starts/Building Permits</a></li>
+<li><a href="http://www.census.gov/econ/qfr/">Quarterly Financial Report - Manufacturing, Mining and Trade</a></li>
+</ul>
+      <br />
+      <h4><a href="/cgi-bin/briefroom/BriefRm"><strong>Economic Indicators</strong></a></h4>
+      <div id="EI">
+        <div class="indic">
+          <form action="/cgi-bin/location" id="econindicator" name="econindicator" method="post">
+            <span class="reader">For the following combo box, to make a selection, press enter then alt plus down arrow and use the up and down arrows.</span> <span class="selqflabel">
+            <label for="econselection">Select an indicator</label>
+            </span><br />
+            <span class="selgeolabel">
+            <select size="1" id="econselection" name="Location" onchange="location=document.econindicator.econselection.options[document.econindicator.econselection.selectedIndex].value;">
+              <option value="/svsd/www/advtable.html">Select an indicator</option>
+              <option value="cgi-bin/briefroom/BriefRm">View all</option>
+              <option value="/const/www/c30index.html">Construction Spending</option>
+              <option value="/indicator/www/m3/">Durable Goods New Orders</option>
+              <option value="/hhes/www/housing/hvs/hvs.html">Homeownership</option>
+              <option value="/const/www/newresconstindex.html">Housing Starts</option>
+              <option value="/hhes/www/housing/hvs/hvs.html">Housing Vacancies</option>
+              <option value="/indicator/www/m3/">Manufacturers&rsquo; New Orders</option>
+              <option value="http://www2.census.gov/econ/qfr/current/qfr_mg.pdf">Manufacturers&rsquo; Profits [PDF]</option>
+              <option value="/svsd/www/advtable.html">Monthly Retail Sales</option>
+              <option value="/svsd/www/mwts.html">Monthly Wholesale Trade</option>
+              <option value="/const/www/newressalesindex.html">New Home Sales</option>
+              <option value="/indicator/qss/QSS.html">Quarterly Services Survey</option>
+              <option value="http://www2.census.gov/econ/qfr/current/qfr_rt.pdf">Retail Profits [PDF]</option>
+              <option value="/mtis/www/mtis.html">Total Business Sales</option>
+              <option value="/foreign-trade/www/">Trade Balance</option>
+            </select>
+            </span>
+            <noscript>
+            <input type="image" alt="Go" src="/main/www/img/home/go.gif" name="Submit" />
+            </noscript>
+          </form>
+        </div>
+      </div>
+      <!-- END ECON HERE -->
+      <span class="hide"><a name="SKIP4" id="SKIP4"> </a></span> </td>
+  </tr>
+  <tr>
+    <td id="cb_footer" class="footer" colspan="3" align="left" valign="top" title="US Census Bureau, Helping you make informed decisions"><a href="http://www.census.gov/" class="hide">US Census Bureau, Helping You Make Informed Decisions</a>
+      <div class="botNav"> <a href="/privacy/privacy_policy/document_accessibility.html" title="accessibility">Accessibility</a> <span class="mid2"> <a href="/qdocs/www/" title="information quality">Information Quality</a> <a href="/po/www/foia/foiaweb.htm" title="freedom of information act">FOIA</a> <a href="/privacy/" title="data protection and privacy policy">Data Protection &amp; Privacy Policy</a> <a href="http://www.commerce.gov/" title="u.s. department of commerce">U.S. Dept of Commerce</a> </span> </div></td>
+  </tr>
+</table>
+</body>
+</html>

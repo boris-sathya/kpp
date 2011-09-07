@@ -1,0 +1,450 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en-us">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="pics-label" content='(pics-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://www.apple.com" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://www.apple.com" r (n 0 s 0 v 0 l 0))'>
+	<meta name="Author" content="Apple Inc.">
+	<meta name="viewport" content="width=1024">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+
+	<title>Apple Retail Store</title>
+	<meta name="omni_page" content="Retail Store - Index">
+	<meta name="Keywords" content="Apple">
+	<meta name="Category" content="">
+	<meta name="Description" content="">
+	<script src="http://images.apple.com/global/scripts/lib/prototype.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/lib/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/browserdetect.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/apple_core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/search_decorator.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="http://images.apple.com/global/scripts/lib/event_mixins.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/ac_quicktime.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/crossfade.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/swap_view.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/overlay_panel.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/view_master_tracker.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/randinator.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/store_selector.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/ac_googlemap.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="http://images.apple.com/global/styles/base.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="http://images.apple.com/global/styles/overlay.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="http://images.apple.com/retail/styles/sgrid.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="http://images.apple.com/retail/styles/retail.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="http://images.apple.com/retail/styles/index.css" type="text/css" charset="utf-8">
+	<script src="http://images.apple.com/retail/scripts/index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/retail/scripts/indexeventslider.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		// on DOM Ready
+		Event.onDOMReady(function() {
+
+			AC.OverlayPanel.overlay.setDelegate({
+				willShow: function(overlayPanel, outgoing, incoming) {
+					if (incoming && incoming.id.match('overlay-')) {
+						overlayPanel.setOverlayShadowImageSrc('http://images.apple.com/finalcutstudio/images/overlay_shadow_610_20080206.png');
+					}
+					return incoming;
+				}
+			});
+
+			Event.Listener.listenForEvent(AC.ViewMaster, 'ViewMasterDidShowNotification', false, function(evt) {
+				var overlay = evt.event_data.data.sender;
+				var trigger = evt.event_data.data.trigger;
+
+				if (overlay == AC.OverlayPanel.overlay && trigger.target) {
+					overlay.target = trigger.target;
+					if (overlay.overlayFeatureViewer) {
+						var section = overlay.overlayFeatureViewer.sectionWithId(overlay.target);
+						if (section) {
+							overlay.overlayFeatureViewer.show(section);
+						}
+					}
+				}
+			});
+
+
+			var googleMap = new AC.GoogleMap();
+			googleMap.setSearchForm('store-locator-form');
+			googleMap.setAutocompleter('mapquery', 'locationChoices');
+
+			var storeNameCookie = document.cookie.match(new RegExp('(^|;)\\s*' + escape('recentlyViewedAppleStoreName') + '=([^;\\s]*)'));
+			var storeLinkCookie = document.cookie.match(new RegExp('(^|;)\\s*' + escape('recentlyViewedAppleStoreLink') + '=([^;\\s]*)'));
+			
+			if (storeNameCookie && storeLinkCookie) {
+				var recentlyViewedStoreLink = document.createElement('a'),
+					recentlyViewedStoreItem = $('recently-viewed-store');
+				recentlyViewedStoreLink.href = unescape(storeLinkCookie[2]);
+				recentlyViewedStoreLink.innerHTML = unescape(storeNameCookie[2]);
+				
+				recentlyViewedStoreItem.innerHTML = '';
+				recentlyViewedStoreItem.appendChild(recentlyViewedStoreLink);
+				
+				$('recently-viewed-title').style.display = 'block';
+				recentlyViewedStoreItem.style.display = 'block';
+			}
+			
+			var tracker = new AC.ViewMaster.Tracker('click');
+	
+			tracker.setDelegate({
+				trackingNameForSection: function(tracker, name, section) {
+					if (name.match(/\b(a|b|c|d|e)\b/i)){
+						return false;
+					}
+					return name;
+				}
+			});
+
+		});
+	</script>
+</head>
+
+<body id="overview" class="retail overview">
+	<script src="http://images.apple.com/global/nav/scripts/shortcuts.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var searchSection = 'global';
+	var searchCountry = 'us';
+</script>
+<div id="globalheader">
+	<!--googleoff: all-->
+	<ul id="globalnav">
+		<li id="gn-apple"><a href="/">Apple</a></li>
+		<li id="gn-store"><a href="http://store.apple.com">Store</a></li>
+		<li id="gn-mac"><a href="/mac/">Mac</a></li>
+		<li id="gn-ipoditunes"><a href="/itunes/">iPod + iTunes</a></li>
+		<li id="gn-iphone"><a href="/iphone/">iPhone</a></li>
+		<li id="gn-downloads"><a href="/downloads/">Downloads</a></li>
+		<li id="gn-support"><a href="/support/">Support</a></li>
+	</ul>
+	<!--googleon: all-->
+	<div id="globalsearch">
+			<form action="http://searchcgi.apple.com/cgi-bin/sp/nph-searchpre11.pl" method="post" class="search" id="g-search">
+			<div>
+				<input type="hidden" value="utf-8" name="oe" id="search-oe">
+				<input type="hidden" value="p" name="access" id="search-access">
+				<input type="hidden" value="us_only" name="site" id="search-site">
+				<input type="hidden" value="lang_en" name="lr" id="search-lr">
+				<label for="sp-searchtext"><span class="prettyplaceholder">Search</span><input type="search" name="q" id="sp-searchtext" class="g-prettysearch applesearch" accesskey="s"></label>
+			</div>
+		</form>
+		<div id="sp-results"><div class="inside"></div></div>
+	</div>
+</div>
+
+	<div id="top">
+<!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+<script type="text/javascript">
+/* RSID: */
+var s_account="appleglobal,appleretail"
+</script>
+
+<script type="text/javascript" src="http://images.apple.com/global/metrics/js/s_code_h.js"></script>
+
+<script type="text/javascript">
+s.pageName=AC.Tracking.pageName()+" (US)";
+s.server=""
+s.channel="www.us.retailstore"
+s.pageType=""
+s.prop1=""
+s.prop2=""
+s.prop3=""
+s.prop4=document.URL;
+s.prop5=""
+
+/* E-commerce Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events=""
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)</script>
+<!-- End SiteCatalyst code version: H.8. -->
+</div>
+
+	<h1><a href="/retail/" class="replaced">Apple Retail Store. Come to shop. Return to learn.</a></h1>
+	<div id="container">
+			<div class="sgrid" id="hero">
+				<div id="main-promo" class="slideshow-frame column first span_10">
+					<div class="slideshow-view">
+						<div class="content" id="featureA">
+							<div class="info">
+								<h1><a href="reserve/"><img id="reserve" src="http://images.apple.com/retail/home/images/2009/11/hero_reserve20091109.png" width="731" height="347" alt="Now you can reserve an iPod or Mac online, then pick it up and purchase it at an Apple Retail Store from December 15 to 24. Many products can even be wrapped." /></a></h1>
+							</div>
+						</div>
+					</div> <!-- /slideshow-view -->
+				</div><!-- /storegallery -->
+				<div class="column last span_4">
+					<div id="storefinder">
+						<div class="retailstorefinder">
+	<h2>Find an Apple Store:</h2>
+	
+	<form action="/retail/locator/index.html" remoteaction="/global/scripts/ac_googlemap_xml.php" id="store-locator-form" name="store-locator-form" method="GET">
+		<input type="hidden" id="storename_id" type="text" name="storename" value="Apple Store">
+		<label for="applesearch">City and State or Zip
+			<input id="mapquery" type="search" name="mapquery" autosave="Store Locator" results="5" class="sbox reseller prettysearch">
+		</label>
+		<button type="submit">Locate</button>
+		<div id="locationChoices" class="autocomplete">
+			<div id="bottomChoices"></div>
+		</div>
+		<ul class="recently-viewed">
+			<li id="recently-viewed-title">Recently Viewed:</li>
+			<li id="recently-viewed-store"><a href="/retail/sanfrancisco/">Apple Store, San Francisco</a></li>
+			<li><a href="/retail/storelist/" id="completestorelist">Complete store list</a></li>
+		</ul>
+	</form>
+</div> <!-- /retailstorefinder -->
+
+					</div> <!-- /storefinder -->
+					<div id="upcomingevents">
+						<h2>&nbsp;</h2> 
+						<ul id="event-link-container"> 
+							<li><a class="event-link" href="#A">A</a></li> 
+						</ul> 
+						<div class="stories"> 
+							<p id="eventContent"></p> 
+						</div>
+						<div id="eventPartsContainer">
+							<div id="A" class="eventParts">
+								<a href="/retail/upperwestside/"><img class="flushnone" src="http://images.apple.com/retail/home/images/2009/11/promo_uws20091112.jpg" width="200" height="90" alt="" /></a>
+								<p>The Apple Store, Upper West Side in New York City, is now open. <a href="/retail/upperwestside/"><em class="more">Learn more</em></a></p>
+							</div>
+							<div id="B" class="eventParts">
+								<a href="/fr/retail/carrouseldulouvre/"><img class="flushnone" src="http://images.apple.com/retail/home/images/2009/11/promo_louvre20091109.jpg" width="200" height="90" alt="The Apple Store, Carrousel du Louvre" /></a>
+								<p>The Apple Store, Carrousel du Louvre in Paris, France, is now open. <a href="/fr/retail/carrouseldulouvre/"><em class="more">Learn more</em></a></p>
+							</div>
+							<div id="C" class="eventParts">
+								<img class="flushtopleft" src="http://images.apple.com/retail/home/images/2009/11/promo_ribbon_macbook20091110.png" width="219" height="125" alt="MacBook" />
+								<p>Our Specialists at the Apple Retail Store are on hand to help you find the perfect holiday gifts.</p>
+							</div>
+							<div id="D" class="eventParts">
+								<img class="flushtopleft" src="http://images.apple.com/retail/home/images/2009/11/promo_ribbon_phones20091110.png" width="219" height="125" alt="iPhone" />
+								<p>Our Specialists at the Apple Retail Store are on hand to help you find the perfect holiday gifts.</p>
+							</div>
+							<div id="E" class="eventParts">
+								<img class="flushtopleft" src="http://images.apple.com/retail/home/images/2009/11/promo_ribbon_imac20091110.png" width="219" height="125" alt="iMac" />
+								<p>Our Specialists at the Apple Retail Store are on hand to help you find the perfect holiday gifts.</p>
+							</div>
+						</div> <!-- /events -->
+					</div> <!-- /upcomingevents -->
+				</div> <!-- /column -->
+			</div> <!-- /hero -->		
+
+		
+		<div id="main">
+			<div id="main-content" class="sgrid">
+					<div id="tips">
+						<div class="column first span_5 no_gutter">
+							<h3>Shopping Tips from the Apple Store</h3>
+						</div> <!-- /column.first -->
+						<div class="column last span_9" id="tip_list">
+							<a href="#" id="expand-tips">More</a>
+							<ul>
+								<li><strong>Tip 1.</strong> <p><strong>Shop early. Shop late.</strong> The store tends to be busiest in the middle of the day. Shopping early in the morning or late in the evening helps you avoid the crowds.</p><div class="clear"></div></li>
+								<li><strong>Tip 2.</strong> <p><strong>Make an appointment.</strong> Test-drive new products and learn all about them by making a <a href="/retail/personalshopping/">Personal Shopping appointment</a>.</p><div class="clear"></div></li>
+								<li><strong>Tip 3.</strong> <p><strong>Check out anywhere.</strong> When you use your credit card for purchases, any Specialist can check you out on the spot.</p><div class="clear"></div></li>
+								<li><strong>Tip 4.</strong> <p><strong>Check out fast.</strong> To pick up an iPod, an iPhone 3G, or Mac, visit the Express Bay for quick checkout.</p><div class="clear"></div></li>
+								<li><strong>Tip 5.</strong> <p><strong>Donâ??t be afraid to ask for help.</strong> If you have any questions, just ask. Any of our Specialists can point you in the right direction.</p><div class="clear"></div></li>
+							</ul>
+						</div> <!-- /column.last -->
+					</div> <!-- /tips -->
+				
+				<div id="heretohelp" class="column first span_6">
+					<h2><img src="http://images.apple.com/retail/home/images/logotitle_onetoone20090609.jpg" width="183" height="31" alt="OnetoOne"></h2>
+					<p class="with_callout">Thereâ??s no better way to get set up, get trained, and get going on your new Mac than with a One to One membership at the Apple Retail Store. We'll transfer your files from your old computer, teach</p>  
+					<div id="o2o-tour" class="overlaycallout left">
+						<div class="tour">
+							<a class="OverlayPanel" href="#overlay-guidedtour">
+								<img src="http://images.apple.com/retail/images/tour_play.png" width="19" height="19" alt="Play" class="enlarge">
+								<img src="http://images.apple.com/retail/images/overview_video_onetoone_20090208.jpg" width="83" height="56" alt="Watch the Guided Tour" class="video">
+							</a>
+							<div class="overlaycontent" id="overlay-guidedtour" style="display:none; width: 800px; height: 476px; padding:35px 50px;">
+								<h2 class="overlaytitle">One to One Program. <span>A Guided Tour.</span></h2>
+								<a class="movieLink" href="http://movies.apple.com/media/us/retail/2009/tours/apple-retail-one_to_one-us-20090602_r640-9cie.mov?width=640&amp;height=360"></a>
+								<a class="posterLink" href="http://images.apple.com/retail/images/endframe_onetoone.jpg"></a>
+								<div class="overlaydescription" style="display:block !important;">
+									<h3>One to One</h3>
+									<p>See how thereâ??s no better way to get set up, get trained, and get going on your new Mac than with a One to One membership at the Apple Retail Store.</p>
+								</div>
+							</div>
+						</div>
+						<p>Watch the One to One Guided Tour</p>
+					</div>
+					<div class="overlaycallout_capbottom left"></div>
+
+					<p class="secondparagraph">you the basics in face-to-face training sessions, and guide you through more advanced projects as your skills grow. One to One is available only at the time you purchase a new Mac from the Apple Retail Store or Apple Online Store. <a href="/retail/onetoone/" class="more">Learn more</a></p>
+
+				</div>
+				<img src="http://images.apple.com/retail/home/images/welcome_geniuses20090609.jpg" width="476" height="248" alt="Apple Specialists" class="right geniuses">
+				<img src="http://images.apple.com/retail/home/images/instore_hardware20090609.jpg" width="397" height="407" alt="Genius Bar" id="instorehardware">
+				<div class="column last span_6" id="everything_shopping">
+					<h2>Weâ??re here to help.</h2>
+					<p class="with_callout">The Apple Retail Store is the best place to test-drive and explore Apple products because itâ??s the one place you can find everything Apple â?? including some of the worldâ??s most knowledgeable Apple people.
+						<div id="tour-retail" class="overlaycallout left">
+							<div class="tour">
+								<a class="OverlayPanel" href="#overlay-intro">
+									<img src="http://images.apple.com/retail/images/tour_play.png" width="19" height="19" alt="Play" class="enlarge">
+									<img src="http://images.apple.com/retail/images/overview_video_retailstore.jpg" width="83" height="56" alt="Watch the Guided Tour" class="video">
+								</a>
+								<div class="overlaycontent" id="overlay-intro" style="display:none; width: 800px; height: 476px; padding:35px 50px;">
+									<h2 class="overlaytitle">The Apple Retail Store. <span>An introduction.</span></h2>
+									<a class="movieLink" href="http://movies.apple.com/media/us/retail/2009/tours/apple-retail-store_introduction-us-20090602_r640-9cie.mov?width=640&#38;height=360"></a>
+									<a class="posterLink" href="http://images.apple.com/retail/images/endframe_onetoone.jpg"></a>
+									<div class="overlaydescription" style="display:block !important;">
+										<h3>Welcome to the Apple Retail Store</h3>
+										<p>As youâ??ll discover in this video, the people, programs, and services at the Apple Retail Store make it the very best place to learn about, shop for, and get the most out of the Mac, iPod, iPhone, and Apple TV.</p>
+									</div>
+								</div>
+							</div>
+							<p>Watch an introduction to the Apple Retail Store.</p>
+						</div> <!-- /tour-retail -->
+						<div class="overlaycallout_capbottom left ars"></div>
+						The Concierge in the orange shirt is your guide to the Apple Retail Store, ready to answer your questions and point you in the right direction. Our Specialists help you get to know our products and answer your questions. Our iPhone experts in the iPhone Activation Zone will help you with fast activation, custom setup, and give you expert advice about which rate plan is right for you. And Geniuses provide hands-on technical support and any necessary repairs at the Genius&nbsp;Bar.</p>
+
+					<h3 class="clear"><a href="/retail/personalshopping/">Personal Shopping</a></h3>
+					<div id="tour-personal-shopping" class="overlaycallout right">
+						<div class="tour">
+							<a class="OverlayPanel" href="#overlay-shopping">
+								<img src="http://images.apple.com/retail/images/tour_play.png" width="19" height="19" alt="Play" class="enlarge">
+								<img src="http://images.apple.com/retail/home/images/overview_video_personalshop_holiday.jpg" width="83" height="56" alt="Watch the Personal Shopping Guided Tour." class="video">
+							</a>
+							<div class="overlaycontent" id="overlay-shopping" style="display:none; width: 800px; height: 476px; padding:35px 50px;">
+								<h2 class="overlaytitle">Personal Shopping. <span>A Guided Tour.</span></h2>
+								<a class="movieLink" href="http://movies.apple.com/media/us/retail/2009/tours/apple-retail-personal_shopping-us-20090602_r640-9cie.mov?width=640&#38;height=360"></a>
+								<a class="posterLink" href="http://images.apple.com/retail/images/endframe_onetoone.jpg"></a>
+								<div class="overlaydescription" style="display:block !important;">
+									<h3>Learn more about personal shopping.</h3>
+									<p>The best way to learn about new products is with a free, face-to-face shopping appointment. Pick a convenient day and time online, and one of our Specialists will spend an uninterrupted hour giving you all the assistance and answers you need to make the right choice.</p>
+								</div>
+							</div>
+						</div>
+						<p>Watch the Personal Shopping Guided Tour.</p>
+					</div> <!-- /tour-retail -->
+					<div class="overlaycallout_capbottom right"></div>
+					<p>We know your time is valuable. Thatâ??s why we offer free Personal Shopping appointments. During your uninterrupted time with a Specialist, you can have your questions answered and get a personal guided tour &#8212; including a test-drive of Apple products. Enjoy as much time as you need with no obligation to purchase. Just book an appointment thatâ??s convenient for you, and weâ??ll help you find the Mac or iPod that meets your needs. <a href="/retail/personalshopping/" class="more">Learn more</a></p>
+				</div>
+
+				<div class="geniusbar clear">
+					<img src="http://images.apple.com/retail/home/images/geniusbar_logo20090609.jpg" width="82" height="64" alt="Genius Bar" class="right">
+					<div id="tour-geniusbar" class="overlaycallout left">
+						<div class="tour">
+							<a class="OverlayPanel" href="#overlay-genius">
+								<img src="http://images.apple.com/retail/images/tour_play.png" width="19" height="19" alt="Play" class="enlarge">
+								<img src="http://images.apple.com/retail/images/overview_video_geniusbar_20090208.jpg" width="83" height="56" alt="Watch the Guided Tour" class="video">
+							</a>
+							<div class="overlaycontent" id="overlay-genius" style="display:none; width: 800px; height: 476px; padding:35px 50px;">
+								<h2 class="overlaytitle">The Genius Bar. <span>A guided tour.</span></h2>
+								<a class="movieLink" href="http://movies.apple.com/movies/us/apple/retail/2008/apple_retail_genius_20080513_r640-9cie.mov?width=640&#38;height=360"></a>
+								<a class="posterLink" href="http://images.apple.com/retail/images/endframe_onetoone.jpg"></a>
+								<div class="overlaydescription" style="display:block !important;">
+									<h3>Meet the Geniuses</h3>
+									<p>Why do people flock to the Genius Bar? Itâ??s the Geniuses, of course, and what they offer Apple customers. In this video, weâ??ll tell you all about the Geniuses and what you can expect when you take a seat at the Genius Bar.</p>
+								</div>
+							</div>
+						</div>
+						<p>Watch the Genius Bar Guided Tour.</p>
+					</div> <!-- /tour-geniusbar -->
+					<div class="overlaycallout_capbottom left"></div>
+					<h3>Genius Bar</h3>
+					<p>If you have technical questions about your Mac, iPod, Apple TV, or iPhone, the Genius Bar is the place for free advice, insight, and friendly, hands-on technical support. Geniuses use their impressive knowledge to answer technical questions, troubleshoot problems, and perform repairs â?? right in your neighborhood store. <a href="/retail/geniusbar/" class="more">Learn more</a></p>
+					<img src="http://images.apple.com/retail/home/images/geniusbar20090609.jpg" width="268" height="142" alt="Apple Specialists" class="farright">
+				</div><!--/geniusbar-->
+				<h2 class="clear">Gather. Learn. Create.</h2>
+				<div class="grid3col clear" id="other_programs">
+					<div class="column first">
+						<img src="http://images.apple.com/retail/images/overview_workshopshero_20090208.jpg" width="268" height="141" alt="Workshops" class="programhero">
+						<h3><a href="/retail/workshops/">Workshops</a></h3>
+						<p class="with_callout">The Apple Retail Store offers free workshops on many topics of interest to both beginners
+						<div id="tour-workshops" class="overlaycallout left">
+							<div class="tour">
+								<a class="OverlayPanel" href="#overlay-workshop">
+									<img src="http://images.apple.com/retail/images/tour_play.png" width="19" height="19" alt="Play" class="enlarge">
+									<img src="http://images.apple.com/retail/images/workshops_video_guidedtour_20090208.jpg" width="83" height="56" alt="Watch the Guided Tour" class="video">
+								</a>
+								<div class="overlaycontent" id="overlay-workshop" style="display:none; width: 800px; height: 476px; padding:35px 50px;">
+									<h2 class="overlaytitle">Group Workshops. <span>A guided tour.</span></h2>
+									<a class="movieLink" href="http://movies.apple.com/media/us/retail/2009/tours/apple-retail-workshops-us-20090602_r640-9cie.mov?width=640&#38;height=360"></a>
+									<a class="posterLink" href="http://images.apple.com/retail/images/endframe_onetoone.jpg"></a>
+									<div class="overlaydescription" style="display:block !important;">
+										<h3>Learn about our workshops</h3>
+										<p>What can you expect from a workshop at an Apple Retail Store? Sit back and watch, and weâ??ll tell you about the courses we offer, the knowledgeable people who teach them, and what you can learn in one of our free workshops.</p>
+									</div>
+								</div>
+							</div>
+							<p>Watch the Workshops Guided Tour.</p>
+						</div> <!-- /tour-onetoone -->
+						<div class="overlaycallout_capbottom left"></div> and pros: from Getting Started on a Mac to digital photography, music, and moviemaking.<br><a href="/retail/workshops/" class="more">Learn more</a></p>
+					</div> <!-- /column -->
+					<div class="column">
+						<img src="http://images.apple.com/retail/images/overview_programshero.jpg" width="268" height="141" alt="Youth Programs" class="programhero">
+						<h3><a href="/retail/youth/">Youth Programs</a></h3>
+						<a href="/retail/youth/"><img src="http://images.apple.com/retail/images/overview_camplogo.gif" width="82" height="41" alt="Apple Camp logo" class="right no_bottom"></a>
+						<p>Your neighborhood Apple Retail Store even offers special programs for kids and families. Available year round, our free Youth Workshops let the entire family learn about Apple products. And every summer, we host Apple Camp, where kids take free classes on digital photography, music, moviemaking, and other topics. <a href="/retail/youth/" class="more">Learn more</a></p>
+					</div> <!-- /column -->
+					<div class="column last">
+						<img src="http://images.apple.com/retail/images/overview_businesshero.jpg" width="268" height="141" alt="Business" class="programhero">
+						<a href="/retail/business/"><img src="http://images.apple.com/retail/images/overview_businesslogo.gif" width="66" height="75" alt="Business logo" class="right"></a>
+						<h3><a href="/retail/business/">Business</a></h3>
+						<p>No matter what kind of business you manage, the Business Team at the Apple Retail Store can work with you one on one. Whether you want to find the right Mac systems for your office, upgrade your network, enhance your business software, or use iPod as an incentive, our Business Team can help you. <a href="/retail/business/" class="more">Learn more</a></p>
+					</div> <!-- /column.last -->
+				</div> <!-- /grid3col -->
+				
+				<div id="findstore">
+
+					<div class="retailstorefinder">
+						<h2>Find an Apple Store:</h2>
+						<form action="/retail/locator/index.html" method="GET" accept-charset="utf-8" id="findastorefooter">
+							<label for="applesearch">City and State or Zip
+								<input type="search" name="mapquery" autosave="Store Locator" results="5" class="sbox reseller prettysearch" id="footer-mapquery">
+							</label>
+							<button>Locate</button>
+						</form>
+						
+						<span><a href="/retail/storelist/" class="more">Complete store list</a></span>
+					</div> <!-- /retailstorefinder --> 
+					<span id="signmeup"><a href="/retail/signmeup/" class="more">Sign up for our newsletter</a></span>
+
+				</div> <!-- /findstore -->
+				
+			</div> <!-- /main-content -->
+			<div class="main_capbottom"></div>
+		</div> <!-- /main -->
+	</div> <!-- /container -->
+	<div id="globalfooter">
+		<div id="breadory">
+			<ol id="breadcrumbs">
+				<li class="home"><a href="/">Home</a></li>
+				<li>Apple Retail Store</li>
+			</ol>
+		</div><!--/breadory-->
+		<p class="gf-buy">Shop the <a href="/store/">Apple Online Store</a> (1-800-MY-APPLE), visit an <a href="/retail/">Apple Retail Store</a>, or find a <a href="/buy/locator/">reseller</a>.</p>
+
+<ul class="gf-links piped">
+	<li><a href="/about/" class="first">Apple Info</a></li>
+	<li><a href="/sitemap/">Site Map</a></li>
+	<li><a href="/hotnews/">Hot News</a></li>
+	<li><a href="/rss/">RSS Feeds</a></li>
+	<li><a href="/contact/" class="contact_us">Contact Us</a></li>
+	<li><a href="/choose-your-country/" class="choose" title="Choose your country or region."><img src="http://images.apple.com/home/elements/worldwide_us.png" alt="United States" width="22" height="22"></a></li>
+</ul>
+	
+<div class="gf-sosumi">
+	<p>Copyright Â© 2009 Apple Inc. All rights reserved.</p>
+	<ul class="piped">
+		<li><a href="/legal/terms/site.html" class="first">Terms of Use</a></li>
+		<li><a href="/legal/privacy/">Privacy Policy</a></li>
+	</ul>
+</div>
+
+
+	</div><!--/globalfooter-->
+</body>
+</html>

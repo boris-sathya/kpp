@@ -1,0 +1,635 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN"> 
+<HTML> 
+<HEAD> 
+<TITLE>Linux HeadQuarters : Kernel Module Programming</TITLE> 
+<META NAME="description" CONTENT="Comprehensive information and resources about the Linux Operating System."> 
+<META NAME="keywords" CONTENT="Linux, Linux Headquarters, Torvalds, Linus, operating system, UNIX, web, www, software, hardware, support, help, information, resources, drivers, manual, documentation project, FAQ, miniHOWTO, howto, documentation, Linus Torvalds, Redhat, Slackware, Yggdrasil, Debian, LinuxPro, OpenLinux, FTP, download, projects, application, usergroup, user group, mailing list, kernel"> 
+</HEAD> 
+
+<!-- header -->
+
+<body bgcolor="#DBEAC2">
+<a href="/robot/index.html"><img src="/images/colour/green.gif" width="1" height="1" border="0" alt="" /></a><a href="mailto:trapper@linuxhq.com?subject=DO NOT SEND EMAIL HERE"><img src="/images/colour/green.gif" width="1" height="1" border="0" alt="" /></a><br />
+<table bgcolor="#88BCEF" border="0" cellspacing="0" cellpadding="0">
+<tr>
+  <td width="16" valign="top"><img src="/images/corner/tleft.gif" width="16" height="16" alt="" /></td>
+  <td width="748"><img src="/images/colour/cell.gif" width="748" height="16" alt="" /></td>
+  <td width="16" valign="top" align="right"><img src="/images/corner/tright.gif" width="16" height="16" alt="" /></td>
+  <td bgcolor="#DBEAC2"></td>
+</tr>
+<tr>
+  <td><img src="/images/colour/cell.gif" height="136" width="16" alt="" /></td>
+  <td>
+    <table width="748" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="400" valign="top"><a href="http://www.linuxhq.com"><img src="/images/logo/linuxhq.gif" width="400" height="104" border="0" alt="Linux Headquarters" /></a></td>
+      <td rowspan="2" width="10"><img src="/images/colour/cell.gif" height="104" width="10" alt="" /></td>
+      <td rowspan="2" width="203" valign="top">
+        <table width="203" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><img src="/images/colour/cell.gif" border="0" height="24" width="96" alt="" /></td>
+            <td><img src="/images/colour/cell.gif" height="24" width="11" alt="" /></td>
+            <td><img src="/images/colour/cell.gif" border="0" height="24" width="96" alt="" /></td>
+          </tr>
+          <tr>
+            <td colspan="3"><img src="/images/colour/cell.gif" height="4" width="203" alt="" /></td>
+          </tr>
+          <tr>
+            <td><img src="/images/colour/cell.gif" border="0" height="24" width="96" alt="" /></td>
+            <td><img src="/images/colour/cell.gif" height="24" width="11" alt="" /></td>
+            <td><img src="/images/colour/cell.gif" border="0" height="24" width="96" alt="" /></td>
+          </tr>
+          <tr>
+            <td colspan="3"><img src="/images/colour/cell.gif" height="4" width="203" alt="" /></td>
+          </tr>
+          <tr>
+            <td><img src="/images/colour/cell.gif" border="0" height="24" width="96" alt="" /></td>
+            <td><img src="/images/colour/cell.gif" height="24" width="11" alt="" /></td>
+            <td><img src="/images/colour/cell.gif" border="0" height="24" width="96" alt="" /><!-- a href="/user/subscribe.html"><img src="/images/navbar/subscribe.gif" border="0" height="24" width="96" alt="[ Subscribe ]" /></a> --></td>
+          </tr>
+          <tr>
+            <td colspan="3"><img src="/images/colour/cell.gif" height="4" width="203" alt="" /></td>
+          </tr>
+          <tr>
+            <td><a href="/user/register.html"><img src="/images/navbar/register.gif" border="0" height="24" width="96" alt="[ Register ]" /></a></td>
+<td><img src="/images/colour/cell.gif" height="24" width="11" alt=" " /></td>
+<td><form method="post" action="/user/bin/login"><input type="hidden" name="action" value="form" /><input type="hidden" name="url" value="/lkprogram.html" /><input type="image" src="/images/navbar/login.gif" align="middle" alt="[ Login ]" /></form></td>
+
+          </tr>
+          <tr>
+            <td colspan="3"><img src="/images/colour/cell.gif" height="4" width="203" alt="" /></td>
+          </tr>
+          <tr>
+            <td><a href="/about/"><img src="/images/navbar/about.gif" border="0" height="24" width="96" alt="[ About us ]" /></a></td>
+            <td><img src="/images/colour/cell.gif" height="24" width="11" alt="" /></td>
+            <td><a href="/"><img src="/images/navbar/homepage.gif" border="0" height="24" width="96" alt="[ Home Page ]" /></a></td>
+          </tr>
+        </table>
+      </td>
+      <td rowspan="2" width="10"><img src="/images/colour/cell.gif" height="136" width="10" alt="" /></td>
+      <td rowspan="2" width="125" valign="top" align="center"><img src="/images/colour/cell.gif" height="1" width="125" alt="" /><br /></td>
+    </tr>
+    <tr valign="bottom">
+      <td colspan="3">
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><a href="/kernel/"><img src="/images/navbar/kernel.gif" border="0" height="24" width="96" alt="[ Kernel ]" /></a></td>
+          <td><img src="/images/colour/cell.gif" height="24" width="5" alt="" /></td>
+          <td><a href="/docs/"><img src="/images/navbar/documentation.gif" border="0" height="24" width="96" alt="[ Documentation ]" /></a></td>
+          <td><img src="/images/colour/cell.gif" height="24" width="6" alt="" /></td>
+          <td><a href="/links/"><img src="/images/navbar/links.gif" border="0" height="24" width="96" alt="[ Links ]" /></a></td>
+          <td><img src="/images/colour/cell.gif" height="24" width="5" alt="" /></td>
+          <td><a href="/books/"><img src="/images/navbar/books.gif" border="0" height="24" width="96" alt="[ Books ]" /></a></td>
+        </tr>
+      </table>
+      </td>
+    </tr>
+    </table>
+  </td>
+  <td><img src="/images/colour/cell.gif" height="136" width="16" alt="" /></td>
+  <td bgcolor="#DBEAC2"></td>
+</tr>
+<tr>
+  <td colspan="3"><img src="/images/colour/cell.gif" height="16" width="780" alt="" /></td>
+  <td bgcolor="#DBEAC2"></td>
+</tr>
+<tr>
+  <td><img src="/images/colour/cell.gif" height="1" width="16" alt="" /></td>
+  <td colspan="3" bgcolor="#FFFFFF">
+  <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td rowspan="8"><img src="/images/colour/white.gif" height="5" width="5" alt="" /></td>
+      <td><img src="/images/colour/white.gif" height="5" width="754" alt="" /></td>
+      <td rowspan="8"><img src="/images/colour/white.gif" height="5" width="5" alt="" /></td>
+    </tr>
+    <tr><td><p></p><center><img src="/images/advert/backwhite.gif" border="0" width="61" height="10" alt="Advertisement" /><br /><script type="text/javascript"><!--
+google_ad_client = "pub-0311253343701054";
+google_alternate_ad_url = "http://www.linuxhq.com/advert/bin/replace?03:1719:0439:854BABE72DFDF7FDFE7CB034";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel ="6877976863";
+google_color_border = "B4D0DC";
+google_color_bg = "ECF8FF";
+google_color_link = "0000CC";
+google_color_url = "008000";
+google_color_text = "6F6F6F";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<script language="javascript" type="text/javascript" src="/advert/bin/source?03:1719:0439:854BABE72DFDF7FDFE7CB034"></script></center></td></tr>
+    <tr><td><img src="/images/colour/white.gif" height="5" width="754" alt="" /></td></tr>
+    <tr valign="top">
+      <td>
+
+<!-- google_ad_section_start -->
+<!-- content -->
+
+
+<UL>
+<TABLE CELLPADDING=6 CELLSPACING=6>
+
+<TR>
+<TD COLSPAN=2>
+Here are some good resources if you are interested in kernel
+programming.
+<BR><BR>
+[<A HREF="#various">Various</A>]
+[<A HREF="#filesystem">Filesystems</A>]
+[<A HREF="#module">Module Programming</A>]
+[<A HREF="#devices">Device Programming</A>]
+[<A HREF="#networking">Networking</A>]
+[<A HREF="#security">Security</A>]
+[<A HREF="#mm">Memory Management</A>]
+</TD>
+</TR>
+
+<TR><TH COLSPAN=2><A NAME="various">Various</A></TH></TR>
+
+<TR>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.linux.org/docs/ldp/howto/KernelAnalysis-HOWTO.html">
+Kernel Analysis HOWTO</A><BR>
+<FONT SIZE=2>
+This document tries to explain some things about the Linux Kernel,
+such as the most important components, how they work, and so on. This
+HOWTO should help prevent the reader from needing to browse all the
+kernel source files searching for the "right function", declaration,
+and definition, and then linking each to the other.
+</FONT>
+</TD>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.tldp.org/LDP/tlk/tlk.html">
+The Linux Kernel</A><BR>
+<FONT SIZE=2>
+This book is for Linux enthusiasts who want to know how the Linux
+kernel works. It is not an internals manual. Rather it describes the
+principles and mechanisms that Linux uses; how and why the Linux
+kernel works the way that it does.
+</FONT>
+</TD>
+
+</TR>
+<TR>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.kernelnewbies.org/">
+Kernel Newbies</A><BR>
+<FONT SIZE=2>
+A good place to start if you are new to kernel programming. They also
+run the IRC channel #kernelnewbies which you can reach at irc.kernelnewbies.org.
+</FONT>
+</TD>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.kerneltraffic.org/kernel-traffic/latest.html">
+Kernel Traffic</A><BR>
+<FONT SIZE=2>
+Kernel Traffic is a weekly summary of what is going on in the
+linux-kernel mailing-list. Very nice if you want to see where development is
+going, but dont wish to subscribe to that mailing-list (which is very high-traffic)
+</FONT>
+</TD>
+
+</TR>
+<TR>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://kernelbook.sourceforge.net/#kdocs">
+Official Linux Kernel-Docs</A><BR>
+<FONT SIZE=2>
+Various documents on kernel programming
+</FONT>
+</TD>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://netfilter.gnumonks.org/unreliable-guides/kernel-hacking/lk-hacking-guide.html">
+Unreliable Guide To Hacking The Linux Kernel</A><BR>
+<FONT SIZE=2>
+This document describes the common routines and general requirements
+for kernel code: its goal is to serve as a primer for Linux kernel
+development for experienced C programmers.
+</FONT>
+</TD>
+
+<TR>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.xenotime.net/linux/linit/lin240_init_x86.html">
+Linux 2.4.x Initialization for IA-32</A><BR>
+<FONT SIZE=2>
+This document is a description of the Linux 2.4 kernel initialization
+sequence on IA-32 processors.
+</FONT>
+</TD>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.moses.uklinux.net/patches/lki.html">
+Linux Kernel 2.4 Internals</A><BR>
+<FONT SIZE=2>
+Introduction to the Linux 2.4 kernel.
+</FONT>
+</TD>
+
+</TR>
+<TR>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://lxr.linux.no/source/">
+Cross-Referencing Linux</A><BR>
+<FONT SIZE=2>
+Easy browsing of the linux kernel code
+</FONT>
+</TD>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://user-mode-linux.sourceforge.net/">
+User-mode Linux</A><BR>
+<FONT SIZE=2>
+User-Mode Linux is a safe, secure way of running Linux versions and
+Linux processes. Run buggy software, experiment with new Linux kernels
+or distributions, and poke around in the internals of Linux, all
+without risking your main Linux setup.
+</FONT>
+</TD>
+
+</TR>
+<TR>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.xenotime.net/linux/syscall_ex/">
+Yet Another HOWTO Add a Syscall to Linux</A><BR>
+<FONT SIZE=2>
+This is a short, quick example of how to add a system call to
+Linux for x86.  This example is specific to Linux version
+2.4.18 but it should be easy to modify the patch to work with
+other kernel versions.
+</FONT>
+</TD>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://quaff.port5.com/syscall_list.html">
+Linux System Call Table</A><BR>
+<FONT SIZE=2>
+This page lists the system calls for the Linux 2.2
+kernel. It could also be thought of as an API for the interface
+between user space and kernel space.
+</FONT>
+</TD>
+
+</TR>
+</TR>
+
+<TR><TH COLSPAN=2><A NAME="filesystem">Filesystems</A></TH></TR>
+
+<TR>
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://web.mit.edu/tytso/www/linux/ext2intro.html">
+The Second Extended Filesystem</A><BR>
+<FONT SIZE=2>
+Covers Linux filesystems history, ext2 features, design, physical
+structure on disk etc. It is written by three of the top ext2 hackers,
+and is a must read!
+</FONT>
+</TD>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.atnf.csiro.au/~rgooch/linux/vfs.txt">
+Overview of the Virtual File System</A><BR>
+<FONT SIZE=2>
+Brief introduction to the Linux Virtual File System. What is it, how it works, operations
+taken when opening a file or mounting a file system and description of
+important data structures explaining the purpose of each of their
+entries.
+</FONT>
+</TD>
+
+<TR>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www-2.cs.cmu.edu/~mihaib/fs/fs.html">
+A Dual-Disk File System: ext4</A><BR>
+<FONT SIZE=2>
+This paper presents the design and implementation of a Unix-compatible
+file system, ext4, which uses two disk partitions to store its
+data. One partition is used exclusively for directory-related
+information, and one partition for ordinary files.
+</FONT>
+</TD>
+
+<TD WIDTH="50%" VALIGN=TOP>
+
+</TD>
+</TR>
+
+<TR><TH COLSPAN=2><A NAME="module">Module programming</A></TH></TR>
+
+<TR>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.tldp.org/LDP/lkmpg/">
+Linux Kernel Module Programming</A><BR>
+<FONT SIZE=2>
+A bit dated, but an excellent guide for anyone wishing to get started
+on kernel module programming.
+</FONT>
+</TD>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.thehackerschoice.com/papers/LKM_HACKING.html">
+(nearly) Complete Linux Loadable Kernel Modules</A><BR>
+<FONT SIZE=2>
+Another guide on kernel module programming, with focus on security
+</FONT>
+</TD>
+
+</TR>
+
+<TR><TH COLSPAN=2><A NAME="devices">Devices</A></TH></TR>
+<TR>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.xml.com/ldd/chapter/book/index.html">
+Linux Device Drivers, 2nd Edition</A><BR>
+<FONT SIZE=2>
+Online version of an excellent book by Alessandro Rubini & Jonathan
+Corbet on how to write device drivers.
+</FONT>
+</TD>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.freeos.com/articles/2677/2/13/">
+Writing a Linux device driver</A><BR>
+<FONT SIZE=2>
+Quick primer on device driver programming.
+</FONT>
+</TD>
+
+</TR>
+<TR>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.linux.org/docs/ldp/howto/SCSI-Generic-HOWTO/index.html">
+Linux SCSI Generic (sg) HOWTO</A><BR>
+<FONT SIZE=2>
+This HOWTO describes the SCSI Generic driver (sg) found in the Linux
+2.4 production series of kernels.
+</FONT>
+</TD>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://usb.cs.tum.edu/usbdoc/">
+Programming Guide for Linux USB Device Drivers</A><BR>
+<FONT SIZE=2>
+This document should give detailed information about the current state
+of the USB subsystem and its API for USB device drivers. You will learn about
+different types of devices and their properties. Going into detail you
+will see how USB devices communicate on the bus. There is an overview
+of the Linux USB subsystem and the device driver framework. Then the
+API and its data structures will be explained step by step.
+</FONT>
+</TD>
+
+</TR>
+
+<TR><TH COLSPAN=2><A NAME="networking">Networking</A></TH></TR>
+
+<TR>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.iptables.org/documentation/HOWTO//netfilter-hacking-HOWTO.html">
+Linux netfilter Hacking HOWTO</A><BR>
+<FONT SIZE=2>
+This document describes the netfilter architecture for Linux, how to
+hack it, and some of the major systems which sit on top of it, such as
+packet filtering, connection tracking and Network Address
+Translation.
+</FONT>
+</TD>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.gnumonks.org/ftp/pub/doc/packet-journey-2.4.html">
+The journey of a packet through the linux 2.4 network stack</A><BR>
+<FONT SIZE=2>
+This document describes the journey of a network packet inside the
+linux kernel 2.4.x. This has changed drastically since 2.2 because the
+globally serialized bottom half was abandoned in favor of the new
+softirq system.
+</FONT>
+</TD>
+
+</TR>
+<TR>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.gnumonks.org/ftp/pub/doc/conntrack+nat.html">
+Netfilter connection tracking and nat helper modules</A><BR>
+<FONT SIZE=2>
+This document gives a brief description how to write netfilter
+connection tracking helper and nat helper modules. Netfilter is the
+packet filtering / NAT infrastructure provided by the Linux 2.4.x
+kernel.
+</FONT>
+</TD>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.gnumonks.org/ftp/pub/doc/skb-doc.html">
+skb - Linux network buffers</A><BR>
+<FONT SIZE=2>
+Short description about the linux network buffers (skb's)
+</FONT>
+</TD>
+
+</TR>
+<TR>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.phrack.com/show.php?p=55&a=12">
+Building into the Linux Network Layer</A><BR>
+<FONT SIZE=2>
+Phrack article that points out interesting things that can be done
+using Kernel Modules in the Network Layer. Like most Phrack articles
+it is very interesting reading, especially if you are interested in
+security.<BR>
+</FONT>
+</TD>
+
+<TD WIDTH="50%" VALIGN=TOP>
+</TD>
+
+</TR>
+
+<TR><TH COLSPAN=2><A NAME="security">Security</A></TH></TR>
+<TR>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.phrack.com/show.php?p=52&a=18">
+Weakening the Linux Kernel</A><BR>
+<FONT SIZE=2>
+Yet another excellent Phrack article. This one is about modifying
+system calls, Kernel Module hiding etc. Interesting security issue, if
+your kernel allows module usage. Mainly focus on the 2.0.x kernel series<BR>
+</FONT>
+</TD>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.phrack.com/show.php?p=52&a=6">
+Hardening the Linux Kernel</A><BR>
+<FONT SIZE=2>
+This article covers a few areas of potential insecurity in the Linux OS
+and attempts to improve upon them.  It contains several security related
+kernel patches for the 2.0.x kernels.
+</FONT>
+</TD>
+
+</TR>
+<TR>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.phrack.com/show.php?p=59&a=14">
+Writing Linux Kernel Keylogger</A><BR>
+<FONT SIZE=2>
+This article begin by describing how the linux keyboard driver work, and discusses
+methods that can be used to create a kernel based keylogger. It then
+presents a smart, kernel-based linux keylogger.
+</FONT>
+</TD>
+
+<TD WIDTH="50%" VALIGN=TOP>
+</TD>
+
+</TR>
+
+<TR><TH COLSPAN=2><A NAME="mm">Memory Management</A></TH></TR>
+<TR>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.linux-mm.org/">
+Linux MM
+</A><BR>
+<FONT SIZE=2>
+This site is supposed to provide full documentation on the Linux MM
+subsystem and to give a good overview of what's happening in the Linux
+MM community.
+</FONT>
+</TD>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://www.surriel.com/lectures/">
+Rik van Riel lectures</A><BR>
+<FONT SIZE=2>
+Very good texts on various aspects of memory management
+</FONT>
+</TD>
+
+<TR>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://linuxcompressed.sourceforge.net/vm24/">
+Linux 2.4 Virtual Memory Overview</A><BR>
+<FONT SIZE=2>
+On this page you can find some studies of Linux 2.4 VM
+system. This page was created to help us out to visualize VM system
+better.
+</FONT>
+</TD>
+
+<TD WIDTH="50%" VALIGN=TOP>
+<LI>
+<A HREF="http://home.earthlink.net/~jknapka/linux-mm/vmoutline.html">
+Outline of the Linux Memory Management System</A><BR>
+<FONT SIZE=2>
+These pages contain notes on the Linux memory-management system.
+</FONT>
+</TD>
+
+</TR>
+</TABLE>
+
+</UL>
+
+<BR><BR>
+<P>
+<!-- footer -->
+<!-- google_ad_section_end -->
+      </td>
+    </tr>
+    <tr valign="top">
+      <td><img src="/images/colour/white.gif" height="5" width="754" alt="" /></td>
+    </tr>
+  </table>
+  </td>
+</tr>
+<tr>
+  <td colspan="3"><img src="/images/colour/cell.gif" height="16" width="780" alt="" /></td>
+  <td bgcolor="#DBEAC2"></td>
+</tr>
+<tr>
+  <td width="16" valign="bottom"><img src="/images/corner/bleft.gif" width="16" height="16" alt="" /></td>
+  <td>
+    <table width="748" border="0" bgcolor="#FFFFFF" cellspacing="0" cellpadding="5">
+      <tr>
+        <td valign="top"><font size="-1">
+          Comments: <a href="mailto:webmaster_at_linuxhq.com">webmaster&nbsp;(at)&nbsp;linuxhq.com</a>.<br />
+          Advertising: <a href="mailto:banners_at_linuxhq.com">banners&nbsp;(at)&nbsp;linuxhq.com</a>.<br />
+          Compilation &copy;1998-2008 <a href="/about/copyright.html">Linux Headquarters, Inc</a>.<br />
+        </font>
+        </td>
+        <td width="480" align="center">
+          <img src="/images/colour/white.gif" height="1" width="480" alt="" /><br />
+        </td>
+      </tr>
+    </table>
+  </td>
+  <td width="16" valign="bottom" align="right"><img src="/images/corner/bright.gif" width="16" height="16" alt="" /></td>
+  <td bgcolor="#DBEAC2"></td>
+</tr>
+</table>
+<script language="javascript" type="text/javascript">
+var dc_UnitID = 14;
+var dc_PublisherID = 4028;
+var dc_AdLinkColor = 'blue';
+var dc_adprod='ADL';
+</script>
+<script language="javascript" type="text/javascript" src="http://kona.kontera.com/javascript/lib/KonaLibInline.js"></script>
+<script language="javascript" type="text/javascript" src="/advert/bin/source?03:1720:0498:854BABE72DFDF7FD707CB08C"></script></body>
+<!-- end -->
+
+
+</HTML> 

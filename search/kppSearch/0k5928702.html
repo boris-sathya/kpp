@@ -1,0 +1,1051 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<!-- start "view_helper" output -->
+<!-- Events Calendar uses shared code from the "mortar" repository. -->
+<!-- Do not modify these three links. -->
+
+<script type="text/javascript" src="/mortar/dhtml/suit_bin/suit_methods.js"></script>
+<script type="text/javascript" src="/mortar/dhtml/suit_bin/suit_widgets.js"></script>
+<link rel="stylesheet" type="text/css" href="/mortar/dhtml/suit_bin/suit_layout.css" />
+
+<script type="text/javascript">
+  /* suit.view object
+     An object for data about the view or state of the current page.
+     This is the SUIT technique for carrying server-side values to the client side code. */
+
+  suitClass.prototype.view = function() {
+    this.pageType = "index";
+    this.view = "index.html";
+    this.path = "/index.html";
+  }
+
+</script>
+
+<!-- local scripts should load after suit stuff, so it can use suit methods -->
+<script type="text/javascript" src="/dhtml/lib.js"></script>
+<script type="text/javascript" src="/dhtml/mm.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/mit/styles/mit-daily-colors.css" />
+<link rel="stylesheet" type="text/css" href="/mit/styles/events-styles.css" />
+<link rel="stylesheet" type="text/css" href="/dhtml/suit_config/suit_template_config.css" />
+
+<link rel="stylesheet" type="text/css" href="/dhtml/suit_config/suit_template_index.css" />
+
+<!-- end "view_helper" output -->
+
+
+
+  <title>
+    MIT Events Calendar
+</title>
+  <LINK REL="alternate" TITLE="MIT Events Calendar (RSS 1.0)" HREF="/rss" TYPE="application/rss+xml">
+</head>
+<body onload="eCal.loader('index.html')">
+<!-- suit standard div -->
+<div id="hi1">
+ <!-- On all pages this must sync w nav3. If nav3 has shuffler.mas this must have search. If no shuffler, no search. -->
+  <div id="skiplink">Skip to: <!-- my loo -->
+    <ul>
+      <li><a href="#listings">listings</a></li>
+      <li><a href="#srch">search</a></li> <!-- aka "the shuffler" -->
+      <li><a href="#spt">spotlight</a></li>
+      <li>or continue on to page.</li>
+    </ul>
+  </div>
+
+  <div class="widthRestriction">
+  <div id="mitTopBar">
+	  <div class="floatLeft">
+		<div class="height32">
+		<a class="MITred" href="http://web.mit.edu/index.html">massachusetts institute of technology</a>
+	  </div>
+	  </div>
+  	<div class="floatRight">
+		
+<script language="javascript" type="text/javascript">document.write("<a class='MITred' href='javascript:;' onclick=\"suit.window('http://www.srh.noaa.gov/data/forecasts/MAZ015.php?warncounty=MAC025&city=Boston', 'child', 700, 400, true);\">22.0&deg;F / -5.6&deg;C&nbsp;&nbsp;mostly cloudy</a>");</script>
+<noscript><a class="MITred" href="http://www.srh.noaa.gov/data/forecasts/MAZ015.php?warncounty=MAC025&city=Boston" target="child">22.0&deg;F / -5.6&deg;C&nbsp;&nbsp;mostly cloudy</a></noscript>
+
+
+	</div>
+	</div>
+  </div>
+  <div id="secondarycolor" class="mithome_bgmit_b">
+  <div class="widthRestriction">
+  	<h1><a href="/index.html" class="mithome">calendar</a></h1>         <ul class="headList">
+          <li class="mithome"><a class="mithome" href="/index.html">events</a></li>
+          <li class="mithome"><a class="mithome" href="/exhibits.html">exhibits</a></li>
+          <li class="mithome"><a class="mithome" href="/holidays.html">mit&nbsp;holidays</a></li>
+		  <li><a href="http://web.mit.edu/registrar/www/calendar.html" class="mithome">academic</a></li>
+          <li><a href="http://calendar.mit.edu/" class="mithome">techtime</a></li>
+        </ul>
+		
+
+
+</div>
+</div>
+</div><!-- end #hi1 --><!-- suit standard div --><div id="hi2" class="mithome_bg_b">
+
+    <div class="widthRestriction">
+		<div class="floatLeft">
+		  <div class="typeDefault"> <!-- This is a hack, eventually font sizing should be localized to elements that need it. -->
+		  
+<table>
+  <tr>
+    <td><a id="spt" name="spt" />
+        <a href="/event.html?id=10749669"><img class="spotImage" src="/external/?url=http%3A%2F%2Fweb.mit.edu%2Fevents%2Fimages%2Farctic-floor.jpg" alt="spotlight image" height="100" /></a>
+      </td>
+      <td valign="top">
+        <div class="mithome_text_f">
+          <a href="/event.html?id=10749669" class="mithome">Exploring the Arctic Seafloor, Photographs by Chris Linder</a><br />
+      Through photography and other media, this exhibition portrays the expedition to learn more about Arctic...<br />
+        <span class="spotDate">
+          Saturday, August 15, 2009
+          <br /><br />
+          <a href="/spotlights.html" class="mithome">view all editor's picks</a>
+        </span>
+    </div>
+    </td>
+  </tr>
+ </table>
+
+
+
+		  </div>
+		  </div>
+		<div class="floatRight">
+		  <div id="hi2calendar"> <!-- This is a hack, eventually font sizing should be localized to elements that need it. -->
+		    
+
+  <div class="mithome_bg_b">
+  <div class="mithome_text_f"><div class="calWrap">
+    <table width="100%" cellspacing="0" class="calendar">
+      <thead>
+        <tr>
+		  <td><a class="mithome" href="/index.html?date=2008/12/21">&lt;&lt;</a></td>
+          <td><a class="mithome" href="/index.html?date=2009/11/21">&lt;</a></td>
+          <td colspan="3">December&nbsp;2009</td>
+		  <td><a href="/index.html?date=2010/1/21" class="mithome">&gt;</a></td>
+		  <td><a href="/index.html?date=2010/12/21" class="mithome">&gt;&gt;</a></td>
+        </tr>
+	  </thead>
+	</table>
+	<table width="100%" cellspacing="0" class="calendar">
+	  <thead>
+        <tr>
+          <th><div class="mithome_text_f">Su</div></th>
+          <th><div class="mithome_text_f">Mo</div></th>
+          <th><div class="mithome_text_f">Tu</div></th>
+          <th><div class="mithome_text_f">We</div></th>
+          <th><div class="mithome_text_f">Th</div></th>
+          <th><div class="mithome_text_f">Fr</div></th>
+          <th><div class="mithome_text_f">Sa</div></th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td colspan="7">[&nbsp;<a class="mithome" href="/index.html">today</a>&nbsp;]</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/1" >1</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/2" >2</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/3" >3</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/4" >4</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/5" >5</a></td>
+        </tr>
+        <tr>
+            <td><a class="mithome" href="/index.html?date=2009/12/6" >6</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/7" >7</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/8" >8</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/9" >9</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/10" >10</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/11" >11</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/12" >12</a></td>
+        </tr>
+        <tr>
+            <td><a class="mithome" href="/index.html?date=2009/12/13" >13</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/14" >14</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/15" >15</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/16" >16</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/17" >17</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/18" >18</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/19" >19</a></td>
+        </tr>
+        <tr>
+            <td><a class="mithome" href="/index.html?date=2009/12/20" >20</a></td>
+<!--            <td class="today">21</td>-->
+            <td class="today"><a class="today" href="/index.html?date=2009/12/21"><span class="mithome_textfocus_f">21</span></a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/22" >22</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/23" >23</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/24" >24</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/25" >25</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/26" >26</a></td>
+        </tr>
+        <tr>
+            <td><a class="mithome" href="/index.html?date=2009/12/27" >27</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/28" >28</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/29" >29</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/30" >30</a></td>
+            <td><a class="mithome" href="/index.html?date=2009/12/31" >31</a></td>
+            <td></td>
+            <td></td>
+        </tr>
+      </tbody>
+    </table></div><!-- calWrap -->
+  </div><!-- mithome_text_f -->
+</div><!-- end mit_bg_b -->
+
+
+
+
+
+
+
+		  </div>
+		</div>
+	</div>
+  </div>
+
+</div>
+<!-- end #hi2 -->
+
+<!-- suit standard div -->
+<div id="mid">
+<div class="widthRestriction">
+
+  <!-- suit standard div -->
+  <div id="nav1" class="container">
+
+  </div>
+  <!-- end #nav1 -->
+  
+  <!-- suit standard div -->
+  
+  <div id="nav2">
+    <div class="typeDefault"><!-- This is a hack, eventually font sizing should be localized to elements that need it. -->
+    
+    <!-- If you change this on a page change skiplink below as well -->
+    <div class="floatLeft">
+  <h2>
+  <img src="http://events.mit.edu/graphics/add-edit.gif" style="cursor:pointer;" alt="" onclick="window.location='https://events.mit.edu/edit/edit.do'"/> <a href="https://events.mit.edu/edit/edit.do">add/edit events <span class="mitOnly">(mit only)</span></a></h2>
+  </div>
+    <div class="floatLeft">
+  <h2>
+  <img src="http://events.mit.edu/graphics/email-alert.gif" style="cursor:pointer;" alt="" onclick="window.location='https://events.mit.edu/prefs/edit.do'"/> <a href="https://events.mit.edu/prefs/edit.do">email alerts <span class="mitOnly">(mit only)</span></a></h2>
+  </div>
+      <div class="floatLeft">
+  <h2>
+  <img src="http://events.mit.edu/graphics/rss.gif" style="cursor:pointer;" alt="" onclick="window.location='http://events.mit.edu/rsssearch.html'"/> <a href="http://events.mit.edu/rsssearch.html">RSS feeds</a></h2>
+  </div>
+  
+     <div class="floatLeft">
+  <h2>
+  <img src="http://events.mit.edu/graphics/browse.gif" style="cursor:pointer;" alt="" onclick="parent.suit.windowDialog('/browse_by_cats.html','700','500')"/> <a href="javascript: parent.suit.windowDialog('/browse_by_cats.html','700','500')">browse by category</a></h2>
+  </div>
+  <a name="srch" id="srch"></a><!-- start shuffler DHTML -->
+  <div class="boxBrdrd" style="background-color:#eee">
+    <h2 class="MITred">quick search</h2>
+
+	<div id="shuffMarg">
+      <form id="search" name="search" action="/searchresults.html" method="get">
+        <div class="container">
+          <input  style="font-size:.84em" type="text" size="22" id="fulltext" name="fulltext" value=""/>
+        </div>
+        <h4><span>from:</span></h4>
+        <div class="datePull">
+          
+<!-- START OPTION_LIST COMPONENT -->
+
+<select name="start.month" id="start.month" onchange="eCal.smartDate('start.day', 'start.month', 'start.year');">
+  <option value="01">jan</option>
+  <option value="02">feb</option>
+  <option value="03">mar</option>
+  <option value="04">apr</option>
+  <option value="05">may</option>
+  <option value="06">jun</option>
+  <option value="07">jul</option>
+  <option value="08">aug</option>
+  <option value="09">sep</option>
+  <option value="10">oct</option>
+  <option value="11">nov</option>
+  <option value="12" selected="selected">dec</option>
+</select>
+
+<!-- END OPTION LIST COMPONENT -->
+
+
+
+
+
+
+          
+<!-- START OPTION_LIST COMPONENT -->
+
+<select name="start.day" id="start.day" onfocus="eCal.smartDate('start.day', 'start.month', 'start.year');">
+  <option value="01">01</option>
+  <option value="02">02</option>
+  <option value="03">03</option>
+  <option value="04">04</option>
+  <option value="05">05</option>
+  <option value="06">06</option>
+  <option value="07">07</option>
+  <option value="08">08</option>
+  <option value="09">09</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21" selected="selected">21</option>
+  <option value="22">22</option>
+  <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+  <option value="26">26</option>
+  <option value="27">27</option>
+  <option value="28">28</option>
+  <option value="29">29</option>
+  <option value="30">30</option>
+  <option value="31">31</option>
+</select>
+
+<!-- END OPTION LIST COMPONENT -->
+
+
+
+
+
+
+          
+<!-- START OPTION_LIST COMPONENT -->
+
+<select name="start.year" id="start.year" onchange="eCal.smartDate('start.day', 'start.month', 'start.year');">
+  <option value="2007">07</option>
+  <option value="2008">08</option>
+  <option value="2009" selected="selected">09</option>
+  <option value="2010">10</option>
+  <option value="2011">11</option>
+</select>
+
+<!-- END OPTION LIST COMPONENT -->
+
+
+
+
+
+
+        </div><!-- datePull -->
+        <h4><span>until:</span></h4>
+        <div class="datePull">
+          
+<!-- START OPTION_LIST COMPONENT -->
+
+<select name="end.month" id="end.month" onchange="eCal.smartDate('end.day', 'end.month', 'end.year');">
+  <option value="01" selected="selected">jan</option>
+  <option value="02">feb</option>
+  <option value="03">mar</option>
+  <option value="04">apr</option>
+  <option value="05">may</option>
+  <option value="06">jun</option>
+  <option value="07">jul</option>
+  <option value="08">aug</option>
+  <option value="09">sep</option>
+  <option value="10">oct</option>
+  <option value="11">nov</option>
+  <option value="12">dec</option>
+</select>
+
+<!-- END OPTION LIST COMPONENT -->
+
+
+
+
+
+
+          
+<!-- START OPTION_LIST COMPONENT -->
+
+<select name="end.day" id="end.day" onfocus="eCal.smartDate('end.day', 'end.month', 'end.year');">
+  <option value="01">01</option>
+  <option value="02">02</option>
+  <option value="03">03</option>
+  <option value="04">04</option>
+  <option value="05">05</option>
+  <option value="06">06</option>
+  <option value="07">07</option>
+  <option value="08">08</option>
+  <option value="09">09</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21" selected="selected">21</option>
+  <option value="22">22</option>
+  <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+  <option value="26">26</option>
+  <option value="27">27</option>
+  <option value="28">28</option>
+  <option value="29">29</option>
+  <option value="30">30</option>
+  <option value="31">31</option>
+</select>
+
+<!-- END OPTION LIST COMPONENT -->
+
+
+
+
+
+
+          
+<!-- START OPTION_LIST COMPONENT -->
+
+<select name="end.year" id="end.year" onchange="eCal.smartDate('end.day', 'end.month', 'end.year');">
+  <option value="2007">07</option>
+  <option value="2008">08</option>
+  <option value="2009">09</option>
+  <option value="2010" selected="selected">10</option>
+  <option value="2011">11</option>
+</select>
+
+<!-- END OPTION LIST COMPONENT -->
+
+
+
+
+
+
+        </div><!-- datePull -->
+       
+
+ <div align="right" id="searchButton">
+  <a id="search_submit" name="search_submit" href="javascript:;" onclick="suit.formSubmit('search'); return false">
+              <input type="submit" name="Submit" value="Search" id="SearchButton"/>
+            </a>
+		</div>
+
+      </form>
+      
+    </div><!-- shuffMarg -->
+
+  </div><!--boxBrdrd-->
+<!-- end shuffler DHTML -->
+
+
+
+    <div class="floatLeft">
+  <h2>
+  <img src="http://events.mit.edu/graphics/magnifying-glass.gif" style="cursor:pointer;" alt="" onclick="window.location='http://events.mit.edu/search.html'"/> <a href="http://events.mit.edu/search.html">advanced search</a></h2>
+  </div>
+    <div class="floatLeft">
+  <h2>
+  <img src="http://events.mit.edu/graphics/help.gif" style="cursor:pointer;" alt="" onclick="window.location='http://events.mit.edu/help/index.html'"/> <a href="http://events.mit.edu/help/index.html">help</a></h2>
+  </div>
+  
+  <div class="nav2SpotBrdrd">
+<table class="spotlights">
+
+<tr>
+                <td>
+&nbsp;
+                </td>
+        </tr>
+        <tr>
+                <td>
+&nbsp;
+                </td>
+        </tr>
+</table>
+</div>
+
+
+
+
+  </div> 
+  </div>
+
+
+  <!-- suit standard div -->
+  <div id="nav3"></div>
+  <!-- end #nav3 -->
+
+  <!-- suit standard div -->
+  <div id="nav4">
+<!-- If you change this on a page change skiplink below as well -->
+
+
+  
+<a href="http://web.mit.edu"><img id="logo_mit" src="/graphics/logo_mit.gif" alt="MIT"/></a>
+
+
+
+    
+
+
+
+
+
+
+
+
+  </div>
+
+
+<a name="listings" id="listings"></a>
+  <div id="content">
+  <h1>
+    <a style="text-decoration:none" href="day.html?date=2009/12/20">&lt;</a>&nbsp;&nbsp;events for
+    <span class="bigger">Monday, December 21, 2009</span>
+    &nbsp;&nbsp;<a style="text-decoration:none" href="day.html?date=2009/12/22">&gt;</a>
+  </h1>
+
+<table border="0" cellpadding="0" cellspacing="0">
+
+<!-- Holidays -->
+<!-- Events -->
+          
+<tr>
+  <td class="event_row">
+
+
+
+  <h2>
+  
+  <a class="MITred" href="/event.html?id=11287915">Wellness Class Registration</a>
+  </h2>
+
+  <p>9:00a&#8211;9:00p</p>
+
+
+  <p>Building: <a href="http://whereis.mit.edu/map-jpg?mapterms=E23-205&mapsearch=go">E23-205</a></p>
+
+
+
+
+
+
+
+  </td>
+</tr><!-- event_row -->
+
+
+
+
+
+          
+<tr>
+  <td class="event_row">
+
+
+
+  <h2>
+  
+  <a class="MITred" href="/event.html?id=9003065">Morning Coffee</a>
+  </h2>
+
+  <p>9:30a&#8211;10:30a</p>
+
+
+  <p>Building: <a href="http://whereis.mit.edu/map-jpg?mapterms=E51&mapsearch=go">E51</a></p>
+
+
+
+
+
+
+
+  </td>
+</tr><!-- event_row -->
+
+
+
+
+
+          
+<tr>
+  <td class="event_row">
+
+
+
+  <h2>
+  
+  <a class="MITred" href="/event.html?id=11600621">Visionary Engineer, Harold Edgerton</a>
+  </h2>
+
+  <p>10:00a&#8211;5:00p</p>
+
+
+  <p>Building: <a href="http://whereis.mit.edu/map-jpg?mapterms=N51&mapsearch=go">N51</a></p>
+
+
+
+
+
+
+
+  </td>
+</tr><!-- event_row -->
+
+
+
+
+
+          
+<tr>
+  <td class="event_row">
+
+
+
+  <h2>
+  
+  <a class="MITred" href="/event.html?id=11601774">H1N1 vaccine clinic by appointment only</a>
+  </h2>
+
+  <p>10:00a&#8211;5:00p</p>
+
+
+  <p>Building: <a href="http://whereis.mit.edu/map-jpg?mapterms=E23&mapsearch=go">E23</a></p>
+
+
+
+
+
+
+
+  </td>
+</tr><!-- event_row -->
+
+
+
+
+
+          
+<tr>
+  <td class="event_row">
+
+
+
+  <h2>
+  
+  <a class="MITred" href="/event.html?id=11289689">Sampling MIT</a>
+  </h2>
+
+  <p>10:00a&#8211;5:00p</p>
+
+
+  <p>Building: <a href="http://whereis.mit.edu/map-jpg?mapterms=N51&mapsearch=go">N51</a></p>
+
+
+
+
+
+
+
+  </td>
+</tr><!-- event_row -->
+
+
+
+
+
+          
+<tr>
+  <td class="event_row">
+
+
+
+  <h2>
+  
+  <a class="MITred" href="/event.html?id=10749797">Exploring the Arctic Seafloor, Photographs by Chris Linder</a>
+  </h2>
+
+  <p>10:00a&#8211;5:00p</p>
+
+
+  <p>Building: <a href="http://whereis.mit.edu/map-jpg?mapterms=10-150&mapsearch=go">10-150</a></p>
+
+
+
+
+
+
+
+  </td>
+</tr><!-- event_row -->
+
+
+
+
+
+          
+<tr>
+  <td class="event_row">
+
+
+
+  <h2>
+  
+  <a class="MITred" href="/event.html?id=10749006"><B>NO CAMPUS TOURS OR INFORMATION SESSIONS TODAY<B> </B> </B></a>
+  </h2>
+
+  <p>11:00a</p>
+
+
+
+
+
+
+
+
+
+  </td>
+</tr><!-- event_row -->
+
+
+
+
+
+          
+<tr>
+  <td class="event_row">
+
+
+
+  <h2>
+  
+  <a class="MITred" href="/event.html?id=11601778">Mighty Slim's 14th Annual December Frank Zappa Special on WMBR's Lost & Found Program</a>
+  </h2>
+
+  <p>12:00p&#8211;2:00p</p>
+
+
+  <p>Location: 
+88.1 FM</p>
+
+
+
+
+
+
+
+  </td>
+</tr><!-- event_row -->
+
+
+
+
+
+          
+<tr>
+  <td class="event_row">
+
+
+
+  <h2>
+  
+  <a class="MITred" href="/event.html?id=10749405"><B>NO CAMPUS TOURS OR INFORMATION SESSIONS TODAY<B> </B> </B></a>
+  </h2>
+
+  <p>3:00p</p>
+
+
+
+
+
+
+
+
+
+  </td>
+</tr><!-- event_row -->
+
+
+
+
+
+          
+<tr>
+  <td class="event_row">
+
+
+
+  <h2>
+  
+  <a class="MITred" href="/event.html?id=11601102">Luminous Windows</a>
+  </h2>
+
+  <p>4:30p&#8211;11:58p</p>
+
+
+  <p>Building: <a href="http://whereis.mit.edu/map-jpg?mapterms=N51&mapsearch=go">N51</a></p>
+
+
+
+
+
+
+
+  </td>
+</tr><!-- event_row -->
+
+
+
+
+
+          
+<tr>
+  <td class="event_row">
+
+
+
+  <h2>
+  
+  <a class="MITred" href="/event.html?id=11283288">Isshinryu karate practice</a>
+  </h2>
+
+  <p>7:00p&#8211;9:00p</p>
+
+
+  <p>Building: <a href="http://whereis.mit.edu/map-jpg?mapterms=57-168&mapsearch=go">57-168</a></p>
+
+
+
+
+
+
+
+  </td>
+</tr><!-- event_row -->
+
+
+
+
+
+          
+<tr>
+  <td class="event_row">
+
+
+
+  <h2>
+  
+  <a class="MITred" href="/event.html?id=11599403">MIT Qigong</a>
+  </h2>
+
+  <p>7:00p&#8211;8:00p</p>
+
+
+  <p>Building: <a href="http://whereis.mit.edu/map-jpg?mapterms=1-242&mapsearch=go">1-242</a></p>
+
+
+
+
+
+
+
+  </td>
+</tr><!-- event_row -->
+
+
+
+
+
+          
+<tr>
+  <td class="event_row">
+
+
+
+  <h2>
+  
+  <a class="MITred" href="/event.html?id=10003467">Kokikai Aikido practice</a>
+  </h2>
+
+  <p>7:30p&#8211;9:00p</p>
+
+
+  <p>Building: <a href="http://whereis.mit.edu/map-jpg?mapterms=W32&mapsearch=go">W32</a></p>
+
+
+
+
+
+
+
+  </td>
+</tr><!-- event_row -->
+
+
+
+
+
+          
+<tr>
+  <td class="event_row">
+
+
+
+  <h2>
+  
+  <a class="MITred" href="/event.html?id=11288962">Change Ringing Practice (Hand Bells)</a>
+  </h2>
+
+  <p>7:30p&#8211;9:45p</p>
+
+
+  <p>Building: <a href="http://whereis.mit.edu/map-jpg?mapterms=5-232&mapsearch=go">5-232</a></p>
+
+
+
+
+
+
+
+  </td>
+</tr><!-- event_row -->
+
+
+
+
+
+          
+<tr>
+  <td class="event_row">
+
+
+
+  <h2>
+  
+  <a class="MITred" href="/event.html?id=11601785">Celebrate the Solstice on WMBR's Bats in the Belfry Program</a>
+  </h2>
+
+  <p>8:00p&#8211;10:00p</p>
+
+
+  <p>Location: 
+88.1 FM</p>
+
+
+
+
+
+
+
+  </td>
+</tr><!-- event_row -->
+
+
+
+
+
+          
+<tr>
+  <td class="event_row">
+
+
+
+  <h2>
+  
+  <a class="MITred" href="/event.html?id=10000573">Trivia</a>
+  </h2>
+
+  <p>8:00p</p>
+
+
+  <p>Building: <a href="http://whereis.mit.edu/map-jpg?mapterms=NW35&mapsearch=go">NW35</a></p>
+
+
+
+
+
+
+
+  </td>
+</tr><!-- event_row -->
+
+
+
+
+
+</table>
+
+</div><!-- END CONTENT -->
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <!-- end #content -->
+</div> <!-- end widthRestriction -->
+</div>
+<!-- end #mid -->
+
+<!-- suit standard div -->
+<div id="lo1">
+        <table width="650" border="0" cellspacing="0" cellpadding="0">
+        <tr align="left" valign="top"> 
+          <td colspan="7" class="footer"><a href="http://web.mit.edu" class="footer">massachusetts 
+            institute of technology</a></td>
+          <td colspan="6" class="footer">77 massachusetts avenue<br>
+                                         cambridge, ma 02139-4307</td>
+          <td colspan="4" class="footer">tel 617.253.1000<br>
+                                         tty 617.258.9344</td>
+
+          <td colspan="3" class="footer"></td>
+          <td colspan="3" class="footer"><a href="/comment-form.html" class="footer">contact</a></td>
+        </tr>
+      </table>
+</div>
+<!-- end #hlo1 -->
+
+<!-- suit standard div -->
+<div id="lo2">
+    <!-- This suit-standard div is empty in this implementation. Here, for now, for completeness.
+         It's set to "display:none" in the stylesheet. -->
+</div>
+<!-- end #lo2 -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
